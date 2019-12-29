@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"  href="css/style.min.css">
+    <link rel="stylesheet" href="css/skins/tomato.min.css" id="template_settings" />
+
+    <meta name="author" content="Alibekov Khiyirbeg">
+    <meta name="keywords" content="HTML design by maker Alibekov Khiyirbeg Sultangamidovich">
+    <meta name="description" content="The practice of developing online stores and their layout HTML design by maker Alibekov Khiyirbeg Sultangamidovich">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>ShoPY</title>  
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <link rel="stylesheet" href="css/styles-ie.css">
+    <![endif]-->
+ </head>
+
+
+<body id="product_page">
+
+<div class="debug">
+  <div>
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</div>
+<!--/.debug  -->
+<header class="header">
+  <div class="header-top">
+    <div class="wrapper">
+      <div class="header__wrap">
+        <ul class="contacts-list">
+          <li class="contacts-item">
+            <a href="mailto:info@site.com" class="contacts-link contacts-link__mail" target="_blank"
+               title="info@site.com">
+              info@site.com
+            </a>
+          </li>
+          <li class="contacts-item">
+            <a href="tel:+7(928)333-33-33" class="contacts-link contacts-link__phone" target="_blank"
+               title="+7(928)333-33-33">
+              +7(928)333-33-33
+            </a>
+          </li>
+        </ul>
+        <!-- End contacts-list -->
+        <ul class="socials-list">
+          <li class="socials-item">
+            <a href="http://facebook.com" class="socials-link socials-link--fb" target="_blank"
+               title="http://facebook.com">
+              <span class="visually-hidden">facebook.com</span>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a href="http://tweeter.com" class="socials-link socials-link--tw" target="_blank"
+               title="http://tweeter.com">
+              <span class="visually-hidden">tweeter.com</span>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a href="http://google.com" class="socials-link socials-link--google" title="http://google.com">
+              <span class="visually-hidden">google.com</span>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a href="http://instagram.com" class="socials-link socials-link--inst" target="_blank"
+               title="http://instagram.com">
+              <span class="visually-hidden">instagram.com</span>
+            </a>
+          </li>
+        </ul>
+        <!-- End socials-list -->
+      </div>
+      <!-- End header__wrap -->
+    </div>
+    <!-- End wrapper -->
+  </div>
+  <!-- End header-top -->
+  <div class="header-bottom">
+    <div class="wrapper">
+      <div class="header__wrap">
+        <div id="header">
+          <div class="logo">
+            <a href="#">
+              <img src="i/@2x/icons/section_1/logo.png" alt="">
+            </a>
+          </div>
+          <nav>
+            <ul>
+              <li class="active">
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="product.html">Products</a>
+                <ul class="mega-dropdown">
+                  <li class="row">
+                    <ul class="mega-col">
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                    <ul class="mega-col">
+                      <li><a href="#">Help</a></li>
+                      <li><a href="#">Pricing</a></li>
+                      <li><a href="#">Team</a></li>
+                      <li><a href="#">Services</a></li>
+                    </ul>
+                    <ul class="mega-col">
+                      <li><a href="#">Coming Soon</a></li>
+                      <li><a href="#">404 Error</a></li>
+                      <li><a href="#">Search</a></li>
+                      <li><a href="#">Author Page</a></li>
+                    </ul>
+                    <ul class="mega-col">
+                      <li><a href="#">Full Width</a></li>
+                      <li><a href="#">Right Column</a></li>
+                      <li><a href="#">Left Column</a></li>
+                      <li><a href="#">Maintenance</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="product-all.html">Hot Deals</a>
+                <ul>
+                  <li><a href="#">About Version</a></li>
+                  <li><a href="#">About Version</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <ul class="action-list">
+          <li class="action-item">
+            <a href="" class="action-link action-link__search">
+
+            </a>
+            <form class="search-form" action="search.php">
+              <input name="q" placeholder="Search..." type="search">
+            </form>
+          </li>
+          <li class="action-item">
+            <a href="" class="action-link action-link__user">
+
+            </a>
+          </li>
+          <li class="action-item">
+            <a href="" class="action-link action-link__basket">
+            </a>
+            <span class="action-number">5</span>
+          </li>
+        </ul>
+      </div>
+      <!-- End header__wrap -->
+    </div>
+    <!-- End wrapper -->
+  </div>
+  <!-- End header-bottom -->
+</header>
+<!-- End header -->
+
+<main class="main">
+  <section id="js_product-view" class="product-view">
+    <h2 class="visually-hidden">Hidden title</h2>
+    <div class="wrapper">
+      <div class="product-view__wrap">
+        <aside class="sidebar__product-view">
+          <div class="product-gallery">
+            <ul class="gallery-list">
+              <li class="gallery-item">
+                <img src="i/@2x/goods-5.png" class="gallery-pic" alt="gallery">
+              </li>
+              <li class="gallery-item">
+                <img src="i/@2x/goods-2.png" class="gallery-pic" alt="gallery">
+              </li>
+              <li class="gallery-item">
+                <img src="i/@2x/goods-3.png" class="gallery-pic" alt="gallery">
+              </li>
+            </ul>
+            <div class="product-gallery__pager">
+              <ul class="gallery-pager__list">
+                <li class="gallery-pager__item">
+                  <a href="#" class="gallery-pager__link" data-slide-index="0">
+                    <img src="i/@1x/goods-5.png" alt="">
+                  </a>
+                </li>
+                <li class="gallery-pager-item">
+                  <a href="#" class="gallery-pager__link" data-slide-index="1">
+                    <img src="i/@1x/goods-2.png" alt="">
+                  </a>
+                </li>
+                <li class="gallery-pager-item">
+                  <a href="#" class="gallery-pager__link" data-slide-index="2">
+                    <img src="i/@1x/goods-3.png" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--//product-gallery__pager-->
+          </div>
+          <!--//product-gallery-->
+        </aside>
+        <!-- End sidebar__product-view-2 -->
+        <article class="contents__product-view">
+          <h2 class="visually-hidden">Hidden title</h2>
+          <div class="product-card">
+            <h2 class="product-card__title">
+              <a href="#">
+                Full winter kit
+              </a>
+            </h2>
+            <p class="product-card__descr">
+              Half Jacket + Skiny Trousers + Boot leather
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry
+              Lorem Ipsum is simply dummy text of the printing
+              and typesetting industry
+            </p>
+            <div class="product-settings__wrap">
+              <div class="product-settings__item">
+                <span>Choose Size</span>
+                <ul class="choose-size__list">
+                  <li class="choose-size__item active">
+                    <a href="#" class="choose-size__link">
+                      S
+                    </a>
+                  </li>
+                  <li class="choose-size__item">
+                    <a href="#" class="choose-size__link">
+                      M
+                    </a>
+                  </li>
+                  <li class="choose-size__item">
+                    <a href="#" class="choose-size__link">
+                      L
+                    </a>
+                  </li>
+                  <li class="choose-size__item">
+                    <a href="#" class="choose-size__link">
+                      XL
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-settings__item">
+                <span class="choose-quantity">Choose quantity</span>
+                <span class="choose-quantity__up">+</span>
+                <span class="choose-quantity__count active">0</span>
+                <span class="choose-quantity__down">-</span>
+              </div>
+            </div>
+            <!--// product-settings__wrap-->
+            <div class="product-actions__wrap">
+              <div class="product-actions__left">
+                <p class="product-actions__price">
+                  Price:120$
+                </p>
+              </div>
+              <div class="product-actions__right">
+                <ul class="product-actions-list">
+                  <li class="product-actions__soc">
+                    <a href="#" class="product-actions__web">
+
+                    </a>
+                  </li>
+                  <li class="product-actions__soc">
+                    <a href="#" class="product-actions__cart">
+
+                    </a>
+                  </li>
+                  <li class="product-actions__soc">
+                    <a href="#" class="product-actions__like">
+
+                    </a>
+                  </li>
+                  <li class="product-actions__soc">
+                    <a href="#" class="product-actions__btn">
+                      Order Now
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--//product-actions__wrap-->
+          </div>
+          <!--// product-card-->
+        </article>
+        <!-- End contents__product-view-1 -->
+      </div>
+    </div>
+    <!-- //wrapper -->
+  </section>
+  <!-- End product-view -->
+  <section id="js_arrivals" class="arrivals">
+    <h2 class="visually-hidden">Hidden title</h2>
+    <div class="wrapper">
+      <header class="section__header js_up">
+        <h2 class="section__title">
+          <span class="first-word">Related</span>
+          <span class="second-word">Products</span>
+        </h2>
+        <p class="section__descr">
+          Lorem Ipsum is simply dummy text
+          of the printing and typesetting industry
+        </p>
+      </header>
+      <article class="arrivals__wrap">
+        <h2 class="visually-hidden">Hidden title</h2>
+
+        <section class="arrivals__inner">
+          <h2 class="visually-hidden">Hidden title</h2>
+          <div class="product">
+            <div class="product__image">
+              <a href="#">
+                <img src="i/@2x/goods-1.png" class="product__pic" alt="product">
+              </a>
+            </div>
+            <!-- // product__image -->
+            <header class="product__header">
+              <h3 class="product__title">
+                <a href="#">
+                  Reebok Track Jacket
+                </a>
+              </h3>
+            </header>
+            <div class="product__price">
+              <a href="#">
+                100$
+              </a>
+            </div>
+          </div>
+          <!-- // product -->
+        </section>
+        <!-- End arrivals__inner-1 -->
+
+        <section class="arrivals__inner">
+          <h2 class="visually-hidden">Hidden title</h2>
+          <div class="product">
+            <div class="product__image">
+              <a href="#">
+                <img src="i/@2x/goods-2.png" class="product__pic" alt="product">
+              </a>
+            </div>
+            <!-- // product__image -->
+            <header class="product__header">
+              <h3 class="product__title">
+                <a href="#">
+                  Reebok Track Jacket
+                </a>
+              </h3>
+            </header>
+            <div class="product__price">
+              <a href="#">
+                100$
+              </a>
+            </div>
+          </div>
+          <!-- // product -->
+        </section>
+        <!-- End arrivals__inner-2 -->
+
+        <section class="arrivals__inner">
+          <h2 class="visually-hidden">Hidden title</h2>
+          <div class="product">
+            <div class="product__image">
+              <a href="#">
+                <img src="i/@2x/goods-3.png" class="product__pic" alt="product">
+              </a>
+            </div>
+            <!-- // product__image -->
+            <header class="product__header">
+              <h3 class="product__title">
+                <a href="#">
+                  Reebok Track Jacket
+                </a>
+              </h3>
+            </header>
+            <div class="product__price">
+              <a href="#">
+                100$
+              </a>
+            </div>
+          </div>
+          <!-- // product -->
+        </section>
+        <!-- End arrivals__inner-3 -->
+
+        <section class="arrivals__inner">
+          <h2 class="visually-hidden">Hidden title</h2>
+          <div class="product">
+            <div class="product__image">
+              <a href="#">
+                <img src="i/@2x/goods-1.png" class="product__pic" alt="product">
+              </a>
+            </div>
+            <!-- // product__image -->
+            <header class="product__header">
+              <h3 class="product__title">
+                <a href="#">
+                  Reebok Track Jacket
+                </a>
+              </h3>
+            </header>
+            <div class="product__price">
+              <a href="#">
+                100$
+              </a>
+            </div>
+          </div>
+          <!-- // product -->
+        </section>
+        <!-- End arrivals__inner-4 -->
+
+      </article>
+      <!--//arrivals__wrap-->
+    </div>
+    <!-- //wrapper -->
+  </section>
+  <!-- End arrivals -->
+  <section id="js_subscribs" class="subscribs">
+    <h2 class="visually-hidden">Hidden title</h2>
+    <div class="wrapper">
+      <article class="subscribs__wrap">
+        <h2 class="visually-hidden">Hidden title</h2>
+        <section class="subscribs__inner">
+          <h2 class="visually-hidden">Hidden title</h2>
+          <div class="subscribs-block  js_left">
+            <h3 class="subscribs-block__title">
+              <a href="#">
+                NEWS LETTER
+              </a>
+            </h3>
+            <p class="subscribs-block__descr">
+              join us now to get all news and special offers
+            </p>
+          </div>
+          <!-- // subscribs-block -->
+        </section>
+        <!-- End subscribs__inner-1 -->
+        <section class="subscribs__inner">
+          <h2 class="visually-hidden">Hidden title</h2>
+          <form action="#" class="subscribs-form  js_right">
+            <label class="subscribs-form__label subscribs-form__label--inp">
+              <input type="email" name="mail" placeholder="type your email here">
+            </label>
+            <label class="subscribs-form__label subscribs-form__label--btn">
+              <input type="submit" class="subscribs-form__btn" name="join_us" value="join us">
+            </label>
+          </form>
+        </section>
+        <!-- End subscribs__inner-2 -->
+      </article>
+    </div>
+    <!-- //wrapper -->
+  </section>
+  <!-- End subscribs -->
+
+</main>
+<!-- End main -->
+
+<footer class="footer">
+  <div class="wrapper">
+    <div class="footer__wrap">
+      <div class="footer-logo js_up">
+        <a href="#" class="footer-logo__link">
+          <img src="i/@2x/icons/section_1/logo.png" class="footer-logo__img" alt="Footer logo">
+          <span class="footer-logo__brand">
+                    shopy c 2015 . your copy right here
+                  </span>
+        </a>
+      </div>
+      <!-- // footer-logo -->
+      <div class="footer-nav js_up">
+        <ul class="footernav-list">
+          <li class="footernav-item">
+            <a href="" class="footernav-link">
+              about us
+            </a>
+          </li>
+          <li class="footernav-item">
+            <a href="" class="footernav-link">
+              contact us
+            </a>
+          </li>
+          <li class="footernav-item">
+            <a href="" class="footernav-link">
+              support
+            </a>
+          </li>
+        </ul>
+        <!-- // footernav-list-1 -->
+        <ul class="footernav-list">
+          <li class="footernav-item">
+            <a href="" class="footernav-link">
+              our feed
+            </a>
+          </li>
+          <li class="footernav-item">
+            <a href="" class="footernav-link">
+              terms and conditions
+            </a>
+          </li>
+          <li class="footernav-item">
+            <a href="" class="footernav-link">
+              our privacy
+            </a>
+          </li>
+        </ul>
+        <!-- // footernav-list-2 -->
+        <ul class="footernav-list">
+          <li class="footernav-item">
+            <a href="" class="footernav-link">
+              join us
+            </a>
+          </li>
+          <li class="footernav-item">
+            <a href="" class="footernav-link">
+              live support
+            </a>
+          </li>
+        </ul>
+        <!-- // footernav-list-3 -->
+        <div class="footerpay">
+          <h3 class="footerpay-list__title">
+            <a href="#">
+              Payment Methods
+            </a>
+          </h3>
+          <ul class="footerpay-list">
+            <li class="footerpay-item">
+              <a href="#">
+                <img src="i/@2x/icons/section_1/footer-icon-1.png" class="footerpay-pic" alt="footerpay">
+              </a>
+            </li>
+            <li class="footerpay-item">
+              <a href="#">
+                <img src="i/@2x/icons/section_1/footer-icon-2.png" class="footerpay-pic" alt="footerpay">
+              </a>
+            </li>
+            <li class="footerpay-item">
+              <a href="#">
+                <img src="i/@2x/icons/section_1/footer-icon-3.png" class="footerpay-pic" alt="footerpay">
+              </a>
+            </li>
+            <li class="footerpay-item">
+              <a href="#">
+                <img src="i/@2x/icons/section_1/footer-icon-4.png" class="footerpay-pic" alt="footerpay">
+              </a>
+            </li>
+            <li class="footerpay-item">
+              <a href="#">
+                <img src="i/@2x/icons/section_1/footer-icon-5.png" class="footerpay-pic" alt="footerpay">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- // footerpay-4 -->
+      </div>
+      <!-- // footer-nav -->
+    </div>
+    <!-- End footer__wrap -->
+  </div>
+  <!-- End wrapper -->
+</footer>
+<!-- End footer -->
+<!-- JS section -->
+<!--[if lt IE 9]>
+    <script src="../../bower_components//html5shiv/es5-shim.min.js"></script>
+    <script src="../../bower_components/html5shiv/html5shiv.min.js"></script>
+    <script src="../../bower_components/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="../../bower_components/respond/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="js/main.min.js"></script>
+<script>
+    var div = document.createElement('div');
+    div.style.cssText = 'width:calc(10px)';
+
+    if(!(div.style.length > 0)){
+        var link = document.createElement('link');
+        link.setAttribute('href', 'css/styles-per.css')
+        link.setAttribute('rel', 'stylesheet')
+        document.body.appendChild(link);
+    }
+</script>
+
+</body>
+</html>

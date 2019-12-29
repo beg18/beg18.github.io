@@ -1,0 +1,231 @@
+/*==============================
+SIZE
+===============================*/
+
+/*==============================
+COLORS
+===============================*/
+
+/*==============================
+FOR  PROJECT
+===============================*/
+
+/*==============================
+FONT-FAMILY
+===============================*/
+
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+
+/*
+
+  Подключить этот файл в начало CSS/LESS файла
+  
+  Вот так:
+  
+  @import "lesselements.less";
+
+*/
+
+/* MY MIXINS */
+
+.cover {
+    background-size: cover;
+}
+
+/* Badges */
+
+/* Tags */
+
+.wrapper-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.col-five,
+.col-lg-five,
+.col-md-five,
+.col-sm-five,
+.col-xs-five,
+.col-xxs-five {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-five,
+.col-lg-five,
+.col-md-five,
+.col-sm-five,
+.col-xs-five,
+.col-xxs-five {
+    width: 20%;
+    float: left;
+}
+
+/* 6dp elevation modified*/
+
+/* 12dp elevation modified*/
+
+/* 16dp elevation */
+
+/* 24dp elevation */
+
+/*==========================================*/
+
+/*=======================================*/
+
+/*=======================================*/
+
+/*=======================================*/
+
+/*=======================================*/
+
+/*===========================*/
+
+/*==========================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+.first-word {
+    color: #e12e3f;
+}
+
+.second-word {
+    color: #34404b;
+}
+
+.header-nav-list li.active a {
+    color: #e12e3f;
+}
+
+.header-nav-list a {
+    color: #34404b;
+}
+
+.header-nav-list a:hover {
+    color: #e12e3f;
+}
+
+.header-basket__number {
+    background-color: #34404b;
+    color: #fff;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager .bx-pager-item a.active {
+    background-color: #e12e3f;
+}
+
+.slider-title {
+    color: #e12e3f;
+}
+
+.slider-goods {
+    color: #495662;
+}
+
+.slider-descr {
+    color: #495662;
+}
+
+.slider-price {
+    color: #495662;
+}
+
+.slider-price:hover {
+    color: #ff5912;
+}
+
+.slider-bue {
+    color: #495662;
+}
+
+.slider-bue:hover {
+    color: #ff5912;
+}
+
+@media (min-width: 380px) {
+    .col-xxs-five {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 576px) {
+    .col-xs-five {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-sm-five {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-five {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1100px) {
+    .col-lg-five {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .wrapper-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .wrapper-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
