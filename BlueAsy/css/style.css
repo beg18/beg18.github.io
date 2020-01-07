@@ -2172,30 +2172,6 @@ http://chimir.ru/post/39:
   font-style: normal;
 }
 
-@font-face {
-    font-family: 'Raleway';
-  src: url('fonts/RalewayRegular/RalewayRegular.eot');
-  src: url('fonts/RalewayRegular/RalewayRegular.eot?#iefix') format('embedded-opentype'), url('fonts/RalewayRegular/RalewayRegular.woff') format('woff'), url('fonts/RalewayRegular/RalewayRegular.ttf') format('truetype'), url('fonts/RalewayRegular/RalewayRegular.svg#Raleway') format('svg');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-    font-family: 'Raleway';
-  src: url('fonts/RalewaySemiBold/RalewaySemiBold.eot');
-  src: url('fonts/RalewaySemiBold/RalewaySemiBold.eot?#iefix') format('embedded-opentype'), url('fonts/RalewaySemiBold/RalewaySemiBold.woff') format('woff'), url('fonts/RalewaySemiBold/RalewaySemiBold.ttf') format('truetype'), url('fonts/RalewaySemiBold/RalewaySemiBold.svg#Raleway') format('svg');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-    font-family: 'Raleway';
-  src: url('fonts/RalewayBold/RalewayBold.eot');
-  src: url('fonts/RalewayBold/RalewayBold.eot?#iefix') format('embedded-opentype'), url('fonts/RalewayBold/RalewayBold.woff') format('woff'), url('fonts/RalewayBold/RalewayBold.ttf') format('truetype'), url('fonts/RalewayBold/RalewayBold.svg#Raleway') format('svg');
-  font-weight: 700;
-  font-style: normal;
-}
-
 /* Pages import
 @import "pages/home";
 ==============================*/
