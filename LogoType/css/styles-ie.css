@@ -1,0 +1,1664 @@
+/*==============================
+SIZE
+===============================*/
+
+/*==============================
+COLORS
+===============================*/
+
+/*==============================
+FOR  PROJECT
+===============================*/
+
+/*==============================
+FONT-FAMILY
+===============================*/
+
+/*
+Add your png file to source images dir (ex. logo.png and icon.png)
+Add styles to your less file:
+.logo {
+  .sprite(@s-logo);
+}
+.icon {
+  .sprite(@s-icon);
+}
+*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ul li {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+legend {
+    color: #000;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Slider */
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/* Vendor libs import
+@import "fonts/fonts";
+==============================*/
+
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+
+/*
+
+  Подключить этот файл в начало CSS/LESS файла
+  
+  Вот так:
+  
+  @import "lesselements.less";
+
+*/
+
+/* MY MIXINS */
+
+.cover {
+    background-size: cover;
+}
+
+/* Badges */
+
+/* Tags */
+
+.wrapper-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.col-five,
+.col-lg-five,
+.col-md-five,
+.col-sm-five,
+.col-xs-five,
+.col-xxs-five {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-five,
+.col-lg-five,
+.col-md-five,
+.col-sm-five,
+.col-xs-five,
+.col-xxs-five {
+    width: 20%;
+    float: left;
+}
+
+/* 6dp elevation modified*/
+
+/* 12dp elevation modified*/
+
+/* 16dp elevation */
+
+/* 24dp elevation */
+
+/*==========================================*/
+
+/*=======================================*/
+
+/*=======================================*/
+
+/*=======================================*/
+
+/*=======================================*/
+
+/*===========================*/
+
+/*==========================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/*==================================================*/
+
+/* Project Elements
+==============================*/
+
+/*===========================
+Table of Content
+
+1. Wrappers
+2. Buttons
+3. Form elements
+4. Font family
+5. Typography
+===========================*/
+
+/* 1. Wrappers
+===========================*/
+
+/*
+.debug {
+    .debug(rgba(0, 0, 0, 0.5), 1px solid #ff0);
+}
+*/
+
+*,
+*:before,
+*,
+*:after {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+/* 2. Buttons
+===========================*/
+
+.header .btn {
+    border: none;
+    text-decoration: none;
+    overflow: hidden;
+    outline: none !important;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    height: 45px;
+    height: 2.8125rem;
+    line-height: 45px;
+    line-height: 2.8125rem;
+    padding: 0 20px;
+    padding: 0 1.25rem;
+    box-sizing: border-box;
+    color: #1b1b1b;
+    background-color: #ffc222;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    padding-left: 50px;
+    border-radius: 0;
+    position: relative;
+}
+
+.header .btn:hover {
+    background-color: #ffbb08;
+    color: #353535;
+    text-decoration: none;
+}
+
+.header .btn:focus {
+    outline: none;
+    text-decoration: none;
+    background-color: #ffc93c;
+    color: #010101;
+}
+
+.header .btn::before {
+    display: block;
+    content: "\f003";
+    font-family: 'icomoon' !important;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1rem;
+    color: #1b1b1b;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.main-btn {
+    border: none;
+    text-decoration: none;
+    overflow: hidden;
+    outline: none !important;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    height: 36px;
+    height: 2.25rem;
+    line-height: 36px;
+    line-height: 2.25rem;
+    padding: 0 20px;
+    padding: 0 1.25rem;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ffc222;
+    border: 0.0625rem solid #ffc222;
+    border-right-width: 30px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.875rem;
+    letter-spacing: 0.35px;
+    letter-spacing: 0.021875rem;
+}
+
+.main-btn:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main-btn:focus {
+    outline: none;
+    text-decoration: none;
+    background-color: rgba(13, 13, 13, 0);
+    color: #e6e6e6;
+}
+
+.main-btn::after {
+    display: block;
+    content: "\f105";
+    font-family: 'icomoon' !important;
+    font-weight: 700;
+    font-style: normal;
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.slider-block__footer {
+    position: relative;
+    width: 200px;
+    width: 12.5rem;
+    margin: 0 auto;
+}
+
+.services-block__footer .main-btn {
+    color: #373636;
+    transition: 0.5s;
+    transition: all 0.5s ease-out;
+}
+
+.services-block__footer .main-btn:hover {
+    color: #fff;
+    background-color: #ffc222;
+}
+
+.services-block__footer .services-block__link {
+    color: #373636;
+    border-bottom: 1px solid #373636;
+    transition: 0.5s;
+    transition: all 0.5s ease-out;
+}
+
+.services-block__footer .services-block__link:hover {
+    text-decoration: none;
+    border-bottom: none;
+    color: #ffc222;
+}
+
+.sevices-section__header-btn {
+    border: none;
+    text-decoration: none;
+    overflow: hidden;
+    outline: none !important;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    height: 34px;
+    height: 2.125rem;
+    line-height: 34px;
+    line-height: 2.125rem;
+    padding: 0 35px;
+    padding: 0 2.1875rem;
+    box-sizing: border-box;
+    color: #373636;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0px;
+    border: 3px solid #e6e6e6;
+    border: 0.1875rem solid #e6e6e6;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.875rem;
+    color: #363636;
+    line-height: 26px;
+    line-height: 1.625rem;
+}
+
+.sevices-section__header-btn:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #514f4f;
+    text-decoration: none;
+}
+
+.sevices-section__header-btn:focus {
+    outline: none;
+    text-decoration: none;
+    background-color: rgba(13, 13, 13, 0);
+    color: #1d1d1d;
+}
+
+.about-block__footer {
+    position: relative;
+    width: 200px;
+    width: 12.5rem;
+}
+
+.about-block__footer .main-btn::after {
+    display: block;
+    content: "\f105";
+    font-family: 'icomoon' !important;
+    font-weight: 700;
+    font-style: normal;
+    position: absolute;
+    top: 50%;
+    right: 37px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #000000;
+}
+
+.consultaion-form__footer {
+    float: right;
+    margin-right: 54px;
+    margin-top: 40px;
+    position: relative;
+    width: 211px;
+    width: 13.1875rem;
+}
+
+.consultaion-form__footer .main-btn::after {
+    display: block;
+    content: "\f105";
+    font-family: 'icomoon' !important;
+    font-weight: 700;
+    font-style: normal;
+    position: absolute;
+    top: 50%;
+    right: -16px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #000000;
+}
+
+.consultaion-form__footer .consultaion-form__btn {
+    color: #000;
+}
+
+#js_slider .slick-btn {
+    background-color: #ffc222;
+    border: 1px solid #fff;
+    border: 0.0625rem solid #fff;
+    width: 40px;
+    width: 2.5rem;
+    height: 40px;
+    height: 2.5rem;
+    z-index: 50;
+    position: absolute;
+    top: 70%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: 'icomoon' !important;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 0.875rem;
+    color: #fff;
+}
+
+#js_slider .slick-btn.slick-disabled {
+    cursor: default;
+    background-color: transparent;
+}
+
+#js_slider .slick-next {
+    left: 0;
+}
+
+#js_slider .slick-next::before {
+    content: "\f104";
+}
+
+#js_slider .slick-prev {
+    right: 0;
+}
+
+#js_slider .slick-prev::before {
+    content: "\f105";
+}
+
+.news__inner-slider {
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(50% - 30px);
+}
+
+.news__inner-slider .slick-next {
+    left: auto;
+    right: 50px;
+}
+
+.news__inner-slider .slick-next::before {
+    content: "\f104";
+    color: #000000;
+    font-family: 'icomoon' !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.news__inner-slider .slick-prev {
+    right: 0;
+}
+
+.news__inner-slider .slick-prev::before {
+    content: "\f105";
+    color: #000000;
+    font-family: 'icomoon' !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.news__inner-slider .slick-btn {
+    top: 115%;
+    background-color: #ffc222;
+    border: 1px solid #fff;
+    border: 0.0625rem solid #fff;
+    width: 40px;
+    width: 2.5rem;
+    height: 40px;
+    height: 2.5rem;
+    z-index: 50;
+    position: absolute;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: 'icomoon' !important;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 0.875rem;
+    color: #fff;
+}
+
+.news__inner-slider .slick-btn.slick-disabled {
+    cursor: default;
+    background-color: transparent;
+    border: 1px solid #d3d2d2;
+    border: 0.0625rem solid #d3d2d2;
+}
+
+/* 3. Form elements
+===========================*/
+
+*::-webkit-input-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+*:-moz-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+*::-moz-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+*:-ms-input-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+/*4. Font family
+ @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700');
+
+.ff-segoe (@font-weight:400; @font-style: normal;){
+    font-family: "Segoe", @ff-s-serifArial;
+    font-weight: @font-weight;
+    font-style: @font-style;
+}
+
+.ff-raleway (@font-weight:400; @font-style: normal;){
+    font-family: "Raleway", @ff-s-serifArial;
+    font-weight: @font-weight;
+    font-style: @font-style;
+}
+
+.ff-PFCentroSlabPro (@font-weight:500; @font-style: normal;){
+    font-family: 'PF Centro Slab Pro', @ff-s-serifArial;
+    font-weight: @font-weight;
+    font-style: @font-style;
+}
+
+.ff-open-sans (@font-weight:400; @font-style: normal;){
+    font-family: "OpenSans", @ff-s-serifArial;
+    font-weight: @font-weight;
+    font-style: @font-style;
+}
+===========================*/
+
+/*5. Typography
+===========================*/
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    height: auto !important;
+    min-height: 100%;
+    color: #000;
+    overflow-x: hidden;
+    min-width: 300px;
+    min-width: 18.75rem;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+header,
+footer {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+main {
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.6875rem;
+}
+
+h2 {
+    font-size: 2.125rem;
+}
+
+h3 {
+    font-size: 1.0625rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.9375rem;
+}
+
+h6 {
+    font-size: 0.8125rem;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:focus {
+    outline: none;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.example-img {
+    width: 100%;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.parent {
+    background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7);
+}
+
+.js_left,
+.js_right,
+.js_up {
+    transition: 1s;
+    transition: all 1s ease-out;
+    transition-delay: 3s;
+}
+
+/*
+http://chimir.ru/post/39:
+@font-face mixin.Пример использования:
+@family: имя шрифта (обязательно).
+@filename: название шрифта, так же используется в качестве id для шрифта в формате svg
+(обязательно, по умолчанию используется имя шрифта).
+@weight: жирность шрифта (не обязательно, по умолчанию normal).
+@style: стиль шрифта (не обязательно, по умолчанию normal).
+
+.font-face(Roboto Slab, RobotoSlab-Bold, bold);
+ .font-face(@family, @filename: @family, @weight: normal, @style: normal){
+    @font-face{
+        font-family: @family;
+        src:url('fonts/@{filename}/@{filename}.eot');
+        src:url('fonts/@{filename}/@{filename}.eot?#iefix') format('embedded-opentype'),
+                url('fonts/@{filename}/@{filename}.woff') format('woff'),
+                url('fonts/@{filename}/@{filename}.ttf') format('truetype'),
+                url('fonts/@{filename}/@{filename}.svg#@{filename}') format('svg');
+        font-weight: @weight;
+        font-style: @style;
+    }
+}
+.font-face(Raleway, RalewayLight, 300);
+.font-face(Raleway, RalewayRegular, 400);
+.font-face(Raleway, RalewaySemiBold, 600);
+.font-face(Raleway, RalewayBold, 700);
+
+.font-face(Open Sans, OpenSansLight, 300);
+.font-face(Open Sans, OpenSansRegular, 400);
+.font-face(Open Sans, OpenSansSemiBold, 600);
+.font-face(Open Sans, OpenSansBold, 700);
+
+.font-face(lobstertwo, lobstertwo-regular, 400);
+.font-face(lobstertwo, lobstertwo-italic, 400, italic);
+.font-face(lobstertwo, lobstertwo-bolditalic, 700, italic);
+.font-face(lobstertwo, lobstertwo-bold, 700);
+
+.font-face(Arabic, Arabic, 400);
+.font-face(Exo2Bold, Exo2Bold, 400);
+
+.font(@f-name, @f-style, @f-weight, @f-url) {
+    @font-face {
+        font-family: @f-name;
+        font-style: @f-style;
+        font-weight: @f-weight;
+        src: url(@f-url) format('woff2');
+    }
+
+}
+
+
+.font('Roboto', normal, 400, '../fonts/roboto-regular-webfont.woff2');
+.font('Roboto', italic, 400, '../fonts/roboto-italic-webfont.woff2');
+.font('Roboto', normal, 700, '../fonts/roboto-bold-webfont.woff2');
+
+
+
+//../fonts
+*/
+
+/*========================
+https://icomoon.io/
+нажимаем на IcoMoon App-> нажимаем на кнопку с книжками add Icon library->
+выбираем нужную библиотеку-> например Font Awesome-> ищем нужные иконки->
+выбираем их-> нажимаем на кнопку Generate Font-> download->
+распакуем архив шрифты из папки font переносим в папку font проекта->
+код из файла style.css вставим в код font.less 
+========================*/
+
+@font-face {
+    font-family: 'icomoon';
+  src: url('fonts/icomoon.eot?fzjwo');
+  src: url('fonts/icomoon.eot?fzjwo#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?fzjwo') format('truetype'), url('fonts/icomoon.woff?fzjwo') format('woff'), url('fonts/icomoon.svg?fzjwo#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelope-o:before {
+    content: "\f003";
+}
+
+.icon-check:before {
+    content: "\f00c";
+}
+
+.icon-map-marker:before {
+    content: "\f041";
+}
+
+.icon-phone:before {
+    content: "\f095";
+}
+
+.icon-briefcase:before {
+    content: "\f0b1";
+}
+
+.icon-angle-left:before {
+    content: "\f104";
+}
+
+.icon-angle-right:before {
+    content: "\f105";
+}
+
+.icon-quote-right:before {
+    content: "\f10e";
+}
+
+.icon-anchor-solid:before {
+    content: "\e900";
+}
+
+.icon-apple-brands:before {
+    content: "\e901";
+}
+
+.icon-thumbs-down-solid:before {
+    content: "\e902";
+}
+
+@font-face {
+    font-family: 'Roboto';
+  src: url('fonts/RobotoLight/RobotoLight.eot');
+  src: url('fonts/RobotoLight/RobotoLight.eot?#iefix') format('embedded-opentype'), url('fonts/RobotoLight/RobotoLight.woff') format('woff'), url('fonts/RobotoLight/RobotoLight.ttf') format('truetype'), url('fonts/RobotoLight/RobotoLight.svg#Roboto') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+  src: url('fonts/RobotoRegular/RobotoRegular.eot');
+  src: url('fonts/RobotoRegular/RobotoRegular.eot?#iefix') format('embedded-opentype'), url('fonts/RobotoRegular/RobotoRegular.woff') format('woff'), url('fonts/RobotoRegular/RobotoRegular.ttf') format('truetype'), url('fonts/RobotoRegular/RobotoRegular.svg#Roboto') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+  src: url('fonts/RobotoMedium/RobotoMedium.eot');
+  src: url('fonts/RobotoMedium/RobotoMedium.eot?#iefix') format('embedded-opentype'), url('fonts/RobotoMedium/RobotoMedium.woff') format('woff'), url('fonts/RobotoMedium/RobotoMedium.ttf') format('truetype'), url('fonts/RobotoMedium/RobotoMedium.svg#Roboto') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTSerif';
+  src: url('fonts/PTSerif-Regular/PTSerif-Regular.eot');
+  src: url('fonts/PTSerif-Regular/PTSerif-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/PTSerif-Regular/PTSerif-Regular.woff') format('woff'), url('fonts/PTSerif-Regular/PTSerif-Regular.ttf') format('truetype'), url('fonts/PTSerif-Regular/PTSerif-Regular.svg#PTSerif') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTSerif';
+  src: url('fonts/PTSerif-Bold/PTSerif-Bold.eot');
+  src: url('fonts/PTSerif-Bold/PTSerif-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/PTSerif-Bold/PTSerif-Bold.woff') format('woff'), url('fonts/PTSerif-Bold/PTSerif-Bold.ttf') format('truetype'), url('fonts/PTSerif-Bold/PTSerif-Bold.svg#PTSerif') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Pages import
+@import "pages/home";
+==============================*/
+
+/*
+=================================================
+HEADER
+=================================================
+*/
+
+.header__wrap {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.header__wrap::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.contacts {
+    float: left;
+    width: calc(58.333333333333336% - 30px);
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.contacts li {
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 13px;
+    padding-bottom: 12px;
+}
+
+.btn-block {
+    text-align: right;
+    float: left;
+    width: calc(41.66666666666667% - 30px);
+}
+
+.header__content-wrap {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.header__content-wrap::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.logo {
+    float: left;
+    width: calc(25% - 30px);
+}
+
+.nav-wrap {
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(75% - 30px);
+}
+
+.menu__list {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.menu__list li + li {
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.menu__item {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*
+=================================================
+SERVICES
+=================================================
+*/
+
+.sevices-section__header {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.sevices-section__header::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.sevices-section__header-left {
+    float: left;
+    width: calc(66.66666666666667% - 30px);
+}
+
+.sevices-section__header-right {
+    text-align: right;
+    float: left;
+    width: calc(33.333333333333336% - 30px);
+}
+
+.services__wrap {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.services__wrap::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.services__item {
+    float: left;
+    width: calc(33.333333333333336% - 30px);
+}
+
+.services-block__footer {
+    width: 100%;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.services-block__footer::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/*
+=================================================
+ABOUT
+=================================================
+*/
+
+.about__wrap {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.about__wrap::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.about__inner {
+    float: left;
+    width: calc(50% - 30px);
+}
+
+.about-block {
+    max-width: 540px;
+    max-width: 33.75rem;
+}
+
+/*
+=================================================
+FORM
+=================================================
+*/
+
+.form__wrap {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.form__wrap::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.form__inner {
+    float: left;
+    width: calc(25% - 30px);
+}
+
+.form__inner-big {
+    float: left;
+    width: calc(50% - 30px);
+}
+
+/*
+=================================================
+SLIDER-1
+=================================================
+*/
+
+.news__inner-slider {
+    float: left;
+    width: calc(50% - 30px);
+}
+
+.news__inner-slider .slider__item {
+    max-width: 554px;
+    max-width: 34.625rem;
+    min-height: 341px;
+    min-height: 21.3125rem;
+    padding: 64px 19px 47px 75px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 5px 15.4px 0.6px rgba(128, 127, 127, 0.13);
+}
+
+/*
+=================================================
+ADVANTAGES
+=================================================
+*/
+
+.advantages__wrap {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.advantages__wrap::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.advantages__inner {
+    float: left;
+    width: calc(33.333333333333336% - 30px);
+}
+
+.advantages-block {
+    min-height: 140px;
+    min-height: 8.75rem;
+    text-align: center;
+}
+
+/*
+=================================================
+NEWS
+=================================================
+*/
+
+.news__wrap {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.news__wrap::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.news__inner-slider {
+    float: left;
+    width: calc(50% - 30px);
+}
+
+.news__inner {
+    float: left;
+    width: calc(25% - 30px);
+}
+
+/*
+==================================
+FOOTER
+==================================
+*/
+
+.footer__wrap {
+    padding-bottom: 37px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.footer__wrap::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.footer__contacts {
+    float: left;
+    width: calc(33.333333333333336% - 30px);
+}
+
+.footer__map {
+    float: left;
+    width: calc(66.66666666666667% - 30px);
+}
+
+.footer__map a {
+    display: block;
+    width: 100%;
+    padding: 10px 0 20px 210px;
+    text-decoration: none;
+}
+
+.footer__map a iframe {
+    width: 100%;
+}
+
+@media (min-width: 380px) {
+    .col-xxs-five {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 576px) {
+    .col-xs-five {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-sm-five {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-five {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1300px) {
+    .col-lg-five {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .wrapper-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .wrapper-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .news__inner-slider {
+        width: calc(100% - 30px);
+    }
+
+    .news__inner-slider .slick-btn {
+        top: 60%;
+    }
+
+    .services__item {
+        width: calc(50% - 30px);
+    }
+
+    .about__inner {
+        width: calc(100% - 30px);
+    }
+
+    .form__inner {
+        width: calc(50% - 30px);
+    }
+
+    .form__inner-big {
+        width: calc(50% - 30px);
+    }
+
+    .news__inner-slider {
+        width: calc(100% - 30px);
+    }
+
+    .news__inner-slider .slider__item {
+        max-width: 100%;
+        width: 100%;
+        padding: 40px;
+    }
+
+    .advantages__inner {
+        width: calc(50% - 30px);
+    }
+
+    .advantages__inner {
+        margin: 0 auto 30px;
+    }
+
+    .news__inner-slider {
+        width: calc(100% - 30px);
+    }
+
+    .news__inner {
+        width: calc(100% - 30px);
+    }
+
+    .news-block {
+        max-width: 80%;
+        width: 80%;
+        margin: 0 auto 30px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .news-block::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+
+    .news-block__image {
+        float: left;
+    }
+
+    .news-block__image {
+        width: calc(33.333333333333336% - 30px);
+    }
+
+    .news-block__contents {
+        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
+    }
+
+    .news-block__contents {
+        float: left;
+    }
+
+    .news-block__contents {
+        width: calc(66.66666666666667% - 30px);
+    }
+
+    .footer__contacts {
+        width: calc(33.333333333333336% - 30px);
+    }
+
+    .footer__map {
+        width: calc(66.66666666666667% - 30px);
+    }
+
+    .footer__map a {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #js_slider .slick-btn {
+        display: none !important;
+    }
+
+    .news__inner-slider {
+        margin-bottom: 60px;
+        margin-bottom: 3.75rem;
+    }
+
+    .news__inner-slider .slick-btn {
+        top: 100%;
+    }
+
+    html {
+        font-size: 15px;
+    }
+
+    .contacts {
+        width: calc(83.33333333333334% - 30px);
+    }
+
+    .contacts {
+        text-align: center;
+    }
+
+    .btn-block {
+        width: calc(83.33333333333334% - 30px);
+    }
+
+    .logo {
+        width: calc(25% - 30px);
+    }
+
+    .nav-wrap {
+        width: calc(75% - 30px);
+    }
+
+    .menu__list li + li {
+        margin: 0;
+    }
+
+    .sevices-section__header-left {
+        width: calc(100% - 30px);
+    }
+
+    .sevices-section__header-right {
+        width: calc(100% - 30px);
+    }
+
+    .services__item {
+        width: calc(100% - 30px);
+    }
+
+    .about-block {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .form__inner {
+        width: calc(100% - 30px);
+    }
+
+    .form__inner {
+        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
+    }
+
+    .form__inner-big {
+        width: calc(100% - 30px);
+    }
+
+    .advantages__inner {
+        width: calc(100% - 30px);
+    }
+
+    .news-block {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .footer__contacts {
+        width: calc(100% - 30px);
+    }
+
+    .footer__map {
+        width: calc(100% - 30px);
+    }
+
+    .footer__map a {
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 14px;
+    }
+
+    .news-block__image {
+        width: calc(100% - 30px);
+    }
+
+    .news-block__image {
+        margin: 0 auto 20px;
+    }
+
+    .news-block__contents {
+        width: calc(100% - 30px);
+    }
+}
+
+@media screen and (max-width: 380px) {
+    html {
+        font-size: 13px;
+    }
+}
