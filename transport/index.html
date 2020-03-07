@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"  href="css/style.min.css">
+
+    <meta name="author" content="Alibekov Khiyirbeg">
+    <meta name="keywords" content="HTML design by maker Alibekov Khiyirbeg Sultangamidovich">
+    <meta name="description" content="The practice of developing online stores and their layout HTML design by maker Alibekov Khiyirbeg Sultangamidovich">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Grid</title>  
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <link rel="stylesheet" href="css/styles-ie.min.css">
+    <![endif]-->
+ </head>
+
+
+<body id="home" class="top">
+<div class="debug">
+    <div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+<!--/.debug  -->
+
+<header class="header">
+    <div class="header-top">
+        <div class="wrapper">
+            <div class="header__wrap">
+                <div class="logo header-logo">
+                    <a class="header-logo__link" href="#">
+                        Cargo one
+                    </a>
+                </div>
+                <!-- // logo header-logo -->
+                <nav class="menu">
+                    <button class="menu__humburger">
+                        <span></span>
+                    </button>
+                    <ul class="menu__list">
+                        <li class="menu__element">
+                            <a href="#" class="menu__link">
+                                Доставка
+                            </a>
+                        </li>
+                        <li class="menu__element">
+                            <a href="#" class="menu__link">
+                                Таможенное оформление ...
+                            </a>
+                        </li>
+                        <li class="menu__element">
+                            <a href="#" class="menu__link">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="menu__element">
+                            <a href="#" class="menu__link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--// menu-->
+                <div class="header-right">
+                    <div class="header-contacts">
+                        <a class="phone" href="tel:88004561756" target="_blank" title="8 800 456 17 56">8 800 456 17
+                            56</a>
+                        <a class="accaunt" href="#" target="_blank" title="accaunt">Личный кабинет</a>
+                    </div>
+                    <!-- // header-phone -->
+                    <a class="btn cart-btn" href="#">Сделать расчет</a>
+                </div>
+                <!-- // header-right -->
+            </div>
+            <!-- End header__wrap -->
+        </div>
+        <!-- End wrapper -->
+    </div>
+    <!-- End header-top -->
+</header>
+<!-- End header -->
+<div class="header-slogan">
+    <div class="wrapper">
+        <div class="header-slogan__content">
+            <h1 class="header-slogan__title">
+                Доставка грузов из Китая и Турции
+            </h1>
+            <p class="header-slogan__descr">
+                Торгово-экономические взаимоотношения между Россией и
+                Китаем с каждым годом только укрепляются. Предприятия
+                малого и среднего бизнеса наряду с международными корпорациями
+                успешно осуществляются экспортно-импортные операции,
+                обмениваясь новинками с соседней страной.
+            </p>
+            <a class="btn slogan-btn" href="#">Подробнее</a>
+        </div>
+        <!-- End header-slogan -->
+    </div>
+    <!-- End wrapper -->
+</div>
+<!-- End header -->
+
+<main class="main">
+    <section id="js_delivery" class="delivery">
+        <h2 class="visually-hidden">Hidden title</h2>
+        <div class="wrapper">
+            <header class="section__header">
+                <h2 class="section__title">Как происходит доставка</h2>
+            </header>
+            <article class="delivery__wrap">
+                <h2 class="visually-hidden">Hidden title</h2>
+                <section class="delivery__item delivery__item--1">
+                    <span class="delivery-arrow"></span>
+                    <h2 class="visually-hidden">Hidden title</h2>
+                    <div class="delivery-text">
+                        <p> Груз доставляется <br> на наш склад</p>
+                    </div>
+                    <span class="delivery-step">1</span>
+                </section>
+                <!-- End delivery__item-1 -->
+                <section class="delivery__item delivery__item--2">
+                    <span class="delivery-arrow"></span>
+                    <h2 class="visually-hidden">Hidden title</h2>
+                    <div class="delivery-text">
+                        <p>Груз <br> консолидируется<br> и готовится к отправке</p>
+                    </div>
+                    <span class="delivery-step">2</span>
+                </section>
+                <!-- End delivery__item-2 -->
+                <section class="delivery__item delivery__item--3">
+                    <span class="delivery-arrow"></span>
+                    <h2 class="visually-hidden">Hidden title</h2>
+                    <div class="delivery-text">
+                        <p>Доставка в Россию <br> на склад заказчика</p>
+                    </div>
+                    <span class="delivery-step">3</span>
+                </section>
+                <!-- End delivery__item-3 -->
+            </article>
+        </div>
+        <!-- End wrapper -->
+    </section>
+    <!-- End delivery -->
+    <section id="js_sub-delivery" class="sub-delivery">
+        <h2 class="visually-hidden">Hidden title</h2>
+        <div class="wrapper">
+            <div class="sub-delivery__wrap">
+                <article class="sub-delivery__block">
+                    <h2 class="visually-hidden">Hidden title</h2>
+                    <header class="section__header">
+                        <h2 class="section__title">Мы осуществляем доставку «подключ» генеральных и сборных грузов</h2>
+                    </header>
+                </article>
+                <!-- End sub-delivery__block-1 -->
+                <article class="sub-delivery__aside">
+                    <h2 class="visually-hidden">Hidden title</h2>
+                    <ul class="sub-delivery__list">
+                        <li class="sub-delivery__item sub-delivery__item--1">
+                            <a class="sub-delivery__link" href="">
+                                Оформление сопроводительной документации
+                            </a>
+                        </li>
+                        <li class="sub-delivery__item sub-delivery__item--2">
+                            <a class="sub-delivery__link" href="">
+                                Контроль над погрузочно- разгрузочными работами
+                            </a>
+                        </li>
+                        <li class="sub-delivery__item sub-delivery__item--3">
+                            <a class="sub-delivery__link" href="">
+                                Таможенная очистка <br> товара
+                            </a>
+                        </li>
+                        <li class="sub-delivery__item sub-delivery__item--4">
+                            <a class="sub-delivery__link" href="">
+                                Обеспечение информацией об актуальном местонахождении груза
+                            </a>
+                        </li>
+                        <li class="sub-delivery__item sub-delivery__item--5">
+                            <a class="sub-delivery__link" href="">
+                                Страхование, ответственность за сохранность груза
+                            </a>
+                        </li>
+                        <li class="sub-delivery__item sub-delivery__item--6">
+                            <a class="sub-delivery__link" href="">
+                                Встреча в аэропорту и сопровождение
+                            </a>
+                        </li>
+                        <li class="sub-delivery__item sub-delivery__item--7">
+                            <a class="sub-delivery__link" href="">
+                                Cобственные склады в Стамбуле и Гуанчжоу
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+                <!-- End sub-delivery__block-2 -->
+            </div>
+        </div>
+        <!-- //wrapper -->
+
+    </section>
+    <!-- End sub-delivery -->
+    <section id="js_warranty-delivery" class="warranty-delivery">
+        <h2 class="visually-hidden">Hidden title</h2>
+        <div class="wrapper">
+            <div class="sub-delivery__wrap">
+                <article class="sub-delivery__block">
+                    <h2 class="visually-hidden">Hidden title</h2>
+                    <header class="section__header">
+                        <h2 class="section__title">
+                            Доставим сборные грузы из Турции в Россию с соблюдением сроков
+                        </h2>
+                        <p class="section__descr">
+                            Экономические отношения Китая и Турции с Россией с
+                            каждым годом выходят на более высокий уровень.
+                            Одним из главных показателей таких взаимоотношений
+                            является торговля. Благодаря максимально выгодным
+                            условиям и конкурентным ценам товарооборот между
+                            вышеупомянутыми государствами в 2019 году превысил
+                            20 миллионов долларов. Как утверждают специалисты,
+                            это далеко не предел.
+                        </p>
+                    </header>
+                </article>
+                <!-- End sub-delivery__block-1 -->
+                <article class="sub-delivery__aside">
+                    <h2 class="visually-hidden">Hidden title</h2>
+                    <ul class="sub-delivery__list">
+                        <li class="sub-delivery__item sub-delivery__item--1">
+                            <a class="sub-delivery__link" href="">
+                                Консолидация товара на едином складе
+                            </a>
+                        </li>
+                        <li class="sub-delivery__item sub-delivery__item--2">
+                            <a class="sub-delivery__link" href="">
+                                Взвешивание, упаковка, маркировка продукции
+                            </a>
+                        </li>
+                        <li class="sub-delivery__item sub-delivery__item--3">
+                            <a class="sub-delivery__link" href="">
+                                Формирование сборного контейнера
+                            </a>
+                        </li>
+                        <li class="sub-delivery__item sub-delivery__item--4">
+                            <a class="sub-delivery__link" href="">
+                                Оформление экспортно-импортной документации
+                            </a>
+                        </li>
+                        <li class="sub-delivery__item sub-delivery__item--5">
+                            <a class="sub-delivery__link" href="">
+                                Таможенная очистка прибывшего груза
+                            </a>
+                        </li>
+                        <li class="sub-delivery__item sub-delivery__item--6">
+                            <a class="sub-delivery__link" href="">
+                                Разгрузочные работы на центральном складе
+                            </a>
+                        </li>
+                        <li class="sub-delivery__item sub-delivery__item--7">
+                            <a class="sub-delivery__link" href="">
+                                Доставка до дверей конечного потребителя
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+                <!-- End sub-delivery__block-2 -->
+            </div>
+        </div>
+        <!-- //wrapper -->
+    </section>
+    <!-- End warranty-delivery -->
+    <section id="js_pricing" class="pricing">
+        <div class="sec-top-line-bg">
+            <svg class="svg--sec-top-line-bg__svg">
+                <use xlink:href="i/symbol/sprite.svg#svg--sec-top-line-bg"></use>
+            </svg>
+            <!-- End svg--sec-top-line-bg__svg -->
+        </div>
+        <h2 class="visually-hidden">Hidden title</h2>
+        <div class="wrapper">
+            <header class="pricing__header">
+                <h2 class="pricing__title">
+                    Стоимость и сроки копия
+                </h2>
+                <div class="pricing__descr">
+                    <a class="map-china" href="#">
+                        Китай
+                    </a>
+                    <a class="map-turkey" href="#">
+                        Турция
+                    </a>
+                </div>
+            </header>
+            <article class="pricing__wrap">
+                <h2 class="visually-hidden">Hidden title</h2>
+                <section class="pricing__inner">
+                    <h2 class="visually-hidden">Hidden title</h2>
+
+                    <div class="pricing-card">
+                        <div class="pricing-car"></div>
+                        <!--//pricing-car-->
+                        <h3 class="pricing-card__title">
+                            Aвтомобиль
+                        </h3>
+                        <div class="pricing-card__term">
+                            Срок: от 14 дней
+                        </div>
+                        <div class="pricing-card__weight">
+                            Вес: от: 200 кг.
+                        </div>
+                        <div class="pricing-card__price">
+                            Стоимость: от <span>4 500</span> руб.
+                        </div>
+                    </div>
+                    <!--//pricing-card-->
+
+                </section>
+                <!-- End pricing__inner-1 -->
+                <section class="pricing__inner">
+                    <h2 class="visually-hidden">Hidden title</h2>
+                    <div class="pricing-card pricing-card__right">
+                        <div class="pricing-airplane"></div>
+                        <!--//pricing-airplane-->
+                        <h3 class="pricing-card__title">
+                            Авиатранспорт
+                        </h3>
+                        <div class="pricing-card__term">
+                            Срок: от 5 дней
+                        </div>
+                        <div class="pricing-card__weight">
+                            Вес: от: 45 кг.
+                        </div>
+                        <div class="pricing-card__price">
+                            Стоимость: от <span>5 000</span> руб.
+                        </div>
+                    </div>
+                    <!--//pricing-card-->
+                </section>
+                <!-- End pricing__inner-2 -->
+            </article>
+            <footer class="pricing-footer">
+                <p>
+                    Мы в обязательном порядке учитываем специфику
+                    перевозимой продукции, обеспечивая все условия
+                    для транспортировки в соответствии с нормами.
+                </p>
+            </footer>
+        </div>
+        <!-- //wrapper -->
+        <div class="pricing-bottom-bg">
+            <svg class="svg--sec-bottom-line-bg__svg">
+                <use xlink:href="i/symbol/sprite.svg#svg--sec-bottom-line-bg"></use>
+            </svg>
+            <!-- End svg--sec-bottom-line-bg__svg -->
+            <svg class="svg--sec-bottom-line-bg2__svg">
+                <use xlink:href="i/symbol/sprite.svg#svg--sec-bottom-line-bg2"></use>
+            </svg>
+            <!-- End svg--sec-bottom-line-bg2__svg -->
+        </div>
+    </section>
+    <!-- End pricing -->
+    <section id="js_paperwork" class="paperwork">
+        <h2 class="visually-hidden">Hidden title</h2>
+        <div class="wrapper">
+            <header class="section__header">
+                <h2 class="section__title">Таможенное оформление</h2>
+                <p class="section__descr">
+                    Для успешного пересечения границы и снижения
+                    себестоимости перевозки важно грамотно оформить
+                    сопроводительную документацию.
+                </p>
+            </header>
+            <div class="sub-delivery__wrap">
+                <article class="sub-delivery__block">
+                    <h2 class="visually-hidden">Hidden title</h2>
+                    <header class="paperwork__header">
+                        <h2 class="paperwork__title">
+                            Специалисты «Карго №1» берут под свой контроль
+                            ВСЕ этапы внешнеэкономической сделки
+                        </h2>
+
+                    </header>
+                </article>
+                <!-- End sub-delivery__block-1 -->
+                <article class="sub-delivery__aside">
+                    <h2 class="visually-hidden">Hidden title</h2>
+                    <ul class="sub-delivery__list">
+                        <li class="sub-delivery__item sub-delivery__item--1">
+                            <a class="sub-delivery__link" href="">
+                                Оформление сопроводительной документации
+                            </a>
+                        </li>
+                        <li class="sub-delivery__item sub-delivery__item--2">
+                            <a class="sub-delivery__link" href="">
+                                Контроль над погрузочно- разгрузочными работами
+                            </a>
+                        </li>
+                        <li class="sub-delivery__item sub-delivery__item--3">
+                            <a class="sub-delivery__link" href="">
+                                Таможенная очистка <br> товара
+                            </a>
+                        </li>
+                        <li class="sub-delivery__item sub-delivery__item--4">
+                            <a class="sub-delivery__link" href="">
+                                Обеспечение информацией об актуальном местонахождении груза
+                            </a>
+                        </li>
+                        <li class="sub-delivery__item sub-delivery__item--5">
+                            <a class="sub-delivery__link" href="">
+                                Страхование, ответственность за сохранность груза
+                            </a>
+                        </li>
+                        <li class="sub-delivery__item sub-delivery__item--6">
+                            <a class="sub-delivery__link" href="">
+                                Встреча в аэропорту и сопровождение
+                            </a>
+                        </li>
+                        <li class="sub-delivery__item sub-delivery__item--7">
+                            <a class="sub-delivery__link" href="">
+                                Cобственные склады в Стамбуле и Гуанчжоу
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+                <!-- End sub-delivery__block-2 -->
+            </div>
+        </div>
+        <!-- //wrapper -->
+    </section>
+    <!-- End paperwork -->
+    <section id="js_contacts" class="contacts">
+        <div class="contact-top_bg">
+            <svg class="svg--contact-top_bg__svg">
+                <use xlink:href="i/symbol/sprite.svg#svg--contact-top_bg"></use>
+            </svg>
+            <!-- End svg--contact-top_bg__svg -->
+        </div>
+        <h2 class="visually-hidden">Hidden title</h2>
+        <div class="wrapper">
+            <header class="section__header">
+                <h2 class="section__title">О компании</h2>
+                <p class="section__descr">
+                    Давно выяснено, что при оценке дизайна и композиции
+                    читаемый текст мешает сосредоточиться. Lorem Ipsum
+                    используют потому, что тот обеспечивает более или
+                    менее стандартное заполнение шаблона, а также реальное
+                    распределение букв и пробелов в абзацах, которое не
+                    получается при простой дубликации
+                </p>
+            </header>
+            <article class="contacts__wrap">
+                <h2 class="visually-hidden">Hidden title</h2>
+                <section class="contacts__inner contacts-of__russian">
+                    <h2 class="visually-hidden">Hidden title</h2>
+                    <div class="contact-item">
+                        <h3 class="contact-item__title">
+                            Контакты в России
+                        </h3>
+                        <div class="contact-item__adr">
+                            Москва, Россия, 117105 Нагорный проезд, 6 строение 6
+                        </div>
+                        <div class="contact-item__phons">
+                            <span>
+                                +7 495 150-35-55
+                            </span>
+                            <span>
+                                +7 495 150-35-55
+                            </span>
+                        </div>
+                        <a href="#" class="contact-link">
+                            показать на карте
+                        </a>
+                    </div>
+                </section>
+                <!-- End contacts__inner-1 -->
+                <section class="contacts__inner contacts-of__turkey">
+                    <h2 class="visually-hidden">Hidden title</h2>
+                    <div class="contact-item">
+                        <h3 class="contact-item__title">
+                            Контакты в Турции
+                        </h3>
+                        <div class="contact-item__adr">
+                            Москва, Россия, 117105 Нагорный проезд, 6 строение 6
+                        </div>
+                        <div class="contact-item__phons">
+                            <span>
+                                +7 495 150-35-55
+                            </span>
+                            <span>
+                                +7 495 150-35-55
+                            </span>
+                        </div>
+                        <a href="" class="contact-link">
+                            показать на карте
+                        </a>
+                    </div>
+                </section>
+                <!-- End contacts__inner-2 -->
+                <section class="contacts__inner contacts-of__china">
+                    <h2 class="visually-hidden">Hidden title</h2>
+                    <div class="contact-item">
+                        <h3 class="contact-item__title">
+                            Контакты в Китае
+                        </h3>
+                        <div class="contact-item__adr">
+                            Москва, Россия, 117105 Нагорный проезд, 6 строение 6
+                        </div>
+                        <div class="contact-item__phons">
+                            <span>
+                                +7 495 150-35-55
+                            </span>
+                            <span>
+                                +7 495 150-35-55
+                            </span>
+                        </div>
+                        <a href="" class="contact-link">
+                            показать на карте
+                        </a>
+                    </div>
+                </section>
+                <!-- End contacts__inner-3 -->
+            </article>
+        </div>
+        <!-- //wrapper -->
+        <div class="contact-bot_bg">
+            <svg class="svg--contact-bot_bg__svg">
+                <use xlink:href="i/symbol/sprite.svg#svg--contact-bot_bg"></use>
+            </svg>
+            <!-- End svg--contact-bot_bg__svg -->
+        </div>
+    </section>
+    <!-- End contacts -->
+    <section id="js_work-with-clients" class="work-with-clients">
+        <h2 class="visually-hidden">Hidden title</h2>
+        <div class="wrapper">
+            <header class="section__header">
+                <h2 class="section__title">Как мы работаем с нашими клиентами?</h2>
+            </header>
+            <article class="delivery__wrap">
+                <h2 class="visually-hidden">Hidden title</h2>
+                <section class="delivery__item delivery__item--1">
+                    <span class="delivery-arrow"></span>
+                    <h2 class="visually-hidden">Hidden title</h2>
+                    <div class="delivery-text">
+                        <p>Заключаем договор с<br> фиксированными<br> сроками и стоимостью</p>
+                    </div>
+                    <span class="delivery-step">1</span>
+                </section>
+                <!-- End delivery__item-1 -->
+                <section class="delivery__item delivery__item--2">
+                    <span class="delivery-arrow"></span>
+                    <h2 class="visually-hidden">Hidden title</h2>
+                    <div class="delivery-text">
+                        <p>Загружаем товар и <br>отправляем в РФ с<br> оформлением всех<br> документов</p>
+                    </div>
+                    <span class="delivery-step">2</span>
+                </section>
+                <!-- End delivery__item-2 -->
+                <section class="delivery__item delivery__item--3">
+                    <span class="delivery-arrow"></span>
+                    <h2 class="visually-hidden">Hidden title</h2>
+                    <div class="delivery-text">
+                        <p>Доставляем груз до<br> указанного<br> местонахождения</p>
+                    </div>
+                    <span class="delivery-step">3</span>
+                </section>
+                <!-- End delivery__item-3 -->
+            </article>
+        </div>
+        <!-- //wrapper -->
+    </section>
+    <!-- End work-with-clients -->
+    <section id="js_clients" class="clients">
+        <h2 class="visually-hidden">Hidden title</h2>
+        <div class="wrapper">
+            <header class="section__header">
+                <h2 class="section__title">
+                    Наши клиенты
+                </h2>
+            </header>
+            <ul class="clients__list">
+                <li class="clients__item">
+                    <a class="clients__link" href="#">
+                        <span class="icon-clients-1"></span>
+                    </a>
+                </li>
+                <li class="clients__item">
+                    <a class="clients__link" href="#">
+                        <span class="icon-clients-2"></span>
+                    </a>
+                </li>
+                <li class="clients__item">
+                    <a class="clients__link" href="#">
+                        <span class="icon-clients-3"></span>
+                    </a>
+                </li>
+                <li class="clients__item">
+                    <a class="clients__link" href="#">
+                        <span class="icon-clients-4"></span>
+                    </a>
+                </li>
+                <li class="clients__item clients__item--5">
+                    <a class="clients__link" href="#">
+                        <span class="icon-clients-5"></span>
+                    </a>
+                </li>
+                <li class="clients__item">
+                    <a class="clients__link" href="#">
+                        <span class="icon-clients-6"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- //wrapper -->
+    </section>
+    <!-- End clients -->
+    <section id="js_feedback" class="feedback">
+        <h2 class="visually-hidden">Hidden title</h2>
+        <div class="wrapper">
+            <header class="section__header">
+                <h2 class="section__title">
+                    У Вас возник вопрос по доставке?
+                </h2>
+                <p class="section__descr">
+                    Напишите нам и наши специалисты перезвонят
+                    вам через 15 минут, они расскажут и объяснят
+                    все моменты касаемо вашего вопроса!
+                </p>
+            </header>
+            <form action="#" class="feeback-form" id="js_feeback-form">
+                <div class="feeback-form__contents">
+                    <label class="feeback-form__group">
+                        <input type="text" class="feeback-form__inp" placeholder="Ваше имя:" name="userName" required>
+                    </label>
+
+                    <label class="feeback-form__group">
+                        <input type="text" class="feeback-form__inp" placeholder="Ваш телефон:" name="phone" required>
+                    </label>
+
+                    <footer class="feeback-form__footer">
+                        <button type="submit" class="feeback-form__btn">
+                            Перезвоните
+                        </button>
+                    </footer>
+                </div>
+            </form>
+        </div>
+        <!-- //wrapper -->
+    </section>
+    <!-- End feedback -->
+</main>
+<!-- End main -->
+
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer__wrap">
+            <div class="logo footer-logo">
+                <a class="footer-logo__link" href="#">
+                    Cargo one
+                </a>
+                <ul class="logo__list">
+                    <li class="logo__item">
+                        <a class="logo__link" href="http://facebook.com">
+                            <span class="icon-facebook2 "></span>
+                            <span class="visually-hidden">
+                                facebook.com
+                            </span>
+                        </a>
+                    </li>
+                    <li class="logo__item">
+                        <a class="logo__link" href="http://instagram.com">
+                            <!--<span class="icon-instagram"></span>-->
+                            <span class="icon-inst"></span>
+                            <span class="visually-hidden">
+                                instagram.com
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- // logo footer-logo -->
+            <div class="footer-menu">
+                <nav class="footer-nav">
+                    <ul id="footer-menu">
+                        <li><a href="javascript:;">Доставка</a></li>
+                        <li><a href="javascript:;">Таможенное оформление </a></li>
+                        <li><a href="javascript:;">О компании</a></li>
+                        <li><a href="javascript:;">Контакты</a></li>
+                        <li><a class="footer-accaunt" href="javascript:;" target="_blank" title="accaunt">
+                            <span class="icon-user-o"></span> Личный кабинет
+                        </a></li>
+                    </ul>
+
+                    <div id="toggle">
+                        <div class="span" id="one"></div>
+                        <div class="span" id="two"></div>
+                        <div class="span" id="three"></div>
+                    </div>
+                </nav>
+
+                <div id="resize">
+                    <ul id="resize-menu">
+                        <li>
+                            <a class="footer-accaunt" href="javascript:;" target="_blank" title="accaunt">
+                                <span class="icon-user-o"></span>  Личный кабинет
+                            </a>
+                        </li>
+                        <li><a href="javascript:;">Доставка</a></li>
+                        <li><a href="javascript:;">Таможенное оформление </a></li>
+                        <li><a href="javascript:;">О компании</a></li>
+                        <li><a href="javascript:;">Контакты</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <!--// footer-menu-->
+            <div class="footer-right">
+                <div class="footer-contacts">
+
+                    <a class="phone" href="tel:+9879956398" target="_blank" title="+98 (799) 567-32-98">
+                        <span class="icon-volume-control-phone"></span>
+                        &nbsp;+98 (799) 567-32-98
+                    </a>
+                    <a class="phone" href="tel:+9879956398" target="_blank" title="+98 (799) 567-32-98">
+                        &nbsp;&nbsp; &nbsp; +98 (799) 567-32-98
+                    </a>
+                </div>
+                <!-- // footer-phone -->
+            </div>
+            <!-- // footer-right -->
+        </div>
+        <!-- End footer__wrap -->
+        <div class="copyright">
+            <div class="copyright__left">
+                <span class="copyright__date">©2020</span> Cargo One. All rights reserved.
+            </div>
+            <div class="copyright__right">
+                Политика конфиденциальности
+            </div>
+        </div>
+    </div>
+    <!-- End wrapper -->
+</footer>
+<!-- End footer -->
+<a id="scroll_top" class="top-but" href="javascript:"></a>
+<!-- JS section -->
+
+<script src="js/main.min.js"></script>
+<script>
+    var div = document.createElement('div');
+    div.style.cssText = 'width:calc(10px)';
+
+    if(!(div.style.length > 0)){
+        var link = document.createElement('link');
+        link.setAttribute('href', 'css/styles-percentage.less')
+        link.setAttribute('rel', 'stylesheet')
+        document.body.appendChild(link);
+    }
+</script>
+
+<noscript>
+    <div><img src="//mc.yandex.ru/watch/25346996" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
+<!-- /Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+
+</body>
+</html>
