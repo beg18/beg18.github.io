@@ -414,7 +414,7 @@ body {
 
 html {
     box-sizing: border-box;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 body {
@@ -424,7 +424,7 @@ body {
     background-color: #f4f8fb;
     overflow-x: hidden;
     min-width: 300px;
-    min-width: 13.636363636363637rem;
+    min-width: 18.75rem;
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -453,27 +453,27 @@ h6 {
 }
 
 h1 {
-    font-size: 1.9545454545454546rem;
+    font-size: 2.69rem;
 }
 
 h2 {
-    font-size: 1.5454545454545454rem;
+    font-size: 2.13rem;
 }
 
 h3 {
-    font-size: 0.7727272727272727rem;
+    font-size: 1.06rem;
 }
 
 h4 {
-    font-size: 0.7272727272727273rem;
+    font-size: 1rem;
 }
 
 h5 {
-    font-size: 0.6818181818181818rem;
+    font-size: 0.94rem;
 }
 
 h6 {
-    font-size: 0.5909090909090909rem;
+    font-size: 0.81rem;
 }
 
 ul,
@@ -540,8 +540,8 @@ https://icomoon.io/
 
 @font-face {
     font-family: 'icomoon';
-  src: url('fonts/icomoon.eot?fzjwo');
-  src: url('fonts/icomoon.eot?fzjwo#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?fzjwo') format('truetype'), url('fonts/icomoon.woff?fzjwo') format('woff'), url('fonts/icomoon.svg?fzjwo#icomoon') format('svg');
+  src: url('../fonts/icomoon.eot?fzjwo');
+  src: url('../fonts/icomoon.eot?fzjwo#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?fzjwo') format('truetype'), url('../fonts/icomoon.woff?fzjwo') format('woff'), url('../fonts/icomoon.svg?fzjwo#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -796,21 +796,21 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 2.1818181818181817rem;
+    font-size: 3rem;
     color: #1b1b1b;
     line-height: 52px;
-    line-height: 2.3636363636363638rem;
+    line-height: 3.25rem;
 }
 
 .section__descr {
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.9090909090909091rem;
-    margin-bottom: 15.18px;
+    font-size: 1.25rem;
+    margin-bottom: 11.04px;
     margin-bottom: 0.69rem;
     line-height: 34px;
-    line-height: 1.5454545454545454rem;
+    line-height: 2.13rem;
     color: #1c1c1c;
     text-align: left;
     margin-top: 80px;
@@ -818,6 +818,7 @@ https://icomoon.io/
 
 .header {
     background-color: #f4f8fb;
+    position: relative;
 }
 
 .header-top {
@@ -841,19 +842,32 @@ https://icomoon.io/
     align-items: center !important;
 }
 
+.fixed {
+  /*background-color: #f4f8fb; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    box-shadow: 0 3px 6px 0 #B8D2E5;
+}
+
 .header-logo {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
     -ms-flex-positive: 1;
     flex-grow: 1;
     max-width: 100%;
+    -ms-flex: 0 0 calc(16.666666666666668% - 2.5%);
+    flex: 0 0 calc(16.666666666666668% - 2.5%);
+    max-width: calc(16.666666666666668% - 2.5%);
     position: relative;
     width: 100%;
     padding-left: 1.25%;
     padding-right: 1.25%;
 }
 
-.menu {
+.header-menu {
     -ms-flex: 0 0 calc(50% - 2.5%);
     flex: 0 0 calc(50% - 2.5%);
     max-width: calc(50% - 2.5%);
@@ -864,9 +878,9 @@ https://icomoon.io/
 }
 
 .header-right {
-    -ms-flex: 0 0 calc(33.333333333333336% - 2.5%);
-    flex: 0 0 calc(33.333333333333336% - 2.5%);
-    max-width: calc(33.333333333333336% - 2.5%);
+    -ms-flex: 0 0 calc(33.333% - 2.5%);
+    flex: 0 0 calc(33.333% - 2.5%);
+    max-width: calc(33.333% - 2.5%);
     position: relative;
     width: 100%;
     padding-left: 1.25%;
@@ -882,7 +896,7 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 1.2727272727272727rem;
+    font-size: 1.5rem;
     color: #005eff;
     text-transform: uppercase;
 }
@@ -894,38 +908,38 @@ https://icomoon.io/
     margin-right: 1.25%;
     display: inline-block;
     vertical-align: top;
-    margin-top: 15px;
+    margin-top: 5px;
     text-align: right;
 }
 
-.phone {
+.header-contacts .phone {
     display: block;
     text-decoration: none;
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 0.8181818181818182rem;
+    font-size: 1.13rem;
     color: #1b1b1b;
     margin-bottom: 5px;
 }
 
-.accaunt {
+.header-contacts .accaunt {
     display: block;
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 0.5909090909090909rem;
+    font-size: 0.81rem;
     color: #1b1b1b;
     position: relative;
     transition: all .3s linear;
     padding-left: 30px;
 }
 
-.accaunt:hover {
+.header-contacts .accaunt:hover {
     text-decoration: none;
 }
 
-.accaunt::before {
+.header-contacts .accaunt::before {
     content: "";
     display: block;
     background-image: url('../i/sprite/sprite.png');
@@ -949,11 +963,11 @@ https://icomoon.io/
     vertical-align: middle;
     white-space: nowrap;
     height: 55px;
-    height: 2.5rem;
+    height: 3.44rem;
     line-height: 55px;
-    line-height: 2.5rem;
+    line-height: 3.44rem;
     padding: 0 15px;
-    padding: 0 0.6818181818181818rem;
+    padding: 0 0.94rem;
     box-sizing: border-box;
     color: #fff;
     background-color: #005eff;
@@ -962,7 +976,7 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 0.6363636363636364rem;
+    font-size: 0.88rem;
     border-radius: 38px;
 }
 
@@ -990,7 +1004,7 @@ https://icomoon.io/
 .header-slogan {
     position: relative;
     min-height: 1080px;
-    min-height: 49.09090909090909rem;
+    min-height: 67.5rem;
     background-image: url('../i/@2x/main_bg.png');
     background-position: center center;
     background-repeat: no-repeat;
@@ -1009,8 +1023,8 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 3.1818181818181817rem;
-    margin-bottom: 15.18px;
+    font-size: 4.38rem;
+    margin-bottom: 11.04px;
     margin-bottom: 0.69rem;
     color: #fff;
     margin-bottom: 75px;
@@ -1020,20 +1034,20 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.9090909090909091rem;
-    margin-bottom: 15.18px;
+    font-size: 1.25rem;
+    margin-bottom: 11.04px;
     margin-bottom: 0.69rem;
     line-height: 33px;
-    line-height: 1.5rem;
+    line-height: 2.06rem;
     color: #fff;
     padding-right: 17.91666667%;
 }
 
 .delivery {
     padding-top: 64px;
-    padding-top: 2.909090909090909rem;
+    padding-top: 4rem;
     padding-bottom: 64px;
-    padding-bottom: 2.909090909090909rem;
+    padding-bottom: 4rem;
     background-color: #f4f8fb;
 }
 
@@ -1072,9 +1086,9 @@ https://icomoon.io/
 .delivery__item--1 .delivery-arrow {
     display: block;
     width: 145px;
-    width: 6.590909090909091rem;
+    width: 9.06rem;
     height: 145px;
-    height: 6.590909090909091rem;
+    height: 9.06rem;
     border-radius: 145px;
     background-color: #f4f8fb;
     z-index: 20;
@@ -1096,7 +1110,7 @@ https://icomoon.io/
     transform: translate(-50%, -50%);
     color: #6c6c6c;
     opacity: .6;
-    font-size: 1.8181818181818181rem;
+    font-size: 2.5rem;
 }
 
 .delivery__item--2 .delivery-text {
@@ -1114,9 +1128,9 @@ https://icomoon.io/
 .delivery__item--2 .delivery-arrow {
     display: block;
     width: 145px;
-    width: 6.590909090909091rem;
+    width: 9.06rem;
     height: 145px;
-    height: 6.590909090909091rem;
+    height: 9.06rem;
     border-radius: 145px;
     background-color: #f4f8fb;
     z-index: 20;
@@ -1138,7 +1152,7 @@ https://icomoon.io/
     transform: translate(-50%, -50%);
     color: #6c6c6c;
     opacity: .6;
-    font-size: 1.8181818181818181rem;
+    font-size: 2.5rem;
 }
 
 .delivery__item--3 .delivery-text {
@@ -1156,9 +1170,9 @@ https://icomoon.io/
 .delivery-text {
     width: 100%;
     max-width: 490px;
-    max-width: 22.272727272727273rem;
+    max-width: 30.63rem;
     height: 500px;
-    height: 22.727272727272727rem;
+    height: 31.25rem;
     position: relative;
     overflow: hidden;
     border-radius: 32px;
@@ -1185,9 +1199,9 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 1.1818181818181819rem;
+    font-size: 1.63rem;
     line-height: 36px;
-    line-height: 1.6363636363636365rem;
+    line-height: 2.25rem;
     color: #ffffff;
     text-transform: uppercase;
     position: absolute;
@@ -1209,9 +1223,9 @@ https://icomoon.io/
 .delivery-step {
     display: block;
     width: 137px;
-    width: 6.2272727272727275rem;
+    width: 8.56rem;
     height: 137px;
-    height: 6.2272727272727275rem;
+    height: 8.56rem;
     border-radius: 137px;
     background-color: #bad3ff;
     border: 14px solid #f4f8fb;
@@ -1224,7 +1238,7 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 1.2727272727272727rem;
+    font-size: 1.75rem;
     color: #f4f8fb;
     position: absolute;
     left: 50%;
@@ -1236,9 +1250,9 @@ https://icomoon.io/
 
 .sub-delivery {
     padding-top: 64px;
-    padding-top: 2.909090909090909rem;
+    padding-top: 4rem;
     padding-bottom: 64px;
-    padding-bottom: 2.909090909090909rem;
+    padding-bottom: 4rem;
     position: relative;
     background-color: #f4f8fb;
 }
@@ -1262,7 +1276,7 @@ https://icomoon.io/
     width: 55.83333333%;
     position: relative;
     min-height: 1000px;
-    min-height: 45.45454545454545rem;
+    min-height: 62.5rem;
 }
 
 .sub-delivery__block::after {
@@ -1270,7 +1284,7 @@ https://icomoon.io/
     display: block;
     width: 100%;
     min-height: 600px;
-    min-height: 27.272727272727273rem;
+    min-height: 37.5rem;
     background-image: url('../i/@2x/sub-delivery_bg.png');
     background-position: center center;
     background-repeat: no-repeat;
@@ -1300,16 +1314,16 @@ https://icomoon.io/
     padding-left: 17.91666667%;
     position: relative;
     margin-top: 64px;
-    margin-top: 2.909090909090909rem;
+    margin-top: 4rem;
     margin-bottom: 64px;
-    margin-bottom: 2.909090909090909rem;
+    margin-bottom: 4rem;
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.9090909090909091rem;
+    font-size: 1.25rem;
     color: #4e4e4e;
     line-height: 33px;
-    line-height: 1.5rem;
+    line-height: 2.06rem;
 }
 
 .sub-delivery__item--1::before {
@@ -1412,16 +1426,16 @@ https://icomoon.io/
 
 .sub-delivery__link {
     text-decoration: none;
-    font-size: 0.9090909090909091rem;
+    font-size: 1.25rem;
     color: #4e4e4e;
     line-height: 33px;
-    line-height: 1.5rem;
+    line-height: 2.06rem;
 }
 
 .warranty-delivery .sub-delivery__block {
     position: relative;
     min-height: 1000px;
-    min-height: 45.45454545454545rem;
+    min-height: 62.5rem;
 }
 
 .warranty-delivery .sub-delivery__block::after {
@@ -1429,7 +1443,7 @@ https://icomoon.io/
     display: block;
     width: 100%;
     min-height: 450px;
-    min-height: 20.454545454545453rem;
+    min-height: 28.13rem;
     background-image: url('../i/@2x/warranty-delivery_bg.png');
     background-position: center center;
     background-repeat: no-repeat;
@@ -1449,7 +1463,7 @@ https://icomoon.io/
 
 .warranty-delivery .sub-delivery__list {
     padding: 140px 0px;
-    padding: 6.363636363636363rem 0rem;
+    padding: 8.75rem 0rem;
 }
 
 .warranty-delivery .sub-delivery__item--2::before {
@@ -1484,9 +1498,9 @@ https://icomoon.io/
     display: block;
     vertical-align: middle;
     width: 100px;
-    width: 4.545454545454546rem;
+    width: 6.25rem;
     height: 100px;
-    height: 4.545454545454546rem;
+    height: 6.25rem;
     border-radius: 50% 50%;
     overflow: hidden;
     box-sizing: border-box;
@@ -1523,7 +1537,7 @@ https://icomoon.io/
 
 .pricing {
     min-height: 1126px;
-    min-height: 51.18181818181818rem;
+    min-height: 70.38rem;
     position: relative;
     background-color: #bad3ff;
     margin-top: 50px;
@@ -1542,6 +1556,8 @@ https://icomoon.io/
     transform: translate(-50%);
     height: 160px;
     fill: #bad3ff;
+    stroke: #bad3ff;
+    stroke-width: 10px;
 }
 
 .pricing-bottom-bg {
@@ -1551,13 +1567,15 @@ https://icomoon.io/
 .pricing-bottom-bg .svg--sec-bottom-line-bg__svg {
     width: 100%;
     height: 200px;
-    height: 9.090909090909092rem;
+    height: 12.5rem;
     position: absolute;
     left: 50%;
     bottom: -135px;
     transform: translate(-50%);
     -ms-transform: translate(-50%);
     fill: #bad3ff;
+    stroke: #bad3ff;
+    stroke-width: 10px;
     z-index: 20;
 }
 
@@ -1571,6 +1589,8 @@ https://icomoon.io/
     margin-top: -68px;
     z-index: -20;
     fill: #e8f0ff;
+    stroke: #e8f0ff;
+    stroke-width: 10px;
 }
 
 .pricing__header {
@@ -1585,9 +1605,10 @@ https://icomoon.io/
     -ms-flex-align: center !important;
     align-items: center !important;
     padding-top: 32px;
-    padding-top: 1.4545454545454546rem;
+    padding-top: 2rem;
     padding-bottom: 32px;
-    padding-bottom: 1.4545454545454546rem;
+    padding-bottom: 2rem;
+    position: relative;
 }
 
 .pricing__title {
@@ -1604,26 +1625,29 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 2.272727272727273rem;
+    font-size: 3.13rem;
     color: #1b1b1b;
 }
 
 .pricing__descr {
-    -ms-flex: 0 0 calc(33.333333333333336% - 2.5%);
-    flex: 0 0 calc(33.333333333333336% - 2.5%);
-    max-width: calc(33.333333333333336% - 2.5%);
+    -ms-flex: 0 0 calc(33.333% - 2.5%);
+    flex: 0 0 calc(33.333% - 2.5%);
+    max-width: calc(33.333% - 2.5%);
     width: 100%;
     padding-left: 1.25%;
     padding-right: 1.25%;
     padding: 0;
     text-align: center;
     width: 408px;
-    width: 18.545454545454547rem;
+    width: 25.5rem;
     height: 80px;
-    height: 3.6363636363636362rem;
+    height: 5rem;
     background-color: #ffffff;
     position: relative;
     border-radius: 20px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
 }
 
 .pricing__descr::before {
@@ -1660,13 +1684,14 @@ https://icomoon.io/
     vertical-align: middle;
     width: 48%;
     height: 100%;
+    background-color: transparent;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     padding-top: 30px;
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.9090909090909091rem;
+    font-size: 1.25rem;
     color: #4e4e4e;
 }
 
@@ -1676,17 +1701,55 @@ https://icomoon.io/
     vertical-align: middle;
     width: 50%;
     height: 100%;
-    background-color: #e5eeff;
+    background-color: transparent;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     padding-top: 30px;
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.9090909090909091rem;
+    font-size: 1.25rem;
     line-height: 20px;
-    line-height: 0.9090909090909091rem;
+    line-height: 1.25rem;
     color: #4e4e4e;
+}
+
+.nav-tab-list__item {
+    background-color: transparent;
+}
+
+.item-active.nav-tab-list__item {
+    background-color: #e5eeff;
+}
+
+.nav-tab-list__link {
+    font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 20px;
+    line-height: 1.25rem;
+    color: #4e4e4e;
+}
+
+.tab-cont-hide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    z-index: -1;
+}
+
+.tab-cont {
+    opacity: 1;
+    transition: opacity 0.45s;
+}
+
+.tab-cont.tab-cont-hide {
+    opacity: 0;
 }
 
 .pricing__wrap {
@@ -1707,18 +1770,18 @@ https://icomoon.io/
     margin-right: 1.25%;
     width: 47.5%;
     margin-top: 64px;
-    margin-top: 2.909090909090909rem;
+    margin-top: 4rem;
     margin-bottom: 64px;
-    margin-bottom: 2.909090909090909rem;
+    margin-bottom: 4rem;
 }
 
 .pricing-card {
     width: 100%;
     max-width: 750px;
-    max-width: 34.09090909090909rem;
+    max-width: 46.88rem;
     height: 100%;
     min-height: 579px;
-    min-height: 26.318181818181817rem;
+    min-height: 36.19rem;
     border-radius: 20px;
     background-color: #fff;
     padding: 175px 70px 145px;
@@ -1731,9 +1794,9 @@ https://icomoon.io/
     display: block;
     vertical-align: middle;
     width: 373px;
-    width: 16.954545454545453rem;
+    width: 23.31rem;
     height: 373px;
-    height: 16.954545454545453rem;
+    height: 23.31rem;
     border-radius: 50% 50%;
     overflow: hidden;
     box-sizing: border-box;
@@ -1745,9 +1808,9 @@ https://icomoon.io/
 
 .pricing-car {
     width: 550px;
-    width: 25rem;
+    width: 34.38rem;
     height: 520px;
-    height: 23.636363636363637rem;
+    height: 32.5rem;
     border-radius: 20px;
     background-image: url('../i/@2x/pricing-car-img.png');
     background-position: center center;
@@ -1768,9 +1831,9 @@ https://icomoon.io/
 
 .pricing-card__right .pricing-airplane {
     width: 1035px;
-    width: 47.04545454545455rem;
+    width: 64.69rem;
     height: 1019px;
-    height: 46.31818181818182rem;
+    height: 63.69rem;
     background-image: url('../i/@2x/pricing-airplane-img.png');
     background-position: center center;
     background-repeat: no-repeat;
@@ -1789,10 +1852,10 @@ https://icomoon.io/
     font-weight: 800;
     font-style: normal;
     font-size: 26px;
-    font-size: 1.1818181818181819rem;
+    font-size: 1.63rem;
     line-height: 130%;
     margin: 0;
-    margin-bottom: 15.18px;
+    margin-bottom: 11.04px;
     margin-bottom: 0.69rem;
     text-transform: uppercase;
     color: #000000;
@@ -1803,9 +1866,9 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.3636363636363635rem;
+    font-size: 1.88rem;
     line-height: 44px;
-    line-height: 2rem;
+    line-height: 2.75rem;
     color: #4e4e4e;
 }
 
@@ -1813,9 +1876,9 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.3636363636363635rem;
+    font-size: 1.88rem;
     line-height: 44px;
-    line-height: 2rem;
+    line-height: 2.75rem;
     color: #4e4e4e;
 }
 
@@ -1823,9 +1886,9 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.3636363636363635rem;
+    font-size: 1.88rem;
     line-height: 44px;
-    line-height: 2rem;
+    line-height: 2.75rem;
     color: #4e4e4e;
 }
 
@@ -1839,21 +1902,24 @@ https://icomoon.io/
 .pricing-footer {
     padding-left: 17.91666667%;
     padding-right: 17.91666667%;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-bottom: 3.13rem;
 }
 
 .pricing-footer p {
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.9090909090909091rem;
+    font-size: 1.25rem;
     line-height: 34px;
-    line-height: 1.5454545454545454rem;
+    line-height: 2.13rem;
     color: #4e4e4e;
 }
 
 .paperwork {
     min-height: 1550px;
-    min-height: 70.45454545454545rem;
+    min-height: 96.88rem;
     padding-top: 140px;
     background-color: #f4f8fb;
     position: relative;
@@ -1875,9 +1941,9 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.9090909090909091rem;
+    font-size: 1.25rem;
     line-height: 26px;
-    line-height: 1.1818181818181819rem;
+    line-height: 1.63rem;
     color: #1c1c1c;
     margin-top: 0;
     text-align: center;
@@ -1919,7 +1985,7 @@ https://icomoon.io/
     width: 55.83333333%;
     position: relative;
     min-height: 1000px;
-    min-height: 45.45454545454545rem;
+    min-height: 62.5rem;
 }
 
 .paperwork .sub-delivery__block::after {
@@ -1927,7 +1993,7 @@ https://icomoon.io/
     display: block;
     width: 100%;
     min-height: 473px;
-    min-height: 21.5rem;
+    min-height: 29.56rem;
     background-image: url('../i/@2x/papperwork_bg.png');
     background-position: center center;
     background-repeat: no-repeat;
@@ -1952,16 +2018,16 @@ https://icomoon.io/
     padding-left: 17.91666667%;
     position: relative;
     margin-top: 64px;
-    margin-top: 2.909090909090909rem;
+    margin-top: 4rem;
     margin-bottom: 64px;
-    margin-bottom: 2.909090909090909rem;
+    margin-bottom: 4rem;
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.9090909090909091rem;
+    font-size: 1.25rem;
     color: #4e4e4e;
     line-height: 33px;
-    line-height: 1.5rem;
+    line-height: 2.06rem;
 }
 
 .paperwork .sub-delivery__item--1::before {
@@ -2064,10 +2130,10 @@ https://icomoon.io/
 
 .paperwork .sub-delivery__link {
     text-decoration: none;
-    font-size: 0.9090909090909091rem;
+    font-size: 1.25rem;
     color: #4e4e4e;
     line-height: 33px;
-    line-height: 1.5rem;
+    line-height: 2.06rem;
 }
 
 .paperwork__header {
@@ -2080,9 +2146,9 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 2.1818181818181817rem;
+    font-size: 3rem;
     line-height: 62px;
-    line-height: 2.8181818181818183rem;
+    line-height: 3.88rem;
     color: #1b1b1b;
 }
 
@@ -2090,7 +2156,7 @@ https://icomoon.io/
     padding: 80px 0;
     position: relative;
     min-height: 870px;
-    min-height: 39.54545454545455rem;
+    min-height: 54.38rem;
     background-color: #eaf2fc;
 }
 
@@ -2102,6 +2168,8 @@ https://icomoon.io/
     right: 0;
     top: -65px;
     fill: #eaf2fc;
+    stroke: #eaf2fc;
+    stroke-width: 10px;
 }
 
 .contacts .svg--contact-bot_bg__svg {
@@ -2112,6 +2180,8 @@ https://icomoon.io/
     right: 0;
     bottom: -104px;
     fill: #eaf2fc;
+    stroke: #eaf2fc;
+    stroke-width: 10px;
 }
 
 .contacts .wrapper {
@@ -2128,11 +2198,11 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.9090909090909091rem;
-    margin-bottom: 15.18px;
+    font-size: 1.25rem;
+    margin-bottom: 11.04px;
     margin-bottom: 0.69rem;
     line-height: 34px;
-    line-height: 1.5454545454545454rem;
+    line-height: 2.13rem;
     color: #1c1c1c;
     text-align: center;
     margin-top: 50px;
@@ -2171,12 +2241,12 @@ https://icomoon.io/
 }
 
 .contact-item__title {
-    font-size: 1.2727272727272727rem;
+    font-size: 1.75rem;
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-style: normal;
     letter-spacing: 0.56px;
-    letter-spacing: 0.025454545454545452rem;
+    letter-spacing: 0.04rem;
     color: #1b1b1b;
     margin-bottom: 35px;
 }
@@ -2185,11 +2255,11 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.9090909090909091rem;
+    font-size: 1.25rem;
     line-height: 24px;
-    line-height: 1.0909090909090908rem;
+    line-height: 1.5rem;
     letter-spacing: 0.4px;
-    letter-spacing: 0.018181818181818184rem;
+    letter-spacing: 0.03rem;
     color: #1c1c1c;
     margin-bottom: 25px;
 }
@@ -2204,22 +2274,22 @@ https://icomoon.io/
 
 .contact-item__phons span {
     display: block;
-    font-size: 1.2727272727272727rem;
+    font-size: 1.75rem;
     line-height: 36px;
-    line-height: 1.6363636363636365rem;
+    line-height: 2.25rem;
     letter-spacing: 0.56px;
-    letter-spacing: 0.025454545454545452rem;
+    letter-spacing: 0.04rem;
 }
 
 .contact-link {
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.9090909090909091rem;
+    font-size: 1.25rem;
     line-height: 24px;
-    line-height: 1.0909090909090908rem;
+    line-height: 1.5rem;
     letter-spacing: 0.4px;
-    letter-spacing: 0.018181818181818184rem;
+    letter-spacing: 0.03rem;
     color: #005eff;
     text-decoration: underline;
     transition: all .5s linear;
@@ -2261,9 +2331,9 @@ https://icomoon.io/
 .work-with-clients .delivery__item--1 .delivery-arrow {
     display: block;
     width: 145px;
-    width: 6.590909090909091rem;
+    width: 9.06rem;
     height: 145px;
-    height: 6.590909090909091rem;
+    height: 9.06rem;
     border-radius: 145px;
     background-color: #f4f8fb;
     z-index: 20;
@@ -2285,7 +2355,7 @@ https://icomoon.io/
     transform: translate(-50%, -50%);
     color: #6c6c6c;
     opacity: .6;
-    font-size: 1.8181818181818181rem;
+    font-size: 2.5rem;
 }
 
 .work-with-clients .delivery__item--2 .delivery-text {
@@ -2303,9 +2373,9 @@ https://icomoon.io/
 .work-with-clients .delivery__item--2 .delivery-arrow {
     display: block;
     width: 145px;
-    width: 6.590909090909091rem;
+    width: 9.06rem;
     height: 145px;
-    height: 6.590909090909091rem;
+    height: 9.06rem;
     border-radius: 145px;
     background-color: #f4f8fb;
     z-index: 20;
@@ -2327,7 +2397,7 @@ https://icomoon.io/
     transform: translate(-50%, -50%);
     color: #6c6c6c;
     opacity: .6;
-    font-size: 1.8181818181818181rem;
+    font-size: 2.5rem;
 }
 
 .work-with-clients .delivery__item--3 .delivery-text {
@@ -2344,7 +2414,7 @@ https://icomoon.io/
 
 .feedback {
     min-height: 615px;
-    min-height: 27.954545454545453rem;
+    min-height: 38.44rem;
     background-image: url('../i/@2x/feedback_bg.png');
     background-position: center center;
     background-repeat: no-repeat;
@@ -2387,9 +2457,9 @@ https://icomoon.io/
     padding-left: 1.25%;
     padding-right: 1.25%;
     margin-top: 16px;
-    margin-top: 0.7272727272727273rem;
+    margin-top: 1rem;
     margin-bottom: 16px;
-    margin-bottom: 0.7272727272727273rem;
+    margin-bottom: 1rem;
 }
 
 .feeback-form__footer {
@@ -2399,9 +2469,9 @@ https://icomoon.io/
     flex-grow: 1;
     max-width: 100%;
     margin-top: 16px;
-    margin-top: 0.7272727272727273rem;
+    margin-top: 1rem;
     margin-bottom: 16px;
-    margin-bottom: 0.7272727272727273rem;
+    margin-bottom: 1rem;
     position: relative;
     width: 100%;
     padding-left: 1.25%;
@@ -2417,9 +2487,9 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.6818181818181818rem;
+    font-size: 0.94rem;
     letter-spacing: 0.6px;
-    letter-spacing: 0.027272727272727275rem;
+    letter-spacing: 0.04rem;
     color: #6c6c6c;
     text-indent: 15px;
     text-align: center;
@@ -2434,11 +2504,11 @@ https://icomoon.io/
     vertical-align: middle;
     white-space: nowrap;
     height: 75px;
-    height: 3.409090909090909rem;
+    height: 4.69rem;
     line-height: 75px;
-    line-height: 3.409090909090909rem;
+    line-height: 4.69rem;
     padding: 0 100px;
-    padding: 0 4.545454545454546rem;
+    padding: 0 6.25rem;
     box-sizing: border-box;
     color: #fff;
     background-color: #005eff;
@@ -2448,9 +2518,9 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 0.6818181818181818rem;
+    font-size: 0.94rem;
     letter-spacing: 0.6px;
-    letter-spacing: 0.027272727272727275rem;
+    letter-spacing: 0.04rem;
 }
 
 .feeback-form__btn:hover {
@@ -2466,8 +2536,7 @@ https://icomoon.io/
 }
 
 .clients {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 0;
 }
 
 .clients__list {
@@ -2493,9 +2562,9 @@ https://icomoon.io/
     max-width: 100%;
     text-align: center;
     margin-top: 16px;
-    margin-top: 0.7272727272727273rem;
+    margin-top: 1rem;
     margin-bottom: 16px;
-    margin-bottom: 0.7272727272727273rem;
+    margin-bottom: 1rem;
     position: relative;
     width: 100%;
     padding-left: 1.25%;
@@ -2510,30 +2579,35 @@ https://icomoon.io/
     font-style: normal;
     color: #6c6c6c;
     opacity: .6;
+    transition: all .5s linear;
+}
+
+.clients__link:hover {
+    opacity: 1;
 }
 
 .clients__link .icon-clients-1 {
-    font-size: 1.0909090909090908rem;
+    font-size: 1.5rem;
 }
 
 .clients__link .icon-clients-2 {
-    font-size: 3.6363636363636362rem;
+    font-size: 5rem;
 }
 
 .clients__link .icon-clients-3 {
-    font-size: 3.6363636363636362rem;
+    font-size: 5rem;
 }
 
 .clients__link .icon-clients-4 {
-    font-size: 3.6363636363636362rem;
+    font-size: 5rem;
 }
 
 .clients__link .icon-clients-5 {
-    font-size: 1.1818181818181819rem;
+    font-size: 1.63rem;
 }
 
 .clients__link .icon-clients-6 {
-    font-size: 3.6363636363636362rem;
+    font-size: 5rem;
 }
 
 .footer {
@@ -2589,7 +2663,7 @@ https://icomoon.io/
     font-family: 'icomoon' !important;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.0909090909090908rem;
+    font-size: 1.5rem;
     color: #3c5896;
     position: relative;
 }
@@ -2614,9 +2688,9 @@ https://icomoon.io/
 }
 
 .footer-menu {
-    -ms-flex: 0 0 calc(58.333333333333336% - 2.5%);
-    flex: 0 0 calc(58.333333333333336% - 2.5%);
-    max-width: calc(58.333333333333336% - 2.5%);
+    -ms-flex: 0 0 calc(58.333% - 2.5%);
+    flex: 0 0 calc(58.333% - 2.5%);
+    max-width: calc(58.333% - 2.5%);
     position: relative;
     width: 100%;
     padding-left: 1.25%;
@@ -2646,14 +2720,14 @@ https://icomoon.io/
     -ms-flex-align: center !important;
     align-items: center !important;
     padding-top: 24px;
-    padding-top: 1.0909090909090908rem;
+    padding-top: 1.5rem;
     padding-bottom: 24px;
-    padding-bottom: 1.0909090909090908rem;
+    padding-bottom: 1.5rem;
     border-top: 1px solid #e5e1ea;
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 0.9090909090909091rem;
+    font-size: 1.25rem;
     color: #2f2f2f;
 }
 
@@ -2687,11 +2761,12 @@ https://icomoon.io/
 }
 
 .footer-contacts .phone {
+    display: block;
     position: relative;
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 0.9090909090909091rem;
+    font-size: 1.25rem;
     color: #1b1b1b;
 }
 
@@ -2737,18 +2812,18 @@ https://icomoon.io/
 
 .search-txt {
     width: 150px;
-    width: 6.818181818181818rem;
+    width: 9.38rem;
     height: 25px;
-    height: 1.1363636363636365rem;
+    height: 1.56rem;
     background-color: #000;
     border: 1px solid #b0b1b1;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6), inset 0 1px 3px rgba(0, 0, 0, 0.3);
     border-radius: 16px;
     text-indent: 10px;
-    font-size: 0.5454545454545454rem;
+    font-size: 0.75rem;
     color: #959595;
     line-height: 25px;
-    line-height: 1.1363636363636365rem;
+    line-height: 1.56rem;
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -2767,8 +2842,8 @@ https://icomoon.io/
 .menu__link {
     text-decoration: none;
     display: block;
-    padding: 7px;
-    font-size: 0.5454545454545454rem;
+    padding: 7px 15px;
+    font-size: 0.88rem;
     color: #1b1b1b;
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 500;
@@ -2787,9 +2862,9 @@ https://icomoon.io/
 
 .menu__humburger {
     width: 45px;
-    width: 2.0454545454545454rem;
+    width: 2.81rem;
     height: 32px;
-    height: 1.4545454545454546rem;
+    height: 2rem;
     margin-right: auto;
     border: none;
     background-color: transparent;
@@ -2802,7 +2877,7 @@ https://icomoon.io/
 .menu__humburger span {
     display: block;
     height: 5px;
-    height: 0.22727272727272727rem;
+    height: 0.31rem;
     background-color: #000;
     margin: 8px 0;
 }
@@ -2812,7 +2887,7 @@ https://icomoon.io/
     content: "";
     display: block;
     height: 5px;
-    height: 0.22727272727272727rem;
+    height: 0.31rem;
     background-color: #000;
 }
 
@@ -2830,6 +2905,7 @@ html {
     text-decoration: none;
 }
 
+.header-nav,
 .footer-nav {
     height: 70px;
     z-index: 1;
@@ -2854,11 +2930,13 @@ nav #brand a:hover {
 }
 */
 
+.header-nav #header-menu,
 .footer-nav #footer-menu {
     float: left;
     position: relative;
 }
 
+.header-nav #header-menu li,
 .footer-nav #footer-menu li {
     display: inline-block;
     padding: 0px 5px;
@@ -2868,18 +2946,24 @@ nav #brand a:hover {
     transition: all 0.3s ease-out;
 }
 
+.header-nav #header-menu li {
+    padding: 0px 12px;
+}
+
+.header-nav #header-menu li a,
 .footer-nav #footer-menu li a {
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 0.5454545454545454rem;
+    font-size: 0.75rem;
     letter-spacing: 1.2px;
-    letter-spacing: 0.05454545454545455rem;
+    letter-spacing: 0.07rem;
     text-transform: uppercase;
     color: #1b1b1b;
     transition: all 0.3s ease-out;
 }
 
+.header-nav #header-menu li:hover a,
 .footer-nav #footer-menu li:hover a {
     color: #005eff;
 }
@@ -2982,6 +3066,167 @@ nav #brand a:hover {
     opacity: 0.99;
 }
 
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.modal {
+    width: 750px;
+    width: 46.88rem;
+    height: 555px;
+    height: 34.69rem;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    z-index: 1000;
+    display: none;
+}
+
+.btn-close {
+    display: block;
+    width: 44px;
+    width: 2.75rem;
+    height: 44px;
+    height: 2.75rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.btn-close:before {
+    content: "";
+    display: block;
+    height: 13px;
+    height: 0.81rem;
+    width: 2px;
+    width: 0.13rem;
+    background-color: #4e4e4e;
+    -ms-transform: rotate(45deg) translate(1px, 5px);
+    transform: rotate(45deg) translate(1px, 5px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.btn-close::after {
+    content: "";
+    display: block;
+    width: 13px;
+    width: 0.81rem;
+    height: 2px;
+    height: 0.13rem;
+    background-color: #4e4e4e;
+    -ms-transform: rotate(45deg) translate(1px, 13px);
+    transform: rotate(45deg) translate(1px, 13px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.modal_lg {
+    width: 100%;
+    max-width: 1300px;
+    max-width: 81.25rem;
+    min-height: 744px;
+    min-height: 46.5rem;
+    padding-left: 9.58333333%;
+    padding-right: 9.58333333%;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    z-index: 1000;
+}
+
+.modal_lg #map,
+.modal_lg #map2,
+.modal_lg #map3 {
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    max-width: 81.25rem;
+    min-height: 744px;
+    min-height: 46.5rem;
+    padding-left: 9.58333333%;
+    padding-right: 9.58333333%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.contacts-map {
+    width: 476px;
+    width: 29.75rem;
+    height: 239px;
+    height: 14.94rem;
+    padding: 30px 45px;
+    padding: 1.88rem 2.81rem;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 60px rgba(105, 130, 174, 0.57);
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 200;
+}
+
+.contacts-map::before {
+    content: "";
+    display: block;
+    vertical-align: middle;
+    width: 49px;
+    width: 3.06rem;
+    height: 49px;
+    height: 3.06rem;
+    border-radius: 50% 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 12px solid #005eff;
+    border: 0.75rem solid #005eff;
+    box-shadow: 0 0 60px rgba(0, 94, 255, 0.57);
+    position: absolute;
+    left: 25px;
+    top: -25px;
+}
+
+.contacts-map__adr {
+    font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.38rem;
+    line-height: 36px;
+    line-height: 2.25rem;
+    margin-bottom: 1.25rem;
+    margin-bottom: 20px;
+    letter-spacing: 0.44px;
+    letter-spacing: 0.03rem;
+    color: #1c1c1c;
+}
+
+.contacts-map__phone {
+    font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.88rem;
+    line-height: 40px;
+    line-height: 2.5rem;
+    letter-spacing: 0.6px;
+    letter-spacing: 0.04rem;
+    color: #1c1c1c;
+}
+
 @media (min-width: 380px) {
     .col-xxs-five {
         width: 20%;
@@ -3035,15 +3280,15 @@ nav #brand a:hover {
     }
 
     .section__title {
-        font-size: 1.9090909090909092rem;
+        font-size: 2.63rem;
         line-height: 48px;
-        line-height: 2.1818181818181817rem;
+        line-height: 3rem;
     }
 
     .section__descr {
-        font-size: 0.8181818181818182rem;
+        font-size: 1.13rem;
         line-height: 30px;
-        line-height: 1.3636363636363635rem;
+        line-height: 1.88rem;
         margin-top: 70px;
     }
 
@@ -3057,30 +3302,31 @@ nav #brand a:hover {
         text-align: center;
     }
 
-    .menu {
-        -ms-flex: 0 0 calc(33.333333333333336% - 2.5%);
-        flex: 0 0 calc(33.333333333333336% - 2.5%);
-        max-width: calc(33.333333333333336% - 2.5%);
+    .header-menu {
+        -ms-flex: 0 0 calc(58.333% - 2.5%);
+        flex: 0 0 calc(58.333% - 2.5%);
+        max-width: calc(58.333% - 2.5%);
     }
 
-    .menu {
-        text-align: center;
+    .header-menu {
+        text-align: left;
         margin-right: auto;
     }
 
     .header-right {
-        -ms-flex: 0 0 calc(66.66666666666667% - 2.5%);
-        flex: 0 0 calc(66.66666666666667% - 2.5%);
-        max-width: calc(66.66666666666667% - 2.5%);
+        -ms-flex: 0 0 calc(41.667% - 2.5%);
+        flex: 0 0 calc(41.667% - 2.5%);
+        max-width: calc(41.667% - 2.5%);
     }
 
     .header-right {
         text-align: right;
+        margin-left: auto;
     }
 
     .header-slogan {
         min-height: 945px;
-        min-height: 42.95454545454545rem;
+        min-height: 59.06rem;
     }
 
     .header-slogan__content {
@@ -3088,18 +3334,18 @@ nav #brand a:hover {
     }
 
     .header-slogan__title {
-        font-size: 2.5rem;
-        margin-bottom: 15.18px;
+        font-size: 3.44rem;
+        margin-bottom: 11.04px;
         margin-bottom: 0.69rem;
     }
 
     .delivery-text p {
-        font-size: 1rem;
+        font-size: 1.38rem;
     }
 
     .sub-delivery__block {
         min-height: 900px;
-        min-height: 40.90909090909091rem;
+        min-height: 56.25rem;
     }
 
     .sub-delivery__block {
@@ -3116,7 +3362,7 @@ nav #brand a:hover {
 
     .pricing {
         min-height: 970px;
-        min-height: 44.09090909090909rem;
+        min-height: 60.63rem;
     }
 
     .pricing-bottom-bg .svg--sec-bottom-line-bg__svg {
@@ -3124,7 +3370,7 @@ nav #brand a:hover {
     }
 
     .pricing__title {
-        font-size: 2.0454545454545454rem;
+        font-size: 2.81rem;
     }
 
     .pricing-card {
@@ -3135,9 +3381,9 @@ nav #brand a:hover {
         display: block;
         vertical-align: middle;
         width: 300px;
-        width: 13.636363636363637rem;
+        width: 18.75rem;
         height: 300px;
-        height: 13.636363636363637rem;
+        height: 18.75rem;
         border-radius: 50% 50%;
         overflow: hidden;
         box-sizing: border-box;
@@ -3145,36 +3391,36 @@ nav #brand a:hover {
 
     .pricing-card__title {
         font-size: 24px;
-        font-size: 1.0909090909090908rem;
+        font-size: 1.5rem;
         line-height: 130%;
         margin: 0;
-        margin-bottom: 15.18px;
+        margin-bottom: 11.04px;
         margin-bottom: 0.69rem;
         text-transform: uppercase;
         margin-bottom: 50px;
     }
 
     .pricing-card__term {
-        font-size: 1.1818181818181819rem;
+        font-size: 1.63rem;
         line-height: 40px;
-        line-height: 1.8181818181818181rem;
+        line-height: 2.5rem;
     }
 
     .pricing-card__weight {
-        font-size: 1.1818181818181819rem;
+        font-size: 1.63rem;
         line-height: 40px;
-        line-height: 1.8181818181818181rem;
+        line-height: 2.5rem;
     }
 
     .pricing-card__price {
-        font-size: 1.1818181818181819rem;
+        font-size: 1.63rem;
         line-height: 40px;
-        line-height: 1.8181818181818181rem;
+        line-height: 2.5rem;
     }
 
     .paperwork .sub-delivery__block {
         min-height: 900px;
-        min-height: 40.90909090909091rem;
+        min-height: 56.25rem;
     }
 
     .paperwork .sub-delivery__block {
@@ -3189,28 +3435,34 @@ nav #brand a:hover {
         padding-left: 13.75%;
     }
 
+    .paperwork__title {
+        font-size: 2.63rem;
+        line-height: 48px;
+        line-height: 3rem;
+    }
+
     .contacts .section__descr {
-        font-size: 0.8181818181818182rem;
+        font-size: 1.13rem;
         line-height: 30px;
-        line-height: 1.3636363636363635rem;
+        line-height: 1.88rem;
     }
 
     .feeback-form__group {
-        -ms-flex: 0 0 calc(33.333333333333336% - 2.5%);
-        flex: 0 0 calc(33.333333333333336% - 2.5%);
-        max-width: calc(33.333333333333336% - 2.5%);
+        -ms-flex: 0 0 calc(33.333% - 2.5%);
+        flex: 0 0 calc(33.333% - 2.5%);
+        max-width: calc(33.333% - 2.5%);
     }
 
     .feeback-form__footer {
-        -ms-flex: 0 0 calc(33.333333333333336% - 2.5%);
-        flex: 0 0 calc(33.333333333333336% - 2.5%);
-        max-width: calc(33.333333333333336% - 2.5%);
+        -ms-flex: 0 0 calc(33.333% - 2.5%);
+        flex: 0 0 calc(33.333% - 2.5%);
+        max-width: calc(33.333% - 2.5%);
     }
 
     .clients__item {
-        -ms-flex: 0 0 calc(33.333333333333336% - 2.5%);
-        flex: 0 0 calc(33.333333333333336% - 2.5%);
-        max-width: calc(33.333333333333336% - 2.5%);
+        -ms-flex: 0 0 calc(33.333% - 2.5%);
+        flex: 0 0 calc(33.333% - 2.5%);
+        max-width: calc(33.333% - 2.5%);
     }
 
     .footer-logo {
@@ -3228,9 +3480,9 @@ nav #brand a:hover {
     }
 
     .footer-menu {
-        -ms-flex: 0 0 calc(58.333333333333336% - 2.5%);
-        flex: 0 0 calc(58.333333333333336% - 2.5%);
-        max-width: calc(58.333333333333336% - 2.5%);
+        -ms-flex: 0 0 calc(58.333% - 2.5%);
+        flex: 0 0 calc(58.333% - 2.5%);
+        max-width: calc(58.333% - 2.5%);
     }
 
     .footer-menu {
@@ -3239,20 +3491,15 @@ nav #brand a:hover {
     }
 
     .footer-right {
-        -ms-flex: 0 0 calc(41.66666666666667% - 2.5%);
-        flex: 0 0 calc(41.66666666666667% - 2.5%);
-        max-width: calc(41.66666666666667% - 2.5%);
+        -ms-flex: 0 0 calc(41.667% - 2.5%);
+        flex: 0 0 calc(41.667% - 2.5%);
+        max-width: calc(41.667% - 2.5%);
     }
 
     .footer-right {
-        -ms-flex: 0 0 calc(33.333333333333336% - 2.5%);
-        flex: 0 0 calc(33.333333333333336% - 2.5%);
-        max-width: calc(33.333333333333336% - 2.5%);
-    }
-
-    .menu {
-        padding-top: 13px;
-        padding-bottom: 13px;
+        -ms-flex: 0 0 calc(33.333% - 2.5%);
+        flex: 0 0 calc(33.333% - 2.5%);
+        max-width: calc(33.333% - 2.5%);
     }
 
     .search {
@@ -3292,6 +3539,40 @@ nav #brand a:hover {
     .menu--active .menu__list {
         display: block;
     }
+
+    .modal_lg {
+        padding-left: 1.25%;
+    }
+
+    .modal_lg {
+        padding-right: 1.25%;
+    }
+
+    .modal_lg {
+        max-width: 950px;
+        max-width: 59.38rem;
+        margin: auto;
+    }
+
+    .modal_lg #map,
+  .modal_lg #map2,
+  .modal_lg #map3 {
+        padding-left: 1.25%;
+    }
+
+    .modal_lg #map,
+  .modal_lg #map2,
+  .modal_lg #map3 {
+        padding-right: 1.25%;
+    }
+
+    .modal_lg #map,
+  .modal_lg #map2,
+  .modal_lg #map3 {
+        max-width: 950px;
+        max-width: 59.38rem;
+        margin: auto;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -3300,7 +3581,8 @@ nav #brand a:hover {
         opacity: 1;
     }
 
-    .footer-nav #footer-menu {
+    .header-nav #header-menu,
+  .footer-nav #footer-menu {
         display: none;
     }
 }
@@ -3317,21 +3599,33 @@ nav #brand a:hover {
     }
 
     .section__title {
-        font-size: 1.7272727272727273rem;
+        font-size: 2.38rem;
         line-height: 44px;
-        line-height: 2rem;
+        line-height: 2.75rem;
     }
 
     .section__descr {
-        font-size: 0.7727272727272727rem;
+        font-size: 1.06rem;
         line-height: 24px;
-        line-height: 1.0909090909090908rem;
+        line-height: 1.5rem;
         margin-top: 60px;
+    }
+
+    .header-menu {
+        -ms-flex: 0 0 calc(41.667% - 2.5%);
+        flex: 0 0 calc(41.667% - 2.5%);
+        max-width: calc(41.667% - 2.5%);
+    }
+
+    .header-right {
+        -ms-flex: 0 0 calc(58.333% - 2.5%);
+        flex: 0 0 calc(58.333% - 2.5%);
+        max-width: calc(58.333% - 2.5%);
     }
 
     .header-slogan {
         min-height: 845px;
-        min-height: 38.40909090909091rem;
+        min-height: 52.81rem;
     }
 
     .header-slogan__content {
@@ -3339,14 +3633,14 @@ nav #brand a:hover {
     }
 
     .header-slogan__title {
-        font-size: 2.0454545454545454rem;
-        margin-bottom: 15.18px;
+        font-size: 2.81rem;
+        margin-bottom: 11.04px;
         margin-bottom: 0.69rem;
     }
 
     .header-slogan__descr {
-        font-size: 0.8181818181818182rem;
-        margin-bottom: 15.18px;
+        font-size: 1.13rem;
+        margin-bottom: 11.04px;
         margin-bottom: 0.69rem;
     }
 
@@ -3381,7 +3675,7 @@ nav #brand a:hover {
 
     .delivery__item {
         margin-bottom: 90px;
-        margin-bottom: 4.090909090909091rem;
+        margin-bottom: 5.63rem;
     }
 
     .sec-top-line-bg .svg--sec-top-line-bg__svg {
@@ -3389,14 +3683,28 @@ nav #brand a:hover {
         height: 140px;
     }
 
+    .pricing__header {
+        margin-bottom: 80px;
+        margin-bottom: 5rem;
+    }
+
     .pricing__title {
-        font-size: 1.8181818181818181rem;
+        font-size: 2.5rem;
+        text-align: center;
     }
 
     .pricing__descr {
-        -ms-flex: 0 0 calc(41.66666666666667% - 2.5%);
-        flex: 0 0 calc(41.66666666666667% - 2.5%);
-        max-width: calc(41.66666666666667% - 2.5%);
+        -ms-flex: 0 0 calc(41.667% - 2.5%);
+        flex: 0 0 calc(41.667% - 2.5%);
+        max-width: calc(41.667% - 2.5%);
+    }
+
+    .pricing__descr {
+        position: absolute;
+        left: 50%;
+        top: 85px;
+        -ms-transform: translate(-50%);
+        transform: translate(-50%);
     }
 
     .pricing-card {
@@ -3407,9 +3715,9 @@ nav #brand a:hover {
         display: block;
         vertical-align: middle;
         width: 250px;
-        width: 11.363636363636363rem;
+        width: 15.63rem;
         height: 250px;
-        height: 11.363636363636363rem;
+        height: 15.63rem;
         border-radius: 50% 50%;
         overflow: hidden;
         box-sizing: border-box;
@@ -3417,44 +3725,50 @@ nav #brand a:hover {
 
     .pricing-card__title {
         font-size: 22px;
-        font-size: 1rem;
+        font-size: 1.38rem;
         line-height: 130%;
         margin: 0;
-        margin-bottom: 15.18px;
+        margin-bottom: 11.04px;
         margin-bottom: 0.69rem;
         text-transform: uppercase;
         margin-bottom: 40px;
     }
 
     .pricing-card__term {
-        font-size: 1rem;
+        font-size: 1.38rem;
         line-height: 36px;
-        line-height: 1.6363636363636365rem;
+        line-height: 2.25rem;
     }
 
     .pricing-card__weight {
-        font-size: 1rem;
+        font-size: 1.38rem;
         line-height: 36px;
-        line-height: 1.6363636363636365rem;
+        line-height: 2.25rem;
     }
 
     .pricing-card__price {
-        font-size: 1rem;
+        font-size: 1.38rem;
         line-height: 36px;
-        line-height: 1.6363636363636365rem;
+        line-height: 2.25rem;
     }
 
     .paperwork {
         padding-top: 64px;
-        padding-top: 2.909090909090909rem;
+        padding-top: 4rem;
         padding-bottom: 64px;
-        padding-bottom: 2.909090909090909rem;
+        padding-bottom: 4rem;
+    }
+
+    .paperwork__title {
+        font-size: 2.38rem;
+        line-height: 44px;
+        line-height: 2.75rem;
     }
 
     .contacts .section__descr {
-        font-size: 0.7727272727272727rem;
+        font-size: 1.06rem;
         line-height: 24px;
-        line-height: 1.0909090909090908rem;
+        line-height: 1.5rem;
     }
 
     .contacts-of__russian {
@@ -3467,13 +3781,6 @@ nav #brand a:hover {
 
     .contacts-of__china {
         padding-right: 1.25%;
-    }
-
-    .work-with-clients {
-        padding-top: 64px;
-        padding-top: 2.909090909090909rem;
-        padding-bottom: 64px;
-        padding-bottom: 2.909090909090909rem;
     }
 
     .work-with-clients .delivery__item--1 .delivery-arrow {
@@ -3498,14 +3805,14 @@ nav #brand a:hover {
 
     .work-with-clients .delivery__item {
         margin-bottom: 90px;
-        margin-bottom: 4.090909090909091rem;
+        margin-bottom: 5.63rem;
     }
 
     .feedback {
         padding-top: 64px;
-        padding-top: 2.909090909090909rem;
+        padding-top: 4rem;
         padding-bottom: 64px;
-        padding-bottom: 2.909090909090909rem;
+        padding-bottom: 4rem;
     }
 
     .feeback-form__contents {
@@ -3531,40 +3838,59 @@ nav #brand a:hover {
 
     .clients {
         padding-top: 64px;
-        padding-top: 2.909090909090909rem;
+        padding-top: 4rem;
         padding-bottom: 64px;
-        padding-bottom: 2.909090909090909rem;
+        padding-bottom: 4rem;
     }
 
     .footer-menu {
-        -ms-flex: 0 0 calc(66.66666666666667% - 2.5%);
-        flex: 0 0 calc(66.66666666666667% - 2.5%);
-        max-width: calc(66.66666666666667% - 2.5%);
+        -ms-flex: 0 0 calc(66.667% - 2.5%);
+        flex: 0 0 calc(66.667% - 2.5%);
+        max-width: calc(66.667% - 2.5%);
+    }
+
+    .modal_lg {
+        max-width: 750px;
+        max-width: 46.88rem;
+        margin: auto;
+    }
+
+    .modal_lg #map,
+  .modal_lg #map2,
+  .modal_lg #map3 {
+        max-width: 750px;
+        max-width: 46.88rem;
+        margin: auto;
     }
 }
 
 @media screen and (max-width: 768px) {
     html {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .section__title {
-        font-size: 1.4545454545454546rem;
+        font-size: 2rem;
         line-height: 38px;
-        line-height: 1.7272727272727273rem;
+        line-height: 2.38rem;
     }
 
     .section__descr {
-        font-size: 0.7272727272727273rem;
+        font-size: 1rem;
         line-height: 22px;
-        line-height: 1rem;
+        line-height: 1.38rem;
         margin-top: 40px;
     }
 
-    .menu {
+    .header-menu {
         -ms-flex: 0 0 calc(100% - 2.5%);
         flex: 0 0 calc(100% - 2.5%);
         max-width: calc(100% - 2.5%);
+    }
+
+    .header-menu {
+        text-align: center;
+        margin: 20px auto;
     }
 
     .header-right {
@@ -3575,16 +3901,17 @@ nav #brand a:hover {
 
     .header-right {
         text-align: center;
+        margin: auto;
     }
 
     .header-slogan {
         min-height: 745px;
-        min-height: 33.86363636363637rem;
+        min-height: 46.56rem;
     }
 
     .header-slogan__title {
-        font-size: 1.5909090909090908rem;
-        margin-bottom: 15.18px;
+        font-size: 2.19rem;
+        margin-bottom: 11.04px;
         margin-bottom: 0.69rem;
     }
 
@@ -3594,21 +3921,21 @@ nav #brand a:hover {
 
     .delivery {
         padding-top: 48px;
-        padding-top: 2.1818181818181817rem;
+        padding-top: 3rem;
         padding-bottom: 48px;
-        padding-bottom: 2.1818181818181817rem;
+        padding-bottom: 3rem;
     }
 
     .delivery__item {
         margin-bottom: 30px;
-        margin-bottom: 1.3636363636363635rem;
+        margin-bottom: 1.88rem;
     }
 
     .sub-delivery {
         padding-top: 48px;
-        padding-top: 2.1818181818181817rem;
+        padding-top: 3rem;
         padding-bottom: 48px;
-        padding-bottom: 2.1818181818181817rem;
+        padding-bottom: 3rem;
     }
 
     .sub-delivery__block::after {
@@ -3617,7 +3944,7 @@ nav #brand a:hover {
 
     .sub-delivery__aside {
         margin-top: 100px;
-        margin-top: 4.545454545454546rem;
+        margin-top: 6.25rem;
     }
 
     .sub-delivery__item {
@@ -3691,7 +4018,7 @@ nav #brand a:hover {
 
     .warranty-delivery .sub-delivery__list {
         padding: 70px 0px;
-        padding: 3.1818181818181817rem 0rem;
+        padding: 4.38rem 0rem;
     }
 
     .warranty-delivery .sub-delivery__item--2::before {
@@ -3758,9 +4085,9 @@ nav #brand a:hover {
         display: block;
         vertical-align: middle;
         width: 373px;
-        width: 16.954545454545453rem;
+        width: 23.31rem;
         height: 373px;
-        height: 16.954545454545453rem;
+        height: 23.31rem;
         border-radius: 50% 50%;
         overflow: hidden;
         box-sizing: border-box;
@@ -3790,9 +4117,14 @@ nav #brand a:hover {
 
     .paperwork {
         padding-top: 48px;
-        padding-top: 2.1818181818181817rem;
+        padding-top: 3rem;
         padding-bottom: 48px;
-        padding-bottom: 2.1818181818181817rem;
+        padding-bottom: 3rem;
+    }
+
+    .paperwork .section__header {
+        padding-left: 1.25%;
+        padding-right: 1.25%;
     }
 
     .paperwork .sub-delivery__block::after {
@@ -3801,7 +4133,7 @@ nav #brand a:hover {
 
     .paperwork .sub-delivery__aside {
         margin-top: 100px;
-        margin-top: 4.545454545454546rem;
+        margin-top: 6.25rem;
     }
 
     .paperwork .sub-delivery__item {
@@ -3869,17 +4201,23 @@ nav #brand a:hover {
         transform: translate(-50%);
     }
 
+    .paperwork__title {
+        font-size: 2rem;
+        line-height: 38px;
+        line-height: 2.38rem;
+    }
+
     .contacts {
         padding-top: 48px;
-        padding-top: 2.1818181818181817rem;
+        padding-top: 3rem;
         padding-bottom: 48px;
-        padding-bottom: 2.1818181818181817rem;
+        padding-bottom: 3rem;
     }
 
     .contacts .section__descr {
-        font-size: 0.7272727272727273rem;
+        font-size: 1rem;
         line-height: 22px;
-        line-height: 1rem;
+        line-height: 1.38rem;
     }
 
     .contacts__wrap {
@@ -3893,33 +4231,24 @@ nav #brand a:hover {
 
     .contacts__inner {
         margin-bottom: 30px;
-        margin-bottom: 1.3636363636363635rem;
-    }
-
-    .work-with-clients {
-        padding-top: 48px;
-        padding-top: 2.1818181818181817rem;
-        padding-bottom: 48px;
-        padding-bottom: 2.1818181818181817rem;
+        margin-bottom: 1.88rem;
     }
 
     .work-with-clients .delivery__item {
         margin-bottom: 30px;
-        margin-bottom: 1.3636363636363635rem;
+        margin-bottom: 1.88rem;
     }
 
     .feedback {
         padding-top: 48px;
-        padding-top: 2.1818181818181817rem;
+        padding-top: 3rem;
         padding-bottom: 48px;
-        padding-bottom: 2.1818181818181817rem;
+        padding-bottom: 3rem;
     }
 
-    .clients {
-        padding-top: 48px;
-        padding-top: 2.1818181818181817rem;
-        padding-bottom: 48px;
-        padding-bottom: 2.1818181818181817rem;
+    .feedback .section__header {
+        padding-left: 1.25%;
+        padding-right: 1.25%;
     }
 
     .clients__item {
@@ -3930,9 +4259,9 @@ nav #brand a:hover {
 
     .footer__wrap {
         padding-top: 48px;
-        padding-top: 2.1818181818181817rem;
+        padding-top: 3rem;
         padding-bottom: 48px;
-        padding-bottom: 2.1818181818181817rem;
+        padding-bottom: 3rem;
     }
 
     .footer-menu {
@@ -3960,9 +4289,9 @@ nav #brand a:hover {
     .copyright__left {
         text-align: center;
         margin-top: 24px;
-        margin-top: 1.0909090909090908rem;
+        margin-top: 1.5rem;
         margin-bottom: 24px;
-        margin-bottom: 1.0909090909090908rem;
+        margin-bottom: 1.5rem;
     }
 
     .copyright__right {
@@ -3973,6 +4302,13 @@ nav #brand a:hover {
 
     .copyright__right {
         text-align: center;
+    }
+
+    .menu {
+        padding: 13px 0;
+        text-align: center;
+        width: 100%;
+        margin: auto;
     }
 
     .menu__humburger {
@@ -4010,42 +4346,42 @@ nav #brand a:hover {
 
 @media screen and (max-width: 576px) {
     html {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .section__title {
-        font-size: 1.1818181818181819rem;
+        font-size: 1.63rem;
         line-height: 32px;
-        line-height: 1.4545454545454546rem;
+        line-height: 2rem;
     }
 
     .header-slogan {
         min-height: 645px;
-        min-height: 29.318181818181817rem;
+        min-height: 40.31rem;
     }
 
     .header-slogan__title {
-        font-size: 1.2727272727272727rem;
-        margin-bottom: 15.18px;
+        font-size: 1.75rem;
+        margin-bottom: 11.04px;
         margin-bottom: 0.69rem;
     }
 
     .delivery {
         padding-top: 32px;
-        padding-top: 1.4545454545454546rem;
+        padding-top: 2rem;
         padding-bottom: 32px;
-        padding-bottom: 1.4545454545454546rem;
+        padding-bottom: 2rem;
     }
 
     .delivery {
         padding-top: 24px;
-        padding-top: 1.0909090909090908rem;
+        padding-top: 1.5rem;
         padding-bottom: 24px;
-        padding-bottom: 1.0909090909090908rem;
+        padding-bottom: 1.5rem;
     }
 
     .delivery__item {
-        width: 97.5%;
+        width: 72.5%;
     }
 
     .delivery-text {
@@ -4054,16 +4390,16 @@ nav #brand a:hover {
 
     .sub-delivery {
         padding-top: 32px;
-        padding-top: 1.4545454545454546rem;
+        padding-top: 2rem;
         padding-bottom: 32px;
-        padding-bottom: 1.4545454545454546rem;
+        padding-bottom: 2rem;
     }
 
     .sub-delivery {
         padding-top: 24px;
-        padding-top: 1.0909090909090908rem;
+        padding-top: 1.5rem;
         padding-bottom: 24px;
-        padding-bottom: 1.0909090909090908rem;
+        padding-bottom: 1.5rem;
     }
 
     .sec-top-line-bg .svg--sec-top-line-bg__svg {
@@ -4072,9 +4408,9 @@ nav #brand a:hover {
     }
 
     .pricing__descr {
-        -ms-flex: 0 0 calc(66.66666666666667% - 2.5%);
-        flex: 0 0 calc(66.66666666666667% - 2.5%);
-        max-width: calc(66.66666666666667% - 2.5%);
+        -ms-flex: 0 0 calc(66.667% - 2.5%);
+        flex: 0 0 calc(66.667% - 2.5%);
+        max-width: calc(66.667% - 2.5%);
     }
 
     .map-china {
@@ -4111,92 +4447,63 @@ nav #brand a:hover {
 
     .paperwork {
         padding-top: 32px;
-        padding-top: 1.4545454545454546rem;
+        padding-top: 2rem;
         padding-bottom: 32px;
-        padding-bottom: 1.4545454545454546rem;
+        padding-bottom: 2rem;
     }
 
     .paperwork {
         padding-top: 24px;
-        padding-top: 1.0909090909090908rem;
+        padding-top: 1.5rem;
         padding-bottom: 24px;
-        padding-bottom: 1.0909090909090908rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .paperwork__title {
+        font-size: 1.63rem;
+        line-height: 32px;
+        line-height: 2rem;
     }
 
     .contacts {
         padding-top: 32px;
-        padding-top: 1.4545454545454546rem;
+        padding-top: 2rem;
         padding-bottom: 32px;
-        padding-bottom: 1.4545454545454546rem;
+        padding-bottom: 2rem;
     }
 
     .contacts {
         padding-top: 24px;
-        padding-top: 1.0909090909090908rem;
+        padding-top: 1.5rem;
         padding-bottom: 24px;
-        padding-bottom: 1.0909090909090908rem;
+        padding-bottom: 1.5rem;
     }
 
     .contacts__inner {
         width: 80.83333333%;
     }
 
-    .work-with-clients {
-        padding-top: 32px;
-        padding-top: 1.4545454545454546rem;
-        padding-bottom: 32px;
-        padding-bottom: 1.4545454545454546rem;
-    }
-
-    .work-with-clients {
-        padding-top: 24px;
-        padding-top: 1.0909090909090908rem;
-        padding-bottom: 24px;
-        padding-bottom: 1.0909090909090908rem;
-    }
-
     .work-with-clients .delivery__item {
-        width: 97.5%;
+        width: 80.83333333%;
     }
 
     .feedback {
         padding-top: 32px;
-        padding-top: 1.4545454545454546rem;
+        padding-top: 2rem;
         padding-bottom: 32px;
-        padding-bottom: 1.4545454545454546rem;
-    }
-
-    .feedback {
-        padding-top: 24px;
-        padding-top: 1.0909090909090908rem;
-        padding-bottom: 24px;
-        padding-bottom: 1.0909090909090908rem;
+        padding-bottom: 2rem;
     }
 
     .feeback-form__group {
-        -ms-flex: 0 0 calc(83.33333333333334% - 2.5%);
-        flex: 0 0 calc(83.33333333333334% - 2.5%);
-        max-width: calc(83.33333333333334% - 2.5%);
+        -ms-flex: 0 0 calc(83.333% - 2.5%);
+        flex: 0 0 calc(83.333% - 2.5%);
+        max-width: calc(83.333% - 2.5%);
     }
 
     .feeback-form__footer {
-        -ms-flex: 0 0 calc(83.33333333333334% - 2.5%);
-        flex: 0 0 calc(83.33333333333334% - 2.5%);
-        max-width: calc(83.33333333333334% - 2.5%);
-    }
-
-    .clients {
-        padding-top: 32px;
-        padding-top: 1.4545454545454546rem;
-        padding-bottom: 32px;
-        padding-bottom: 1.4545454545454546rem;
-    }
-
-    .clients {
-        padding-top: 24px;
-        padding-top: 1.0909090909090908rem;
-        padding-bottom: 24px;
-        padding-bottom: 1.0909090909090908rem;
+        -ms-flex: 0 0 calc(83.333% - 2.5%);
+        flex: 0 0 calc(83.333% - 2.5%);
+        max-width: calc(83.333% - 2.5%);
     }
 
     .clients__list {
@@ -4208,9 +4515,9 @@ nav #brand a:hover {
     }
 
     .clients__item {
-        -ms-flex: 0 0 calc(66.66666666666667% - 2.5%);
-        flex: 0 0 calc(66.66666666666667% - 2.5%);
-        max-width: calc(66.66666666666667% - 2.5%);
+        -ms-flex: 0 0 calc(66.667% - 2.5%);
+        flex: 0 0 calc(66.667% - 2.5%);
+        max-width: calc(66.667% - 2.5%);
     }
 
     .clients__item {
@@ -4218,41 +4525,41 @@ nav #brand a:hover {
     }
 
     .clients__link .icon-clients-1 {
-        font-size: 1.6363636363636365rem;
+        font-size: 2.25rem;
     }
 
     .clients__link .icon-clients-2 {
-        font-size: 5.454545454545454rem;
+        font-size: 7.5rem;
     }
 
     .clients__link .icon-clients-3 {
-        font-size: 5.454545454545454rem;
+        font-size: 7.5rem;
     }
 
     .clients__link .icon-clients-4 {
-        font-size: 5.454545454545454rem;
+        font-size: 7.5rem;
     }
 
     .clients__link .icon-clients-5 {
-        font-size: 1.8181818181818181rem;
+        font-size: 2.5rem;
     }
 
     .clients__link .icon-clients-6 {
-        font-size: 5.454545454545454rem;
+        font-size: 7.5rem;
     }
 
     .footer__wrap {
         padding-top: 32px;
-        padding-top: 1.4545454545454546rem;
+        padding-top: 2rem;
         padding-bottom: 32px;
-        padding-bottom: 1.4545454545454546rem;
+        padding-bottom: 2rem;
     }
 
     .footer__wrap {
         padding-top: 24px;
-        padding-top: 1.0909090909090908rem;
+        padding-top: 1.5rem;
         padding-bottom: 24px;
-        padding-bottom: 1.0909090909090908rem;
+        padding-bottom: 1.5rem;
     }
 
     #resize #resize-menu li .footer-accaunt {
@@ -4268,54 +4575,58 @@ nav #brand a:hover {
 
 @media (max-width: 576px) {
     .delivery__item--1 .delivery-arrow {
-        opacity: 0;
+        display: none;
     }
 
     .delivery__item--1 .delivery-arrow::before {
-        opacity: 0;
+        display: none;
     }
 
     .delivery__item--2 .delivery-arrow {
-        opacity: 0;
+        display: none;
     }
 
     .delivery__item--2 .delivery-arrow::before {
-        opacity: 0;
+        display: none;
     }
 
     .delivery-step {
-        opacity: 0;
+        display: none;
     }
 
     .work-with-clients .delivery__item--1 .delivery-arrow {
-        opacity: 0;
+        display: none;
     }
 
     .work-with-clients .delivery__item--1 .delivery-arrow::before {
-        opacity: 0;
+        display: none;
     }
 
     .work-with-clients .delivery__item--2 .delivery-arrow {
-        opacity: 0;
+        display: none;
     }
 
     .work-with-clients .delivery__item--2 .delivery-arrow::before {
-        opacity: 0;
+        display: none;
+    }
+
+    .modal_lg {
+        display: none;
+    }
+
+    .modal_lg #map,
+  .modal_lg #map2,
+  .modal_lg #map3 {
+        display: none;
     }
 }
 
 @media screen and (max-width: 380px) {
     html {
-        font-size: 16px;
+        font-size: 13px;
     }
 
-    .section__title {
-        font-size: 1rem;
-        line-height: 28px;
-        line-height: 1.2727272727272727rem;
-    }
-
-    .menu {
+    .header-menu {
         -ms-flex: 0 0 calc(100% - 2.5%);
         flex: 0 0 calc(100% - 2.5%);
         max-width: calc(100% - 2.5%);
@@ -4329,7 +4640,11 @@ nav #brand a:hover {
 
     .header-slogan {
         min-height: 545px;
-        min-height: 24.772727272727273rem;
+        min-height: 34.06rem;
+    }
+
+    .delivery__item {
+        width: 97.5%;
     }
 
     .sec-top-line-bg .svg--sec-top-line-bg__svg {
@@ -4355,6 +4670,22 @@ nav #brand a:hover {
     .pricing-card__right .pricing-airplane {
         top: 507px;
         right: -370px;
+    }
+
+    .work-with-clients .delivery__item {
+        width: 97.5%;
+    }
+
+    .feeback-form__group {
+        -ms-flex: 0 0 calc(100% - 2.5%);
+        flex: 0 0 calc(100% - 2.5%);
+        max-width: calc(100% - 2.5%);
+    }
+
+    .feeback-form__footer {
+        -ms-flex: 0 0 calc(100% - 2.5%);
+        flex: 0 0 calc(100% - 2.5%);
+        max-width: calc(100% - 2.5%);
     }
 
     .footer-menu {

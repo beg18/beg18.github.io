@@ -12,8 +12,8 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Grid</title>  
-    <!--[if lt IE 9]>
+    <title>Cargo One</title>
+    <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
         <link rel="stylesheet" href="css/styles-ie.min.css">
     <![endif]-->
@@ -41,8 +41,8 @@
 </div>
 <!--/.debug  -->
 
-<header class="header">
-    <div class="header-top">
+<header id="js_header" class="header">
+    <div id="js_header-top" class="header-top">
         <div class="wrapper">
             <div class="header__wrap">
                 <div class="logo header-logo">
@@ -83,7 +83,7 @@
                     <div class="header-contacts">
                         <a class="phone" href="tel:88004561756" target="_blank" title="8 800 456 17 56">8 800 456 17
                             56</a>
-                        <a class="accaunt" href="#" target="_blank" title="accaunt">Личный кабинет</a>
+                        <a class="accaunt js-show-modal" href="#js-login-modal" target="_blank" title="accaunt">Личный кабинет</a>
                     </div>
                     <!-- // header-phone -->
                     <a class="btn cart-btn" href="#">Сделать расчет</a>
@@ -95,28 +95,29 @@
         <!-- End wrapper -->
     </div>
     <!-- End header-top -->
+    <div class="header-slogan">
+        <div class="wrapper">
+            <div class="header-slogan__content">
+                <h1 class="header-slogan__title">
+                    Доставка грузов из Китая и Турции
+                </h1>
+                <p class="header-slogan__descr">
+                    Торгово-экономические взаимоотношения между Россией и
+                    Китаем с каждым годом только укрепляются. Предприятия
+                    малого и среднего бизнеса наряду с международными корпорациями
+                    успешно осуществляются экспортно-импортные операции,
+                    обмениваясь новинками с соседней страной.
+                </p>
+                <a class="btn slogan-btn" href="#">Подробнее</a>
+            </div>
+            <!-- End header-slogan -->
+        </div>
+        <!-- End wrapper -->
+    </div>
+    <!-- End header-slogan -->
 </header>
 <!-- End header -->
-<div class="header-slogan">
-    <div class="wrapper">
-        <div class="header-slogan__content">
-            <h1 class="header-slogan__title">
-                Доставка грузов из Китая и Турции
-            </h1>
-            <p class="header-slogan__descr">
-                Торгово-экономические взаимоотношения между Россией и
-                Китаем с каждым годом только укрепляются. Предприятия
-                малого и среднего бизнеса наряду с международными корпорациями
-                успешно осуществляются экспортно-импортные операции,
-                обмениваясь новинками с соседней страной.
-            </p>
-            <a class="btn slogan-btn" href="#">Подробнее</a>
-        </div>
-        <!-- End header-slogan -->
-    </div>
-    <!-- End wrapper -->
-</div>
-<!-- End header -->
+
 
 <main class="main">
     <section id="js_delivery" class="delivery">
@@ -286,7 +287,7 @@
         <!-- //wrapper -->
     </section>
     <!-- End warranty-delivery -->
-    <section id="js_pricing" class="pricing">
+    <section class="pricing">
         <div class="sec-top-line-bg">
             <svg class="svg--sec-top-line-bg__svg">
                 <use xlink:href="i/symbol/sprite.svg#svg--sec-top-line-bg"></use>
@@ -299,69 +300,131 @@
                 <h2 class="pricing__title">
                     Стоимость и сроки копия
                 </h2>
-                <div class="pricing__descr">
-                    <a class="map-china" href="#">
-                        Китай
-                    </a>
-                    <a class="map-turkey" href="#">
-                        Турция
-                    </a>
-                </div>
             </header>
-            <article class="pricing__wrap">
+
+            <article id="js_pricing">
                 <h2 class="visually-hidden">Hidden title</h2>
-                <section class="pricing__inner">
+                <ul class="pricing__descr nav-tab-list tabs">
+                     <li class="map-china  nav-tab-list__item item-active">
+                        <a class="nav-tab-list__link" href="#tab_1">
+                            Китай
+                        </a>
+                     </li>
+                     <li class="map-turkey nav-tab-list__item">
+                        <a class="nav-tab-list__link" href="#tab_2">
+                            Турция
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-cont" id="tab_1">
+                    <section class="pricing__wrap" >
+                        <h2 class="visually-hidden">Hidden title</h2>
+
+                        <div class="pricing__inner">
+                            <div class="pricing-card">
+                                <div class="pricing-car"></div>
+                                <!--//pricing-car-->
+                                <h3 class="pricing-card__title">
+                                    Aвтомобиль
+                                </h3>
+                                <div class="pricing-card__term">
+                                    Срок: от 14 дней
+                                </div>
+                                <div class="pricing-card__weight">
+                                    Вес: от: 200 кг.
+                                </div>
+                                <div class="pricing-card__price">
+                                    Стоимость: от <span>4 500</span> руб.
+                                </div>
+                            </div>
+                        </div>
+                        <!--//pricing-card-->
+                        <div class="pricing__inner">
+                            <div class="pricing-card pricing-card__right">
+                                <div class="pricing-airplane"></div>
+                                <!--//pricing-airplane-->
+                                <h3 class="pricing-card__title">
+                                    Авиатранспорт
+                                </h3>
+                                <div class="pricing-card__term">
+                                    Срок: от 5 дней
+                                </div>
+                                <div class="pricing-card__weight">
+                                    Вес: от: 45 кг.
+                                </div>
+                                <div class="pricing-card__price">
+                                    Стоимость: от <span>5 000</span> руб.
+                                </div>
+                            </div>
+                            <!--//pricing-card-->
+
+                        </div>
+
+                    </section>
+                    <!-- End pricing__wrap-1 -->
+                    <footer class="pricing-footer">
+                        <p>
+                            Китай:Мы в обязательном порядке учитываем специфику
+                            перевозимой продукции, обеспечивая все условия
+                            для транспортировки в соответствии с нормами.
+                        </p>
+                    </footer>
+                    <!-- End pricing__inner-1 -->
+                </div>
+                <div class="tab-cont tab-cont-hide"  id="tab_2">
+                <section class="pricing__wrap">
                     <h2 class="visually-hidden">Hidden title</h2>
 
-                    <div class="pricing-card">
-                        <div class="pricing-car"></div>
-                        <!--//pricing-car-->
-                        <h3 class="pricing-card__title">
-                            Aвтомобиль
-                        </h3>
-                        <div class="pricing-card__term">
-                            Срок: от 14 дней
-                        </div>
-                        <div class="pricing-card__weight">
-                            Вес: от: 200 кг.
-                        </div>
-                        <div class="pricing-card__price">
-                            Стоимость: от <span>4 500</span> руб.
+                    <div class="pricing__inner">
+                        <div class="pricing-card">
+                            <div class="pricing-car"></div>
+                            <!--//pricing-car-->
+                            <h3 class="pricing-card__title">
+                                Aвтомобиль
+                            </h3>
+                            <div class="pricing-card__term">
+                                Срок: от 14 дней
+                            </div>
+                            <div class="pricing-card__weight">
+                                Вес: от: 200 кг.
+                            </div>
+                            <div class="pricing-card__price">
+                                Стоимость: от <span>4 500</span> руб.
+                            </div>
                         </div>
                     </div>
                     <!--//pricing-card-->
-
+                    <div class="pricing__inner">
+                            <div class="pricing-card pricing-card__right">
+                                <div class="pricing-airplane"></div>
+                                <!--//pricing-airplane-->
+                                <h3 class="pricing-card__title">
+                                    Авиатранспорт
+                                </h3>
+                                <div class="pricing-card__term">
+                                    Срок: от 5 дней
+                                </div>
+                                <div class="pricing-card__weight">
+                                    Вес: от: 45 кг.
+                                </div>
+                                <div class="pricing-card__price">
+                                    Стоимость: от <span>5 000</span> руб.
+                                </div>
+                            </div>
+                            <!--//pricing-card-->
+                       </div>
+                    <!-- End pricing__inner-2 -->
                 </section>
-                <!-- End pricing__inner-1 -->
-                <section class="pricing__inner">
-                    <h2 class="visually-hidden">Hidden title</h2>
-                    <div class="pricing-card pricing-card__right">
-                        <div class="pricing-airplane"></div>
-                        <!--//pricing-airplane-->
-                        <h3 class="pricing-card__title">
-                            Авиатранспорт
-                        </h3>
-                        <div class="pricing-card__term">
-                            Срок: от 5 дней
-                        </div>
-                        <div class="pricing-card__weight">
-                            Вес: от: 45 кг.
-                        </div>
-                        <div class="pricing-card__price">
-                            Стоимость: от <span>5 000</span> руб.
-                        </div>
-                    </div>
-                    <!--//pricing-card-->
-                </section>
-                <!-- End pricing__inner-2 -->
+                <!-- End pricing__wrap-2 -->
+                    <footer class="pricing-footer">
+                        <p>
+                            Турция:Мы в обязательном порядке учитываем специфику
+                            перевозимой продукции, обеспечивая все условия
+                            для транспортировки в соответствии с нормами.
+                        </p>
+                    </footer>
+                </div>
             </article>
-            <footer class="pricing-footer">
-                <p>
-                    Мы в обязательном порядке учитываем специфику
-                    перевозимой продукции, обеспечивая все условия
-                    для транспортировки в соответствии с нормами.
-                </p>
-            </footer>
         </div>
         <!-- //wrapper -->
         <div class="pricing-bottom-bg">
@@ -484,7 +547,7 @@
                                 +7 495 150-35-55
                             </span>
                         </div>
-                        <a href="#" class="contact-link">
+                        <a href="#js-modal-russianmap" class="contact-link js-show-modal">
                             показать на карте
                         </a>
                     </div>
@@ -507,7 +570,7 @@
                                 +7 495 150-35-55
                             </span>
                         </div>
-                        <a href="" class="contact-link">
+                        <a href="#js-modal-turkeymap" class="contact-link js-show-modal">
                             показать на карте
                         </a>
                     </div>
@@ -530,7 +593,7 @@
                                 +7 495 150-35-55
                             </span>
                         </div>
-                        <a href="" class="contact-link">
+                        <a href="#js-modal-chinamap" class="contact-link js-show-modal">
                             показать на карте
                         </a>
                     </div>
@@ -750,7 +813,7 @@
         <!-- End footer__wrap -->
         <div class="copyright">
             <div class="copyright__left">
-                <span class="copyright__date">©2020</span> Cargo One. All rights reserved.
+                <span class="copyright__date">&copy;2020</span> Cargo One. All rights reserved.
             </div>
             <div class="copyright__right">
                 Политика конфиденциальности
@@ -761,8 +824,68 @@
 </footer>
 <!-- End footer -->
 <a id="scroll_top" class="top-but" href="javascript:"></a>
-<!-- JS section -->
 
+<div class="modal js-modal" id="js-login-modal">
+    <h2>Заявка</h2>
+    <p>Здесь будет форма заявки...</p>
+    <a href="#" class="btn-close js-modal-close"><span class="visually-hidden">Close</span></a>
+</div>
+
+<div class="modal modal_lg js-modal" id="js-modal-russianmap">
+    <div id="map"></div>
+    <a href="#" class="btn-close js-modal-close"><span class="visually-hidden">Close</span></a>
+    <div class="contacts-map">
+        <p class="contacts-map__adr">
+            Москва, Россия, 117105 Нагорный проезд, 6 строение 6
+        </p>
+        <p class="contacts-map__phone">
+            +7 495 150-35-55
+        </p>
+        <p class="contacts-map__phone">
+            +7 495 150-35-55
+        </p>
+    </div>
+</div>
+
+<div class="modal modal_lg js-modal" id="js-modal-turkeymap">
+     <div id="map2"></div>
+    <h2>Карта оффиса в Турции</h2>
+    <!--<p>здесь будет карта Москва, Россия, 117105 Нагорный проезд, 6 строение 6    </p>-->
+    <div class="contacts-map">
+        <p class="contacts-map__adr">
+            Москва, Россия, 117105 Нагорный проезд, 6 строение 6
+        </p>
+        <p class="contacts-map__phone">
+            +7 495 150-35-55
+        </p>
+        <p class="contacts-map__phone">
+            +7 495 150-35-55
+        </p>
+    </div>
+    <a href="#" class="btn-close js-modal-close"><span class="visually-hidden">Close</span></a>
+</div>
+
+<div class="modal modal_lg js-modal" id="js-modal-chinamap">
+    <div id="map3"></div>
+    <h2>Карта оффиса в Китае</h2>
+    <div class="contacts-map">
+        <p class="contacts-map__adr">
+            Москва, Россия, 117105 Нагорный проезд, 6 строение 6
+        </p>
+        <p class="contacts-map__phone">
+            +7 495 150-35-55
+        </p>
+        <p class="contacts-map__phone">
+            +7 495 150-35-55
+        </p>
+    </div>
+    <!--<h2>Карта оффиса в Китае</h2>-->
+    <!--<p>здесь будет карта Пекин, КНР, 117105 Нагорный проезд, 6 строение 6    </p>-->
+    <a href="#" class="btn-close js-modal-close"><span class="visually-hidden">Close</span></a>
+</div>
+
+<!-- JS section -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
 <script src="js/main.min.js"></script>
 <script>
     var div = document.createElement('div');
@@ -776,11 +899,6 @@
     }
 </script>
 
-<noscript>
-    <div><img src="//mc.yandex.ru/watch/25346996" style="position:absolute; left:-9999px;" alt="" /></div>
-</noscript>
-<!-- /Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
-<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 
 </body>
 </html>
