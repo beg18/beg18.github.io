@@ -541,8 +541,8 @@ https://icomoon.io/
 
 @font-face {
     font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?fzjwo');
-  src: url('../fonts/icomoon.eot?fzjwo#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?fzjwo') format('truetype'), url('../fonts/icomoon.woff?fzjwo') format('woff'), url('../fonts/icomoon.svg?fzjwo#icomoon') format('svg');
+  src: url('fonts/icomoon.eot?fzjwo');
+  src: url('fonts/icomoon.eot?fzjwo#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?fzjwo') format('truetype'), url('fonts/icomoon.woff?fzjwo') format('woff'), url('fonts/icomoon.svg?fzjwo#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;

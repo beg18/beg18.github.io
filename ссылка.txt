@@ -1,7 +1,0 @@
-https://beg18.github.io/имя проекта:transport;lp;lp2.../
-https://beg18.github.io/transport/
-Имя пользователя: beg18-> git config -global name
-Email: beg_geb@mail.ru->  git config -global email
-Пароль: A1H2F3H4Sahs
-ссылка на gitHub IO->https://github.com/beg18/beg18.github.io
-ссылка на gitHub->   https://github.com/beg18/newStartSprites
