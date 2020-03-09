@@ -235,9 +235,9 @@ function init() {
 
     var neighborhoods = [
         // Main
-        {lat: 56.9472687, lng: 24.108269, title: 'Title 1', content: 'Text text text', icon: 'map-pin.png'},
-        {lat: 56.9473097, lng: 24.1101143, title: 'Title 2', content: 'Text text text2', icon: 'map-pin.png'},
-        {lat: 56.9472896, lng: 24.110705, title: 'Title 3', content: 'Text text text3', icon: 'map-pin.png'},
+        {lat: 56.9472687, lng: 24.108269, title: 'Title 1', content: 'Text text text'},
+        {lat: 56.9473097, lng: 24.1101143, title: 'Title 2', content: 'Text text text2'},
+        {lat: 56.9472896, lng: 24.110705, title: 'Title 3', content: 'Text text text3'},
     ];
 
     /* Info windows
@@ -254,10 +254,10 @@ function init() {
 
           var latlng = new google.maps.LatLng(neighborhoods[i].lat, neighborhoods[i].lng);
           var name = neighborhoods[i].title;
-          var icon = neighborhoods[i].icon;
+
           var content = neighborhoods[i].content;
 
-          createMarker(latlng, name, content, icon, i * 250);
+          createMarker(latlng, name, content, i * 250);
 
           // Marker’s Lat. and Lng. values are added to bounds variable
           bounds.extend(latlng);
@@ -266,16 +266,13 @@ function init() {
     }
 
 
-    function createMarker(latlng, title, content, icon, timeout) {
+    function createMarker(latlng, title, content,  timeout) {
 
         window.setTimeout(function() {
            var marker = new google.maps.Marker({
               map: map,
               position: latlng,
               clickable: true,
-              icon: {
-                url: "i/" + icon
-              },
               animation: google.maps.Animation.DROP
            });
 
