@@ -307,7 +307,8 @@ Table of Content
 
 /*
 .debug {
-    .debug(rgba(0, 0, 0, 0.5), 1px solid #ff0);
+    .debug(rgba(204, 0, 0, 0.5), 1px solid #ff0);
+    z-index: 10;
 }
 */
 
@@ -364,44 +365,6 @@ Table of Content
 }
 
 /*4. Font family
- @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700');
-
-.ff-segoe (@font-weight:400; @font-style: normal;){
-    font-family: "Segoe", @ff-s-serifArial;
-    font-weight: @font-weight;
-    font-style: @font-style;
-}
-
-.ff-raleway (@font-weight:400; @font-style: normal;){
-    font-family: "Raleway", @ff-s-serifArial;
-    font-weight: @font-weight;
-    font-style: @font-style;
-}
-
-.ff-PFCentroSlabPro (@font-weight:500; @font-style: normal;){
-    font-family: 'PF Centro Slab Pro', @ff-s-serifArial;
-    font-weight: @font-weight;
-    font-style: @font-style;
-}
-
-.ff-open-sans (@font-weight:400; @font-style: normal;){
-    font-family: "OpenSans", @ff-s-serifArial;
-    font-weight: @font-weight;
-    font-style: @font-style;
-}
-
-.ff-roboto (@font-weight:400; @font-style: normal;){
-    font-family: 'Roboto', @ff-s-serifArial;
-    font-weight: @font-weight;
-    font-style: @font-style;
-}
-
-.ff-pt-serif (@font-weight:400; @font-style: normal;){
-    font-family: 'PTSerif', @ff-s-serifArial;
-    font-weight: @font-weight;
-    font-style: @font-style;
-}
-
 ===========================*/
 
 /*5. Typography
@@ -453,26 +416,32 @@ h6 {
 }
 
 h1 {
+    font-size: 43px;
     font-size: 2.69rem;
 }
 
 h2 {
+    font-size: 34px;
     font-size: 2.13rem;
 }
 
 h3 {
+    font-size: 17px;
     font-size: 1.06rem;
 }
 
 h4 {
+    font-size: 16px;
     font-size: 1rem;
 }
 
 h5 {
+    font-size: 15px;
     font-size: 0.94rem;
 }
 
 h6 {
+    font-size: 13px;
     font-size: 0.81rem;
 }
 
@@ -501,18 +470,6 @@ fieldset {
     display: block;
     max-width: 100%;
     height: auto;
-}
-
-.parent {
-    background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7);
-}
-
-.js_left,
-.js_right,
-.js_up {
-    transition: 1s;
-    transition: all 1s ease-out;
-    transition-delay: 3s;
 }
 
 /*
@@ -796,16 +753,20 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-style: normal;
+    font-size: 48px;
     font-size: 3rem;
     color: #1b1b1b;
     line-height: 52px;
     line-height: 3.25rem;
+    letter-spacing: 0.96px;
+    letter-spacing: 0.06rem;
 }
 
 .section__descr {
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 20px;
     font-size: 1.25rem;
     margin-bottom: 11.04px;
     margin-bottom: 0.69rem;
@@ -816,14 +777,20 @@ https://icomoon.io/
     margin-top: 80px;
 }
 
+/*
+===============================================================
+HEADER
+===============================================================
+*/
+
 .header {
     background-color: #f4f8fb;
     position: relative;
 }
 
 .header-top {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 0px;
+    padding: 1.88rem 0rem;
     background-color: #fff;
     position: relative;
     z-index: 10;
@@ -853,14 +820,14 @@ https://icomoon.io/
 }
 
 .header-logo {
+    -ms-flex: 0 0 calc(25% - 2.5%);
+    flex: 0 0 calc(25% - 2.5%);
+    max-width: calc(25% - 2.5%);
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
     -ms-flex-positive: 1;
     flex-grow: 1;
     max-width: 100%;
-    -ms-flex: 0 0 calc(16.666666666666668% - 2.5%);
-    flex: 0 0 calc(16.666666666666668% - 2.5%);
-    max-width: calc(16.666666666666668% - 2.5%);
     position: relative;
     width: 100%;
     padding-left: 1.25%;
@@ -868,9 +835,9 @@ https://icomoon.io/
 }
 
 .header-menu {
-    -ms-flex: 0 0 calc(50% - 2.5%);
-    flex: 0 0 calc(50% - 2.5%);
-    max-width: calc(50% - 2.5%);
+    -ms-flex: 0 0 calc(41.667% - 2.5%);
+    flex: 0 0 calc(41.667% - 2.5%);
+    max-width: calc(41.667% - 2.5%);
     position: relative;
     width: 100%;
     padding-left: 1.25%;
@@ -896,9 +863,12 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 23px;
+    font-size: 1.44rem;
     color: #005eff;
     text-transform: uppercase;
+    letter-spacing: 0.46px;
+    letter-spacing: 0.03rem;
 }
 
 .header-contacts {
@@ -918,6 +888,7 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-style: normal;
+    font-size: 18px;
     font-size: 1.13rem;
     color: #1b1b1b;
     margin-bottom: 5px;
@@ -928,6 +899,7 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-style: normal;
+    font-size: 13px;
     font-size: 0.81rem;
     color: #1b1b1b;
     position: relative;
@@ -976,6 +948,7 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-style: normal;
+    font-size: 14px;
     font-size: 0.88rem;
     border-radius: 38px;
 }
@@ -1014,6 +987,13 @@ https://icomoon.io/
 }
 
 .header-slogan__content {
+    min-width: 300px;
+    min-width: 18.75rem;
+    max-width: 95%;
+    padding: 0 15px;
+    padding: 0 0.94rem;
+    box-sizing: border-box;
+    margin: 0 auto;
     padding: 25% 0;
     position: relative;
     z-index: 10;
@@ -1023,17 +1003,21 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 4.38rem;
+    font-size: 69px;
+    font-size: 4.31rem;
     margin-bottom: 11.04px;
     margin-bottom: 0.69rem;
     color: #fff;
     margin-bottom: 75px;
+    letter-spacing: 1.38px;
+    letter-spacing: 0.09rem;
 }
 
 .header-slogan__descr {
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 20px;
     font-size: 1.25rem;
     margin-bottom: 11.04px;
     margin-bottom: 0.69rem;
@@ -1041,14 +1025,20 @@ https://icomoon.io/
     line-height: 2.06rem;
     color: #fff;
     padding-right: 17.91666667%;
+    letter-spacing: 0.4px;
+    letter-spacing: 0.03rem;
 }
 
+/*
+===============================================================
+DELIVERY
+===============================================================
+*/
+
 .delivery {
-    padding-top: 64px;
-    padding-top: 4rem;
-    padding-bottom: 64px;
-    padding-bottom: 4rem;
     background-color: #f4f8fb;
+    padding: 50px 75px;
+    padding: 3.13rem 4.69rem;
 }
 
 .delivery__wrap {
@@ -1110,6 +1100,7 @@ https://icomoon.io/
     transform: translate(-50%, -50%);
     color: #6c6c6c;
     opacity: .6;
+    font-size: 40px;
     font-size: 2.5rem;
 }
 
@@ -1152,6 +1143,7 @@ https://icomoon.io/
     transform: translate(-50%, -50%);
     color: #6c6c6c;
     opacity: .6;
+    font-size: 40px;
     font-size: 2.5rem;
 }
 
@@ -1199,6 +1191,7 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-style: normal;
+    font-size: 26px;
     font-size: 1.63rem;
     line-height: 36px;
     line-height: 2.25rem;
@@ -1238,6 +1231,7 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-style: normal;
+    font-size: 28px;
     font-size: 1.75rem;
     color: #f4f8fb;
     position: absolute;
@@ -1248,13 +1242,17 @@ https://icomoon.io/
     z-index: 20;
 }
 
+/*
+===============================================================
+SUB-DELIVERY
+===============================================================
+*/
+
 .sub-delivery {
-    padding-top: 64px;
-    padding-top: 4rem;
-    padding-bottom: 64px;
-    padding-bottom: 4rem;
     position: relative;
     background-color: #f4f8fb;
+    padding: 75px 115px;
+    padding: 4.69rem 7.19rem;
 }
 
 .sub-delivery__wrap {
@@ -1320,6 +1318,7 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 20px;
     font-size: 1.25rem;
     color: #4e4e4e;
     line-height: 33px;
@@ -1426,10 +1425,13 @@ https://icomoon.io/
 
 .sub-delivery__link {
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: 19px;
+    font-size: 1.19rem;
     color: #4e4e4e;
     line-height: 33px;
     line-height: 2.06rem;
+    letter-spacing: 0.38px;
+    letter-spacing: 0.02rem;
 }
 
 .warranty-delivery .sub-delivery__block {
@@ -1535,62 +1537,44 @@ https://icomoon.io/
     opacity: 1;
 }
 
+/*
+===============================================================
+PRICING
+===============================================================
+*/
+
 .pricing {
     min-height: 1126px;
-    min-height: 70.38rem;
+    background-color: #cddfff;
     position: relative;
-    background-color: #bad3ff;
     margin-top: 50px;
 }
 
-.sec-top-line-bg {
+.pricing .svg--sec-top_bg__svg {
+    display: block;
     width: 100%;
-}
-
-.sec-top-line-bg .svg--sec-top-line-bg__svg {
-    width: 100%;
+    height: 100%;
     position: absolute;
     left: 50%;
-    top: -100px;
+    top: -585px;
     -ms-transform: translate(-50%);
     transform: translate(-50%);
-    height: 160px;
-    fill: #bad3ff;
-    stroke: #bad3ff;
-    stroke-width: 10px;
 }
 
-.pricing-bottom-bg {
+.pricing .svg--sec-bot_bg__svg {
+    display: block;
     width: 100%;
-}
-
-.pricing-bottom-bg .svg--sec-bottom-line-bg__svg {
-    width: 100%;
-    height: 200px;
-    height: 12.5rem;
+    height: 100%;
     position: absolute;
     left: 50%;
-    bottom: -135px;
-    transform: translate(-50%);
+    bottom: -600px;
     -ms-transform: translate(-50%);
-    fill: #bad3ff;
-    stroke: #bad3ff;
-    stroke-width: 10px;
-    z-index: 20;
+    transform: translate(-50%);
+    z-index: 50;
 }
 
-.pricing-bottom-bg .svg--sec-bottom-line-bg2__svg {
-    width: 100%;
-    position: absolute;
-    left: 45%;
-    bottom: -60px;
-    -ms-transform: translate(-50%);
-    transform: translate(-50%);
-    margin-top: -68px;
-    z-index: -20;
-    fill: #e8f0ff;
-    stroke: #e8f0ff;
-    stroke-width: 10px;
+#js_pricing {
+    position: relative;
 }
 
 .pricing__header {
@@ -1625,6 +1609,7 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-style: normal;
+    font-size: 50px;
     font-size: 3.13rem;
     color: #1b1b1b;
 }
@@ -1647,7 +1632,7 @@ https://icomoon.io/
     border-radius: 20px;
     position: absolute;
     right: 30px;
-    top: 30px;
+    top: -100px;
 }
 
 .pricing__descr::before {
@@ -1691,6 +1676,7 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 20px;
     font-size: 1.25rem;
     color: #4e4e4e;
 }
@@ -1708,6 +1694,7 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 20px;
     font-size: 1.25rem;
     line-height: 20px;
     line-height: 1.25rem;
@@ -1726,6 +1713,7 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 20px;
     font-size: 1.25rem;
     line-height: 20px;
     line-height: 1.25rem;
@@ -1866,6 +1854,7 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 30px;
     font-size: 1.88rem;
     line-height: 44px;
     line-height: 2.75rem;
@@ -1876,6 +1865,7 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 30px;
     font-size: 1.88rem;
     line-height: 44px;
     line-height: 2.75rem;
@@ -1886,6 +1876,7 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 30px;
     font-size: 1.88rem;
     line-height: 44px;
     line-height: 2.75rem;
@@ -1911,18 +1902,25 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 20px;
     font-size: 1.25rem;
     line-height: 34px;
     line-height: 2.13rem;
     color: #4e4e4e;
 }
 
+/*
+===============================================================
+PAPERWORK
+===============================================================
+*/
+
 .paperwork {
     min-height: 1550px;
     min-height: 96.88rem;
-    padding-top: 140px;
     background-color: #f4f8fb;
     position: relative;
+    padding: 200px 0  30px 0;
 }
 
 .paperwork .section__header {
@@ -1941,29 +1939,13 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 20px;
     font-size: 1.25rem;
     line-height: 26px;
     line-height: 1.63rem;
     color: #1c1c1c;
     margin-top: 0;
     text-align: center;
-  /*
-    .lg-block({
-      .rem-size(18);
-      .line-height-rem(30);
-      margin-top: 70px;
-    });
-    .md-block({
-      .rem-size(17);
-      .line-height-rem(24);
-      margin-top: 60px;
-    });
-    .sm-block({
-      .rem-size(16);
-      .line-height-rem(22);
-      margin-top: 40px;
-    });
-*/
 }
 
 .paperwork .sub-delivery__wrap {
@@ -2017,13 +1999,12 @@ https://icomoon.io/
 .paperwork .sub-delivery__item {
     padding-left: 17.91666667%;
     position: relative;
-    margin-top: 64px;
-    margin-top: 4rem;
-    margin-bottom: 64px;
-    margin-bottom: 4rem;
+    margin: 64px 0px;
+    margin: 4rem 0rem;
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 20px;
     font-size: 1.25rem;
     color: #4e4e4e;
     line-height: 33px;
@@ -2130,6 +2111,7 @@ https://icomoon.io/
 
 .paperwork .sub-delivery__link {
     text-decoration: none;
+    font-size: 20px;
     font-size: 1.25rem;
     color: #4e4e4e;
     line-height: 33px;
@@ -2146,42 +2128,47 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-style: normal;
+    font-size: 48px;
     font-size: 3rem;
     line-height: 62px;
     line-height: 3.88rem;
     color: #1b1b1b;
 }
 
+/*
+===============================================================
+CONTACTS
+===============================================================
+*/
+
 .contacts {
-    padding: 80px 0;
     position: relative;
-    min-height: 870px;
-    min-height: 54.38rem;
-    background-color: #eaf2fc;
+    min-height: 680px;
+    min-height: 42.5rem;
+    background-color: #e8f0ff;
+    padding: 20px 0 20px 0;
 }
 
-.contacts .svg--contact-top_bg__svg {
+.contacts .svg--contacts-top_bg__svg {
+    display: block;
     width: 100%;
-    height: 115px;
+    height: 100%;
     position: absolute;
-    left: 0;
-    right: 0;
-    top: -65px;
-    fill: #eaf2fc;
-    stroke: #eaf2fc;
-    stroke-width: 10px;
+    left: 50%;
+    top: -365px;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
 }
 
-.contacts .svg--contact-bot_bg__svg {
+.contacts .svg--contacts-bot_bg__svg {
+    display: block;
     width: 100%;
-    height: 184px;
+    height: 100%;
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -104px;
-    fill: #eaf2fc;
-    stroke: #eaf2fc;
-    stroke-width: 10px;
+    left: 50%;
+    bottom: -365px;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
 }
 
 .contacts .wrapper {
@@ -2198,6 +2185,7 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 20px;
     font-size: 1.25rem;
     margin-bottom: 11.04px;
     margin-bottom: 0.69rem;
@@ -2241,6 +2229,7 @@ https://icomoon.io/
 }
 
 .contact-item__title {
+    font-size: 28px;
     font-size: 1.75rem;
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 800;
@@ -2255,6 +2244,7 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 20px;
     font-size: 1.25rem;
     line-height: 24px;
     line-height: 1.5rem;
@@ -2274,6 +2264,7 @@ https://icomoon.io/
 
 .contact-item__phons span {
     display: block;
+    font-size: 28px;
     font-size: 1.75rem;
     line-height: 36px;
     line-height: 2.25rem;
@@ -2285,6 +2276,7 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 20px;
     font-size: 1.25rem;
     line-height: 24px;
     line-height: 1.5rem;
@@ -2299,8 +2291,14 @@ https://icomoon.io/
     text-decoration: none;
 }
 
+/*
+===============================================================
+WORK-WITH-CLIENTS
+===============================================================
+*/
+
 .work-with-clients {
-    padding: 100px 0;
+    padding: 180px 0 110px 0;
 }
 
 .work-with-clients .section__header {
@@ -2355,6 +2353,7 @@ https://icomoon.io/
     transform: translate(-50%, -50%);
     color: #6c6c6c;
     opacity: .6;
+    font-size: 40px;
     font-size: 2.5rem;
 }
 
@@ -2397,6 +2396,7 @@ https://icomoon.io/
     transform: translate(-50%, -50%);
     color: #6c6c6c;
     opacity: .6;
+    font-size: 40px;
     font-size: 2.5rem;
 }
 
@@ -2412,27 +2412,81 @@ https://icomoon.io/
     background-image: linear-gradient(-18deg, rgba(160, 118, 63, 0.52) 0%, transparent 100%);
 }
 
+/*
+===============================================================
+FEEDBACK
+===============================================================
+*/
+
 .feedback {
-    min-height: 615px;
-    min-height: 38.44rem;
-    background-image: url('../i/@2x/feedback_bg.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    padding-top: 115px;
-    padding-bottom: 160px;
+    min-height: 460px;
+    min-height: 28.75rem;
+    overflow: hidden;
+    margin: 55px 0px;
+    margin: 3.44rem 0rem;
+    padding: 80px 0px;
+    padding: 5rem 0rem;
+    position: relative;
+    z-index: 10;
+}
+
+.feedback .wrapper {
+    position: relative;
+    z-index: 60;
 }
 
 .feedback .section__header {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     padding-left: 17.91666667%;
     padding-right: 17.91666667%;
 }
 
 .feedback .section__descr {
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.feedback::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 300px;
+    height: 18.75rem;
+    background-color: rgba(205, 223, 255, 0.5);
+    background-image: url('../i/@2x/feedback.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.feedback .svg--feedback-top__svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: -180px;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+}
+
+.feedback .svg--feedback-bot__svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: -189px;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
 }
 
 .feeback-form__contents {
@@ -2481,12 +2535,13 @@ https://icomoon.io/
 .feeback-form__inp {
     border: none;
     width: 100%;
-    height: 75px;
+    height: 65px;
     background-color: white;
     border-radius: 38px;
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 15px;
     font-size: 0.94rem;
     letter-spacing: 0.6px;
     letter-spacing: 0.04rem;
@@ -2503,10 +2558,10 @@ https://icomoon.io/
     display: inline-block;
     vertical-align: middle;
     white-space: nowrap;
-    height: 75px;
-    height: 4.69rem;
-    line-height: 75px;
-    line-height: 4.69rem;
+    height: 65px;
+    height: 4.06rem;
+    line-height: 65px;
+    line-height: 4.06rem;
     padding: 0 100px;
     padding: 0 6.25rem;
     box-sizing: border-box;
@@ -2518,6 +2573,7 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-style: normal;
+    font-size: 15px;
     font-size: 0.94rem;
     letter-spacing: 0.6px;
     letter-spacing: 0.04rem;
@@ -2535,8 +2591,14 @@ https://icomoon.io/
     color: #e6e6e6;
 }
 
+/*
+===============================================================
+CLIENTS
+===============================================================
+*/
+
 .clients {
-    padding: 120px 0;
+    padding: 64px 0 50px 0;
 }
 
 .clients__list {
@@ -2587,28 +2649,40 @@ https://icomoon.io/
 }
 
 .clients__link .icon-clients-1 {
+    font-size: 24px;
     font-size: 1.5rem;
 }
 
 .clients__link .icon-clients-2 {
+    font-size: 80px;
     font-size: 5rem;
 }
 
 .clients__link .icon-clients-3 {
+    font-size: 80px;
     font-size: 5rem;
 }
 
 .clients__link .icon-clients-4 {
+    font-size: 80px;
     font-size: 5rem;
 }
 
 .clients__link .icon-clients-5 {
+    font-size: 26px;
     font-size: 1.63rem;
 }
 
 .clients__link .icon-clients-6 {
+    font-size: 80px;
     font-size: 5rem;
 }
+
+/*
+===============================================================
+FOOTER
+===============================================================
+*/
 
 .footer {
     background-color: #f4f8fb;
@@ -2625,16 +2699,15 @@ https://icomoon.io/
     justify-content: space-between;
     -ms-flex-align: center !important;
     align-items: center !important;
-    padding: 80px 0;
+    padding: 35px 0px;
+    padding: 2.19rem 0rem;
 }
 
 .footer-logo {
     margin-top: 45px;
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    max-width: 100%;
+    -ms-flex: 0 0 calc(16.667% - 2.5%);
+    flex: 0 0 calc(16.667% - 2.5%);
+    max-width: calc(16.667% - 2.5%);
     position: relative;
     width: 100%;
     padding-left: 1.25%;
@@ -2647,7 +2720,6 @@ https://icomoon.io/
     margin-right: -1.25%;
     font-size: 0;
     text-align: center;
-    padding-right: 60px;
 }
 
 .logo__item {
@@ -2663,6 +2735,7 @@ https://icomoon.io/
     font-family: 'icomoon' !important;
     font-weight: 400;
     font-style: normal;
+    font-size: 24px;
     font-size: 1.5rem;
     color: #3c5896;
     position: relative;
@@ -2727,6 +2800,7 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-style: normal;
+    font-size: 20px;
     font-size: 1.25rem;
     color: #2f2f2f;
 }
@@ -2766,6 +2840,7 @@ https://icomoon.io/
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-style: normal;
+    font-size: 20px;
     font-size: 1.25rem;
     color: #1b1b1b;
 }
@@ -2788,45 +2863,15 @@ https://icomoon.io/
     text-decoration: none;
 }
 
+/*
+===============================================================
+MENU
+===============================================================
+*/
+
 .menu {
     padding: 0 20px;
     position: relative;
-}
-
-.search {
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%);
-}
-
-.search input {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.search input[type=image] {
-    margin: 0 15px;
-}
-
-.search-txt {
-    width: 150px;
-    width: 9.38rem;
-    height: 25px;
-    height: 1.56rem;
-    background-color: #000;
-    border: 1px solid #b0b1b1;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6), inset 0 1px 3px rgba(0, 0, 0, 0.3);
-    border-radius: 16px;
-    text-indent: 10px;
-    font-size: 0.75rem;
-    color: #959595;
-    line-height: 25px;
-    line-height: 1.56rem;
-    font-family: 'Gilroy', Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 .menu__list {
@@ -2843,6 +2888,7 @@ https://icomoon.io/
     text-decoration: none;
     display: block;
     padding: 7px 15px;
+    font-size: 14px;
     font-size: 0.88rem;
     color: #1b1b1b;
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
@@ -2850,6 +2896,8 @@ https://icomoon.io/
     font-style: normal;
     text-transform: uppercase;
     transition: color .3s linear;
+    letter-spacing: 1.12px;
+    letter-spacing: 0.07rem;
 }
 
 .menu__link:hover {
@@ -2891,19 +2939,11 @@ https://icomoon.io/
     background-color: #000;
 }
 
-html {
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-decoration: none;
-}
+/*
+===============================================================
+FOOTER MENU
+===============================================================
+*/
 
 .header-nav,
 .footer-nav {
@@ -2955,6 +2995,7 @@ nav #brand a:hover {
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-style: normal;
+    font-size: 12px;
     font-size: 0.75rem;
     letter-spacing: 1.2px;
     letter-spacing: 0.07rem;
@@ -3021,17 +3062,17 @@ nav #brand a:hover {
 }
 
 #resize #resize-menu {
-    height: 50px;
+    height: 30px;
     display: table-cell;
     vertical-align: middle;
 }
 
 #resize #resize-menu li {
     display: block;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
-    font-size: 50px;
-    min-height: 50px;
+    font-size: 30px;
+    min-height: 30px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease-out;
@@ -3039,10 +3080,10 @@ nav #brand a:hover {
 
 #resize #resize-menu li .footer-accaunt {
     display: block;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
-    font-size: 50px;
-    min-height: 50px;
+    font-size: 30px;
+    min-height: 30px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease-out;
@@ -3065,6 +3106,12 @@ nav #brand a:hover {
     visibility: visible;
     opacity: 0.99;
 }
+
+/*
+===============================================================
+MODALS
+===============================================================
+*/
 
 .overlay {
     width: 100%;
@@ -3205,6 +3252,7 @@ nav #brand a:hover {
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 22px;
     font-size: 1.38rem;
     line-height: 36px;
     line-height: 2.25rem;
@@ -3219,6 +3267,7 @@ nav #brand a:hover {
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 30px;
     font-size: 1.88rem;
     line-height: 40px;
     line-height: 2.5rem;
@@ -3280,12 +3329,16 @@ nav #brand a:hover {
     }
 
     .section__title {
+        font-size: 42px;
         font-size: 2.63rem;
         line-height: 48px;
         line-height: 3rem;
+        letter-spacing: 0.84px;
+        letter-spacing: 0.05rem;
     }
 
     .section__descr {
+        font-size: 18px;
         font-size: 1.13rem;
         line-height: 30px;
         line-height: 1.88rem;
@@ -3334,12 +3387,16 @@ nav #brand a:hover {
     }
 
     .header-slogan__title {
-        font-size: 3.44rem;
+        font-size: 64px;
+        font-size: 4rem;
         margin-bottom: 11.04px;
         margin-bottom: 0.69rem;
+        letter-spacing: 1.28px;
+        letter-spacing: 0.08rem;
     }
 
     .delivery-text p {
+        font-size: 22px;
         font-size: 1.38rem;
     }
 
@@ -3361,15 +3418,17 @@ nav #brand a:hover {
     }
 
     .pricing {
-        min-height: 970px;
-        min-height: 60.63rem;
+        padding: 75px 0px;
+        padding: 4.69rem 0rem;
     }
 
-    .pricing-bottom-bg .svg--sec-bottom-line-bg__svg {
-        bottom: -125px;
+    .pricing {
+        min-height: 780px;
+        min-height: 48.75rem;
     }
 
     .pricing__title {
+        font-size: 45px;
         font-size: 2.81rem;
     }
 
@@ -3401,18 +3460,21 @@ nav #brand a:hover {
     }
 
     .pricing-card__term {
+        font-size: 26px;
         font-size: 1.63rem;
         line-height: 40px;
         line-height: 2.5rem;
     }
 
     .pricing-card__weight {
+        font-size: 26px;
         font-size: 1.63rem;
         line-height: 40px;
         line-height: 2.5rem;
     }
 
     .pricing-card__price {
+        font-size: 26px;
         font-size: 1.63rem;
         line-height: 40px;
         line-height: 2.5rem;
@@ -3436,15 +3498,30 @@ nav #brand a:hover {
     }
 
     .paperwork__title {
+        font-size: 42px;
         font-size: 2.63rem;
         line-height: 48px;
         line-height: 3rem;
     }
 
+    .contacts {
+        padding: 75px 0px;
+        padding: 4.69rem 0rem;
+    }
+
     .contacts .section__descr {
+        font-size: 18px;
         font-size: 1.13rem;
         line-height: 30px;
         line-height: 1.88rem;
+    }
+
+    .feedback {
+        background-color: #cddfff;
+    }
+
+    .feedback:before {
+        background-image: none;
     }
 
     .feeback-form__group {
@@ -3500,10 +3577,6 @@ nav #brand a:hover {
         -ms-flex: 0 0 calc(33.333% - 2.5%);
         flex: 0 0 calc(33.333% - 2.5%);
         max-width: calc(33.333% - 2.5%);
-    }
-
-    .search {
-        display: none;
     }
 
     .menu__list {
@@ -3575,6 +3648,32 @@ nav #brand a:hover {
     }
 }
 
+@media (max-width: 1170px) {
+    .pricing .svg--sec-top_bg__svg {
+        display: none;
+    }
+
+    .pricing .svg--sec-bot_bg__svg {
+        display: none;
+    }
+
+    .contacts .svg--contacts-top_bg__svg {
+        display: none;
+    }
+
+    .contacts .svg--contacts-bot_bg__svg {
+        display: none;
+    }
+
+    .feedback .svg--feedback-top__svg {
+        display: none;
+    }
+
+    .feedback .svg--feedback-bot__svg {
+        display: none;
+    }
+}
+
 @media (max-width: 1100px) {
     #toggle {
         visibility: visible;
@@ -3599,12 +3698,16 @@ nav #brand a:hover {
     }
 
     .section__title {
+        font-size: 38px;
         font-size: 2.38rem;
         line-height: 44px;
         line-height: 2.75rem;
+        letter-spacing: 0.76px;
+        letter-spacing: 0.05rem;
     }
 
     .section__descr {
+        font-size: 17px;
         font-size: 1.06rem;
         line-height: 24px;
         line-height: 1.5rem;
@@ -3633,15 +3736,21 @@ nav #brand a:hover {
     }
 
     .header-slogan__title {
-        font-size: 2.81rem;
+        font-size: 58px;
+        font-size: 3.63rem;
         margin-bottom: 11.04px;
         margin-bottom: 0.69rem;
+        letter-spacing: 1.16px;
+        letter-spacing: 0.07rem;
     }
 
     .header-slogan__descr {
+        font-size: 18px;
         font-size: 1.13rem;
         margin-bottom: 11.04px;
         margin-bottom: 0.69rem;
+        letter-spacing: 0.36px;
+        letter-spacing: 0.02rem;
     }
 
     .header-slogan__descr {
@@ -3678,9 +3787,9 @@ nav #brand a:hover {
         margin-bottom: 5.63rem;
     }
 
-    .sec-top-line-bg .svg--sec-top-line-bg__svg {
-        top: -85px;
-        height: 140px;
+    .pricing {
+        padding: 60px 0px;
+        padding: 3.75rem 0rem;
     }
 
     .pricing__header {
@@ -3689,6 +3798,7 @@ nav #brand a:hover {
     }
 
     .pricing__title {
+        font-size: 40px;
         font-size: 2.5rem;
         text-align: center;
     }
@@ -3735,37 +3845,45 @@ nav #brand a:hover {
     }
 
     .pricing-card__term {
+        font-size: 22px;
         font-size: 1.38rem;
         line-height: 36px;
         line-height: 2.25rem;
     }
 
     .pricing-card__weight {
+        font-size: 22px;
         font-size: 1.38rem;
         line-height: 36px;
         line-height: 2.25rem;
     }
 
     .pricing-card__price {
+        font-size: 22px;
         font-size: 1.38rem;
         line-height: 36px;
         line-height: 2.25rem;
     }
 
     .paperwork {
-        padding-top: 64px;
-        padding-top: 4rem;
-        padding-bottom: 64px;
-        padding-bottom: 4rem;
+        padding: 64px 0px;
+        padding: 4rem 0rem;
     }
 
     .paperwork__title {
+        font-size: 38px;
         font-size: 2.38rem;
         line-height: 44px;
         line-height: 2.75rem;
     }
 
+    .contacts {
+        padding: 60px 0px;
+        padding: 3.75rem 0rem;
+    }
+
     .contacts .section__descr {
+        font-size: 17px;
         font-size: 1.06rem;
         line-height: 24px;
         line-height: 1.5rem;
@@ -3781,6 +3899,11 @@ nav #brand a:hover {
 
     .contacts-of__china {
         padding-right: 1.25%;
+    }
+
+    .work-with-clients {
+        padding: 64px 0px;
+        padding: 4rem 0rem;
     }
 
     .work-with-clients .delivery__item--1 .delivery-arrow {
@@ -3809,10 +3932,13 @@ nav #brand a:hover {
     }
 
     .feedback {
-        padding-top: 64px;
-        padding-top: 4rem;
-        padding-bottom: 64px;
-        padding-bottom: 4rem;
+        margin: 20px 0px;
+        margin: 1.25rem 0rem;
+    }
+
+    .feedback {
+        padding: 64px 0px;
+        padding: 4rem 0rem;
     }
 
     .feeback-form__contents {
@@ -3837,10 +3963,8 @@ nav #brand a:hover {
     }
 
     .clients {
-        padding-top: 64px;
-        padding-top: 4rem;
-        padding-bottom: 64px;
-        padding-bottom: 4rem;
+        padding: 64px 0px;
+        padding: 4rem 0rem;
     }
 
     .footer-menu {
@@ -3870,12 +3994,16 @@ nav #brand a:hover {
     }
 
     .section__title {
+        font-size: 32px;
         font-size: 2rem;
         line-height: 38px;
         line-height: 2.38rem;
+        letter-spacing: 0.64px;
+        letter-spacing: 0.04rem;
     }
 
     .section__descr {
+        font-size: 16px;
         font-size: 1rem;
         line-height: 22px;
         line-height: 1.38rem;
@@ -3910,9 +4038,12 @@ nav #brand a:hover {
     }
 
     .header-slogan__title {
-        font-size: 2.19rem;
+        font-size: 52px;
+        font-size: 3.25rem;
         margin-bottom: 11.04px;
         margin-bottom: 0.69rem;
+        letter-spacing: 1.04px;
+        letter-spacing: 0.07rem;
     }
 
     .header-slogan__descr {
@@ -3920,10 +4051,8 @@ nav #brand a:hover {
     }
 
     .delivery {
-        padding-top: 48px;
-        padding-top: 3rem;
-        padding-bottom: 48px;
-        padding-bottom: 3rem;
+        padding: 48px 0px;
+        padding: 3rem 0rem;
     }
 
     .delivery__item {
@@ -3932,10 +4061,8 @@ nav #brand a:hover {
     }
 
     .sub-delivery {
-        padding-top: 48px;
-        padding-top: 3rem;
-        padding-bottom: 48px;
-        padding-bottom: 3rem;
+        padding: 48px 0px;
+        padding: 3rem 0rem;
     }
 
     .sub-delivery__block::after {
@@ -4037,14 +4164,9 @@ nav #brand a:hover {
         transform: translate(-50%);
     }
 
-    .sec-top-line-bg .svg--sec-top-line-bg__svg {
-        top: -60px;
-        height: 105px;
-    }
-
-    .pricing-bottom-bg .svg--sec-bottom-line-bg__svg {
-        height: 195px;
-        bottom: -113px;
+    .pricing {
+        padding: 50px 0px;
+        padding: 3.13rem 0rem;
     }
 
     .pricing__title {
@@ -4116,10 +4238,8 @@ nav #brand a:hover {
     }
 
     .paperwork {
-        padding-top: 48px;
-        padding-top: 3rem;
-        padding-bottom: 48px;
-        padding-bottom: 3rem;
+        padding: 48px 0px;
+        padding: 3rem 0rem;
     }
 
     .paperwork .section__header {
@@ -4202,19 +4322,19 @@ nav #brand a:hover {
     }
 
     .paperwork__title {
+        font-size: 32px;
         font-size: 2rem;
         line-height: 38px;
         line-height: 2.38rem;
     }
 
     .contacts {
-        padding-top: 48px;
-        padding-top: 3rem;
-        padding-bottom: 48px;
-        padding-bottom: 3rem;
+        padding: 50px 0px;
+        padding: 3.13rem 0rem;
     }
 
     .contacts .section__descr {
+        font-size: 16px;
         font-size: 1rem;
         line-height: 22px;
         line-height: 1.38rem;
@@ -4234,16 +4354,19 @@ nav #brand a:hover {
         margin-bottom: 1.88rem;
     }
 
+    .work-with-clients {
+        padding: 48px 0px;
+        padding: 3rem 0rem;
+    }
+
     .work-with-clients .delivery__item {
         margin-bottom: 30px;
         margin-bottom: 1.88rem;
     }
 
     .feedback {
-        padding-top: 48px;
-        padding-top: 3rem;
-        padding-bottom: 48px;
-        padding-bottom: 3rem;
+        padding: 48px 0px;
+        padding: 3rem 0rem;
     }
 
     .feedback .section__header {
@@ -4251,17 +4374,15 @@ nav #brand a:hover {
         padding-right: 1.25%;
     }
 
+    .clients {
+        padding: 48px 0px;
+        padding: 3rem 0rem;
+    }
+
     .clients__item {
         -ms-flex: 0 0 calc(50% - 2.5%);
         flex: 0 0 calc(50% - 2.5%);
         max-width: calc(50% - 2.5%);
-    }
-
-    .footer__wrap {
-        padding-top: 48px;
-        padding-top: 3rem;
-        padding-bottom: 48px;
-        padding-bottom: 3rem;
     }
 
     .footer-menu {
@@ -4324,23 +4445,13 @@ nav #brand a:hover {
     }
 
     #resize #resize-menu li .footer-accaunt {
-        font-size: 40px;
-        min-height: 40px;
+        font-size: 28px;
+        min-height: 28px;
     }
 
     #resize #resize-menu li {
-        font-size: 40px;
-        min-height: 40px;
-    }
-}
-
-@media (max-width: 768px) {
-    .pricing-bottom-bg .svg--sec-bottom-line-bg__svg {
-        display: none;
-    }
-
-    .pricing-bottom-bg .svg--sec-bottom-line-bg2__svg {
-        display: none;
+        font-size: 28px;
+        min-height: 28px;
     }
 }
 
@@ -4350,9 +4461,12 @@ nav #brand a:hover {
     }
 
     .section__title {
+        font-size: 26px;
         font-size: 1.63rem;
         line-height: 32px;
         line-height: 2rem;
+        letter-spacing: 0.52px;
+        letter-spacing: 0.03rem;
     }
 
     .header-slogan {
@@ -4361,23 +4475,17 @@ nav #brand a:hover {
     }
 
     .header-slogan__title {
-        font-size: 1.75rem;
+        font-size: 36px;
+        font-size: 2.25rem;
         margin-bottom: 11.04px;
         margin-bottom: 0.69rem;
+        letter-spacing: 0.72px;
+        letter-spacing: 0.04rem;
     }
 
     .delivery {
-        padding-top: 32px;
-        padding-top: 2rem;
-        padding-bottom: 32px;
-        padding-bottom: 2rem;
-    }
-
-    .delivery {
-        padding-top: 24px;
-        padding-top: 1.5rem;
-        padding-bottom: 24px;
-        padding-bottom: 1.5rem;
+        padding: 32px 0px;
+        padding: 2rem 0rem;
     }
 
     .delivery__item {
@@ -4389,22 +4497,8 @@ nav #brand a:hover {
     }
 
     .sub-delivery {
-        padding-top: 32px;
-        padding-top: 2rem;
-        padding-bottom: 32px;
-        padding-bottom: 2rem;
-    }
-
-    .sub-delivery {
-        padding-top: 24px;
-        padding-top: 1.5rem;
-        padding-bottom: 24px;
-        padding-bottom: 1.5rem;
-    }
-
-    .sec-top-line-bg .svg--sec-top-line-bg__svg {
-        top: -45px;
-        height: 80px;
+        padding: 32px 0px;
+        padding: 2rem 0rem;
     }
 
     .pricing__descr {
@@ -4446,41 +4540,29 @@ nav #brand a:hover {
     }
 
     .paperwork {
-        padding-top: 32px;
-        padding-top: 2rem;
-        padding-bottom: 32px;
-        padding-bottom: 2rem;
-    }
-
-    .paperwork {
-        padding-top: 24px;
-        padding-top: 1.5rem;
-        padding-bottom: 24px;
-        padding-bottom: 1.5rem;
+        padding: 32px 0px;
+        padding: 2rem 0rem;
     }
 
     .paperwork__title {
+        font-size: 26px;
         font-size: 1.63rem;
         line-height: 32px;
         line-height: 2rem;
     }
 
     .contacts {
-        padding-top: 32px;
-        padding-top: 2rem;
-        padding-bottom: 32px;
-        padding-bottom: 2rem;
-    }
-
-    .contacts {
-        padding-top: 24px;
-        padding-top: 1.5rem;
-        padding-bottom: 24px;
-        padding-bottom: 1.5rem;
+        padding: 32px 0px;
+        padding: 2rem 0rem;
     }
 
     .contacts__inner {
         width: 80.83333333%;
+    }
+
+    .work-with-clients {
+        padding: 32px 0px;
+        padding: 2rem 0rem;
     }
 
     .work-with-clients .delivery__item {
@@ -4488,10 +4570,8 @@ nav #brand a:hover {
     }
 
     .feedback {
-        padding-top: 32px;
-        padding-top: 2rem;
-        padding-bottom: 32px;
-        padding-bottom: 2rem;
+        padding: 32px 0px;
+        padding: 2rem 0rem;
     }
 
     .feeback-form__group {
@@ -4504,6 +4584,11 @@ nav #brand a:hover {
         -ms-flex: 0 0 calc(83.333% - 2.5%);
         flex: 0 0 calc(83.333% - 2.5%);
         max-width: calc(83.333% - 2.5%);
+    }
+
+    .clients {
+        padding: 32px 0px;
+        padding: 2rem 0rem;
     }
 
     .clients__list {
@@ -4525,51 +4610,43 @@ nav #brand a:hover {
     }
 
     .clients__link .icon-clients-1 {
+        font-size: 36px;
         font-size: 2.25rem;
     }
 
     .clients__link .icon-clients-2 {
+        font-size: 120px;
         font-size: 7.5rem;
     }
 
     .clients__link .icon-clients-3 {
+        font-size: 120px;
         font-size: 7.5rem;
     }
 
     .clients__link .icon-clients-4 {
+        font-size: 120px;
         font-size: 7.5rem;
     }
 
     .clients__link .icon-clients-5 {
+        font-size: 40px;
         font-size: 2.5rem;
     }
 
     .clients__link .icon-clients-6 {
+        font-size: 120px;
         font-size: 7.5rem;
     }
 
-    .footer__wrap {
-        padding-top: 32px;
-        padding-top: 2rem;
-        padding-bottom: 32px;
-        padding-bottom: 2rem;
-    }
-
-    .footer__wrap {
-        padding-top: 24px;
-        padding-top: 1.5rem;
-        padding-bottom: 24px;
-        padding-bottom: 1.5rem;
-    }
-
     #resize #resize-menu li .footer-accaunt {
-        font-size: 30px;
-        min-height: 30px;
+        font-size: 26px;
+        min-height: 26px;
     }
 
     #resize #resize-menu li {
-        font-size: 30px;
-        min-height: 30px;
+        font-size: 26px;
+        min-height: 26px;
     }
 }
 
@@ -4647,11 +4724,6 @@ nav #brand a:hover {
         width: 97.5%;
     }
 
-    .sec-top-line-bg .svg--sec-top-line-bg__svg {
-        top: -27px;
-        height: 55px;
-    }
-
     .pricing__descr {
         -ms-flex: 0 0 calc(100% - 2.5%);
         flex: 0 0 calc(100% - 2.5%);
@@ -4670,6 +4742,11 @@ nav #brand a:hover {
     .pricing-card__right .pricing-airplane {
         top: 507px;
         right: -370px;
+    }
+
+    .contacts {
+        padding: 24px 0px;
+        padding: 1.5rem 0rem;
     }
 
     .work-with-clients .delivery__item {
@@ -4701,12 +4778,12 @@ nav #brand a:hover {
     }
 
     #resize #resize-menu li .footer-accaunt {
-        font-size: 25px;
-        min-height: 25px;
+        font-size: 24px;
+        min-height: 24px;
     }
 
     #resize #resize-menu li {
-        font-size: 25px;
-        min-height: 25px;
+        font-size: 24px;
+        min-height: 24px;
     }
 }

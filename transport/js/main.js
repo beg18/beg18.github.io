@@ -50,7 +50,6 @@ $(function(){
     $(document).ready(function() {
         $.preloadImages(
             "main_bg.png",
-            "contact_bg.png",
             "delivery-img-1.jpg",
             "delivery-img-2.jpg",
             "delivery-img-3.jpg",

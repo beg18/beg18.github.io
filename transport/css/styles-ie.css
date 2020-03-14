@@ -308,7 +308,8 @@ Table of Content
 
 /*
 .debug {
-    .debug(rgba(0, 0, 0, 0.5), 1px solid #ff0);
+    .debug(rgba(204, 0, 0, 0.5), 1px solid #ff0);
+    z-index: 10;
 }
 */
 
@@ -322,8 +323,8 @@ Table of Content
 .wrapper {
     max-width: 1560px;
     margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0px 30px;
+    padding: 0rem 1.88rem;
 }
 
 .visually-hidden {
@@ -365,44 +366,6 @@ Table of Content
 }
 
 /*4. Font family
- @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700');
-
-.ff-segoe (@font-weight:400; @font-style: normal;){
-    font-family: "Segoe", @ff-s-serifArial;
-    font-weight: @font-weight;
-    font-style: @font-style;
-}
-
-.ff-raleway (@font-weight:400; @font-style: normal;){
-    font-family: "Raleway", @ff-s-serifArial;
-    font-weight: @font-weight;
-    font-style: @font-style;
-}
-
-.ff-PFCentroSlabPro (@font-weight:500; @font-style: normal;){
-    font-family: 'PF Centro Slab Pro', @ff-s-serifArial;
-    font-weight: @font-weight;
-    font-style: @font-style;
-}
-
-.ff-open-sans (@font-weight:400; @font-style: normal;){
-    font-family: "OpenSans", @ff-s-serifArial;
-    font-weight: @font-weight;
-    font-style: @font-style;
-}
-
-.ff-roboto (@font-weight:400; @font-style: normal;){
-    font-family: 'Roboto', @ff-s-serifArial;
-    font-weight: @font-weight;
-    font-style: @font-style;
-}
-
-.ff-pt-serif (@font-weight:400; @font-style: normal;){
-    font-family: 'PTSerif', @ff-s-serifArial;
-    font-weight: @font-weight;
-    font-style: @font-style;
-}
-
 ===========================*/
 
 /*5. Typography
@@ -454,26 +417,32 @@ h6 {
 }
 
 h1 {
+    font-size: 43px;
     font-size: 2.69rem;
 }
 
 h2 {
+    font-size: 34px;
     font-size: 2.13rem;
 }
 
 h3 {
+    font-size: 17px;
     font-size: 1.06rem;
 }
 
 h4 {
+    font-size: 16px;
     font-size: 1rem;
 }
 
 h5 {
+    font-size: 15px;
     font-size: 0.94rem;
 }
 
 h6 {
+    font-size: 13px;
     font-size: 0.81rem;
 }
 
@@ -502,18 +471,6 @@ fieldset {
     display: block;
     max-width: 100%;
     height: auto;
-}
-
-.parent {
-    background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7);
-}
-
-.js_left,
-.js_right,
-.js_up {
-    transition: 1s;
-    transition: all 1s ease-out;
-    transition-delay: 3s;
 }
 
 /*
@@ -881,8 +838,8 @@ https://icomoon.io/
     }
 
     .wrapper {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 0px 15px;
+        padding: 0rem 0.94rem;
     }
 }
 
@@ -893,8 +850,8 @@ https://icomoon.io/
     }
 
     .wrapper {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 0px 15px;
+        padding: 0rem 0.94rem;
     }
 }
 
