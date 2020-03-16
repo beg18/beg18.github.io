@@ -49,7 +49,7 @@ $(function(){
 
     $(document).ready(function() {
         $.preloadImages(
-            "main_bg.png",
+            "main_bg.jpg",
             "delivery-img-1.jpg",
             "delivery-img-2.jpg",
             "delivery-img-3.jpg",
@@ -162,6 +162,22 @@ $('.nav-tab-list__link').click(function (e) {
         .parent()
         .addClass('item-active');
     return false;
+});
+
+
+/*
+Navigation Scroll - ljepo radi materem
+============================================
+*/
+
+$('.menu__list a').click(function(event) {
+    var id = $(this).attr("href");
+    var offset = 70;
+    var target = $(id).offset().top - offset;
+    $('html, body').animate({
+        scrollTop: target
+    }, 1500);
+    event.preventDefault();
 });
 
 });

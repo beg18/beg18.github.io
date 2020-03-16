@@ -321,10 +321,10 @@ Table of Content
 }
 
 .wrapper {
-    max-width: 1560px;
+    max-width: 1170px;
     margin: 0 auto;
-    padding: 0px 30px;
-    padding: 0rem 1.88rem;
+    padding: 0px 30pxpx;
+    padding: 0rem 1.88pxrem;
 }
 
 .visually-hidden {
@@ -337,6 +337,42 @@ Table of Content
     white-space: nowrap;
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
+}
+
+.section-wave__top {
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    z-index: 1;
+}
+
+.section-waves {
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    z-index: 1;
+}
+
+.section-wave1 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.section-wave2 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.section-wave3 {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
 }
 
 /* 2. Buttons
@@ -824,22 +860,22 @@ https://icomoon.io/
     }
 }
 
-@media (min-width: 1170px) {
+@media (min-width: 1200px) {
     .col-lg-five {
         width: 20%;
         float: left;
     }
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1200px) {
     .wrapper-fluid {
         padding-left: 15px;
         padding-right: 15px;
     }
 
     .wrapper {
-        padding: 0px 15px;
-        padding: 0rem 0.94rem;
+        padding: 0px 15pxpx;
+        padding: 0rem 0.94pxrem;
     }
 }
 
@@ -850,8 +886,8 @@ https://icomoon.io/
     }
 
     .wrapper {
-        padding: 0px 15px;
-        padding: 0rem 0.94rem;
+        padding: 0px 15pxpx;
+        padding: 0rem 0.94pxrem;
     }
 }
 
