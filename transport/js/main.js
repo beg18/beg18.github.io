@@ -40,6 +40,7 @@ Custom
 */
 
 $(function(){
+    
     //https://habr.com/ru/post/211538/
     $.preloadImages = function() {
         for(var i = 0; i<arguments.length; i++) {
