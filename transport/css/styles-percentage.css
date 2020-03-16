@@ -862,7 +862,7 @@ HEADER
     flex-grow: 1;
     max-width: 100%;
     padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-right: 0;
     position: relative;
     width: 100%;
     padding-left: 1.25%;
@@ -3434,6 +3434,7 @@ MODALS
     .header-right {
         text-align: right;
         margin-left: auto;
+        margin-right: 30px;
     }
 
     .header-slogan {
@@ -3443,6 +3444,13 @@ MODALS
 
     .header-slogan__content {
         padding: 20% 0;
+        min-width: 300px;
+        min-width: 18.75rem;
+        max-width: 90%;
+        padding: 0 15px;
+        padding: 0 0.94rem;
+        box-sizing: border-box;
+        margin: 0 auto;
     }
 
     .header-slogan__title {
@@ -3615,6 +3623,10 @@ MODALS
 
     .menu__link:hover {
         background-color: transparent;
+    }
+
+    .menu__humburger {
+        margin-left: 30px;
     }
 
     .menu__humburger {

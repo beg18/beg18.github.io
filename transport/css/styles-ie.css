@@ -323,8 +323,8 @@ Table of Content
 .wrapper {
     max-width: 1170px;
     margin: 0 auto;
-    padding: 0px 30pxpx;
-    padding: 0rem 1.88pxrem;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .visually-hidden {
@@ -874,8 +874,8 @@ https://icomoon.io/
     }
 
     .wrapper {
-        padding: 0px 15pxpx;
-        padding: 0rem 0.94pxrem;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -886,8 +886,8 @@ https://icomoon.io/
     }
 
     .wrapper {
-        padding: 0px 15pxpx;
-        padding: 0rem 0.94pxrem;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 

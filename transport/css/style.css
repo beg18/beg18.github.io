@@ -319,8 +319,8 @@ Table of Content
 .wrapper {
     max-width: 1170px;
     margin: 0 auto;
-    padding: 0px 30pxpx;
-    padding: 0rem 1.88pxrem;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .visually-hidden {
@@ -859,7 +859,7 @@ HEADER
     flex-grow: 1;
     max-width: 100%;
     padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-right: 0;
     position: relative;
     width: 100%;
     padding-left: 15px;
@@ -3378,8 +3378,8 @@ MODALS
     }
 
     .wrapper {
-        padding: 0px 15pxpx;
-        padding: 0rem 0.94pxrem;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .section__title {
@@ -3431,6 +3431,7 @@ MODALS
     .header-right {
         text-align: right;
         margin-left: auto;
+        margin-right: 30px;
     }
 
     .header-slogan {
@@ -3440,6 +3441,13 @@ MODALS
 
     .header-slogan__content {
         padding: 20% 0;
+        min-width: 300px;
+        min-width: 18.75rem;
+        max-width: 90%;
+        padding: 0 15px;
+        padding: 0 0.94rem;
+        box-sizing: border-box;
+        margin: 0 auto;
     }
 
     .header-slogan__title {
@@ -3615,6 +3623,10 @@ MODALS
     }
 
     .menu__humburger {
+        margin-left: 30px;
+    }
+
+    .menu__humburger {
         display: block;
     }
 
@@ -3694,8 +3706,8 @@ MODALS
     }
 
     .wrapper {
-        padding: 0px 15pxpx;
-        padding: 0rem 0.94pxrem;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .section__title {
