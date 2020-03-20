@@ -787,13 +787,6 @@
     <section id="js_feedback" class="feedback">
         <h2 class="visually-hidden">Hidden title</h2>
 
-
-        <svg class="svg--feedback-top__svg">
-            <use xlink:href="i/symbol/sprite.svg#svg--feedback-top"></use>
-        </svg>
-        <!-- End svg--feedback-top__svg -->
-
-
         <div class="wrapper">
             <header class="section__header">
                 <h2 class="section__title">
@@ -816,7 +809,7 @@
                     </label>
 
                     <footer class="feeback-form__footer">
-                        <button type="submit" class="feeback-form__btn">
+                        <button data-modal="js_thanks" type="submit" class="feeback-form__btn">
                             Перезвоните
                         </button>
                     </footer>
@@ -824,14 +817,6 @@
             </form>
         </div>
         <!-- //wrapper -->
-
-
-        <svg class="svg--feedback-bot__svg">
-            <use xlink:href="i/symbol/sprite.svg#svg--feedback-bot"></use>
-        </svg>
-        <!-- End svg--feedback-bot__svg -->
-
-
     </section>
     <!-- End feedback -->
 
@@ -932,7 +917,9 @@
 <!-- End footer -->
 
 
-<a id="scroll_top" class="top-but" href="javascript:"></a>
+<a id="scroll_top" class="top-but" href="javascript:">
+    <img src="i/@2x/arrow-top.png" width="25"  alt="">
+</a>
 
 <div class="modal js-modal" id="js-login-modal">
     <h2>Заявка</h2>
@@ -941,9 +928,10 @@
 </div>
 
 <div class="modal modal_lg js-modal" id="js-modal-russianmap">
-    <div id="map"></div>
+    <div id="map" class="map-rus"></div>
+
     <a href="#" class="btn-close js-modal-close"><span class="visually-hidden">Close</span></a>
-    <div class="contacts-map">
+   <!-- <div class="contacts-map">
         <p class="contacts-map__adr">
             Москва, Россия, 117105 Нагорный проезд, 6 строение 6
         </p>
@@ -953,13 +941,14 @@
         <p class="contacts-map__phone">
             +7 495 150-35-55
         </p>
-    </div>
+    </div>-->
 </div>
 
 <div class="modal modal_lg js-modal" id="js-modal-turkeymap">
      <div id="map2"></div>
     <h2>Карта оффиса в Турции</h2>
-    <!--<p>здесь будет карта Москва, Россия, 117105 Нагорный проезд, 6 строение 6    </p>-->
+    <a href="#" class="btn-close js-modal-close"><span class="visually-hidden">Close</span></a>
+   <!--
     <div class="contacts-map">
         <p class="contacts-map__adr">
             Москва, Россия, 117105 Нагорный проезд, 6 строение 6
@@ -971,12 +960,14 @@
             +7 495 150-35-55
         </p>
     </div>
-    <a href="#" class="btn-close js-modal-close"><span class="visually-hidden">Close</span></a>
+-->
 </div>
 
 <div class="modal modal_lg js-modal" id="js-modal-chinamap">
     <div id="map3"></div>
     <h2>Карта оффиса в Китае</h2>
+    <a href="#" class="btn-close js-modal-close"><span class="visually-hidden">Close</span></a>
+<!--
     <div class="contacts-map">
         <p class="contacts-map__adr">
             Москва, Россия, 117105 Нагорный проезд, 6 строение 6
@@ -988,13 +979,20 @@
             +7 495 150-35-55
         </p>
     </div>
-    <!--<h2>Карта оффиса в Китае</h2>-->
-    <!--<p>здесь будет карта Пекин, КНР, 117105 Нагорный проезд, 6 строение 6    </p>-->
-    <a href="#" class="btn-close js-modal-close"><span class="visually-hidden">Close</span></a>
+
+-->
+</div>
+<div class="feedback-overlay">
+    <div class="feedback-modal  js-feedback-modal" id="js_thanks">
+        <div class="feedback-modal__close">&times;</div>
+            <div class="feedback-modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="feedback-modal__descr">Наш менеджер свяжется с вами
+                в ближайшее время!</div>
+    </div>
 </div>
 
 <!-- JS section -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATHFnc9WpPZp0YAVf3XRv5hAs5WIbM_2g"></script>
 <script src="js/main.min.js"></script>
 <script>
     var div = document.createElement('div');

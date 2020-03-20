@@ -401,6 +401,25 @@ Table of Content
     opacity: 1;
 }
 
+.feeback-form__group input.error {
+    box-shadow: 0 0 2px 1px #f44336;
+}
+
+.feeback-form__group label.error {
+    display: block;
+    width: 300px;
+    width: 18.75rem;
+    font-size: 14px;
+    font-size: 0.88rem;
+    text-align: center;
+    color: #f44336;
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+}
+
 /*4. Font family
 ===========================*/
 
