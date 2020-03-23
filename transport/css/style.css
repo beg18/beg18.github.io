@@ -3271,7 +3271,7 @@ MODALS
     z-index: 100;
 }
 
-.gm-style .gm-style-iw-c {
+.modal_lg .gm-style .gm-style-iw-c {
     position: absolute;
     box-sizing: border-box;
     overflow: hidden;
@@ -3284,17 +3284,21 @@ MODALS
     padding: 0;
 }
 
-.gm-style .gm-style-iw-c .gm-ui-hover-effect {
+.modal_lg .gm-style-iw-d {
+    overflow: hidden !important;
+}
+
+.modal_lg .gm-style .gm-style-iw-c .gm-ui-hover-effect {
     top: 10px !important;
     right: 10px !important;
 }
 
-.gm-style img {
+.modal_lg .gm-style img {
     position: relative;
     z-index: 20;
 }
 
-.gm-style .gm-style-iw-t::after {
+.modal_lg .gm-style .gm-style-iw-t::after {
     display: none;
 }
 

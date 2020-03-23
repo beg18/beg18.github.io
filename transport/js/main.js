@@ -381,7 +381,7 @@ function init() {
               position: latlng,
               clickable: true,
               icon: {
-                url: "../i/@2x/" + icon
+                url: "i/@2x/" + icon
               },
               animation: google.maps.Animation.DROP
            });
@@ -442,7 +442,7 @@ var neighborhoods2 = [
               position: latlng,
               clickable: true,
               icon: {
-                url: "../i/@2x/" + icon
+                url: "i/@2x/" + icon
               },
               animation: google.maps.Animation.DROP
            });
@@ -505,7 +505,7 @@ var neighborhoods3 = [
               position: latlng,
               clickable: true,
               icon: {
-                url: "../i/@2x/" + icon
+                url: "i/@2x/" + icon
               },
               animation: google.maps.Animation.DROP
            });
