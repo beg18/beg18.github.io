@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="33" height="21" viewBox="0 0 33 21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1c242a;
+        stroke: url(#linear-gradient-1);
+        stroke-linejoin: round;
+        stroke-width: 2px;
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #bb9c66;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        filter: url(#filter-chain-1);
+      }
+
+      .cls-3 {
+        filter: url(#filter-chain-2);
+      }
+
+      .cls-4 {
+        filter: url(#filter-chain-3);
+      }
+    </style>
+
+    <linearGradient id="linear-gradient-1" gradientUnits="userSpaceOnUse" x1="10" y1="18.594" x2="10" y2="1">
+      <stop offset="0" stop-color="#9e7a47"/>
+      <stop offset="0.5" stop-color="#c8ae80"/>
+      <stop offset="0.5" stop-color="#efdcba"/>
+      <stop offset="1" stop-color="#c8ae80"/>
+    </linearGradient>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" in="SourceAlpha"/>
+      <feGaussianBlur result="dropBlur"/>
+      <feFlood flood-color="#80633b"/>
+      <feComposite operator="in" in2="dropBlur" result="dropShadowComp"/>
+      <feComposite in="SourceGraphic" result="shadowed"/>
+    </filter>
+    <filter id="filter-chain-1" filterUnits="userSpaceOnUse">
+      <feImage x="2.4400000000000546" y="4.156300000000002" width="15.11999999999989" height="15.843699999999998" preserveAspectRatio="none" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTUuMTE5OTk5OTk5OTk5ODkiIGhlaWdodD0iMTUuODQzNjk5OTk5OTk5OTk4Ij48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iNy41NiIgeTE9IjE1Ljg0NCIgeDI9IjcuNTYiPgogIDxzdG9wIG9mZnNldD0iMCIvPgogIDxzdG9wIG9mZnNldD0iMC41IiBzdG9wLWNvbG9yPSIjOWU5ZTllIi8+CiAgPHN0b3Agb2Zmc2V0PSIwLjUiIHN0b3AtY29sb3I9IiNkMGQwZDAiLz4KICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM5ZTllOWUiLz4KPC9saW5lYXJHcmFkaWVudD4KPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgb3BhY2l0eT0iMC45NiIgZmlsbD0idXJsKCNncmFkKSIvPjwvc3ZnPg=="/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend mode="softLight" in2="SourceGraphic" result="gradientFill"/>
+      <feGaussianBlur stdDeviation="4.333" in="SourceAlpha" result="innerGlowBlur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.24"/>
+      <feComposite operator="out" in2="innerGlowBlur"/>
+      <feComposite operator="in" in2="SourceAlpha"/>
+      <feBlend mode="screen" in2="gradientFill" result="innerGlow"/>
+      <feOffset dy="1" in="SourceAlpha"/>
+      <feGaussianBlur result="innerShadowBlur"/>
+      <feFlood flood-color="#fff1d8" flood-opacity="0.44"/>
+      <feComposite operator="out" in2="innerShadowBlur"/>
+      <feComposite operator="in" in2="SourceAlpha"/>
+      <feBlend in2="innerGlow" result="innerShadow"/>
+    </filter>
+    <filter id="filter-chain-2" filterUnits="userSpaceOnUse">
+      <feImage x="25" y="4" width="8" height="5" preserveAspectRatio="none" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOCIgaGVpZ2h0PSI1Ij48bGluZWFyR3JhZGllbnQvPgo8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBvcGFjaXR5PSIwLjk2IiBmaWxsPSJ1cmwoI2dyYWQpIi8+PC9zdmc+"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend mode="softLight" in2="SourceGraphic" result="gradientFill"/>
+      <feGaussianBlur stdDeviation="4.333" in="SourceAlpha" result="innerGlowBlur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.24"/>
+      <feComposite operator="out" in2="innerGlowBlur"/>
+      <feComposite operator="in" in2="SourceAlpha"/>
+      <feBlend mode="screen" in2="gradientFill" result="innerGlow"/>
+      <feOffset dy="1" in="SourceAlpha"/>
+      <feGaussianBlur result="innerShadowBlur"/>
+      <feFlood flood-color="#fff1d8" flood-opacity="0.44"/>
+      <feComposite operator="out" in2="innerShadowBlur"/>
+      <feComposite operator="in" in2="SourceAlpha"/>
+      <feBlend in2="innerGlow" result="innerShadow"/>
+    </filter>
+    <filter id="filter-chain-3" filterUnits="userSpaceOnUse">
+      <feImage x="25" y="12" width="8" height="5" preserveAspectRatio="none" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOCIgaGVpZ2h0PSI1Ij48bGluZWFyR3JhZGllbnQvPgo8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBvcGFjaXR5PSIwLjk2IiBmaWxsPSJ1cmwoI2dyYWQpIi8+PC9zdmc+"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend mode="softLight" in2="SourceGraphic" result="gradientFill"/>
+      <feGaussianBlur stdDeviation="4.333" in="SourceAlpha" result="innerGlowBlur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.24"/>
+      <feComposite operator="out" in2="innerGlowBlur"/>
+      <feComposite operator="in" in2="SourceAlpha"/>
+      <feBlend mode="screen" in2="gradientFill" result="innerGlow"/>
+      <feOffset dy="1" in="SourceAlpha"/>
+      <feGaussianBlur result="innerShadowBlur"/>
+      <feFlood flood-color="#fff1d8" flood-opacity="0.44"/>
+      <feComposite operator="out" in2="innerShadowBlur"/>
+      <feComposite operator="in" in2="SourceAlpha"/>
+      <feBlend in2="innerGlow" result="innerShadow"/>
+    </filter>
+  </defs>
+  <g>
+    <g style="fill: #1c242a; filter: url(#drop-shadow-1)">
+      <ellipse cx="10" cy="9.797" rx="9" ry="8.797" id="ellipse-1" style="stroke: inherit; filter: none; fill: inherit" class="cls-1"/>
+    </g>
+    <use xlink:href="#ellipse-1" style="stroke: url(#linear-gradient-1); filter: none; fill: none"/>
+    <path d="M11.669,4.495 C11.796,5.001 11.809,5.044 11.797,5.563 C11.792,5.764 11.676,6.691 11.707,6.975 C11.733,7.209 11.793,7.228 11.886,7.421 C12.050,7.757 11.995,8.221 11.933,8.560 C11.898,8.745 11.826,9.009 11.716,9.161 C11.594,9.328 11.351,9.329 11.244,9.524 C11.089,9.804 11.177,10.197 11.079,10.500 C10.968,10.843 10.686,10.867 10.665,11.317 C10.803,11.336 10.941,11.356 11.079,11.375 C11.217,11.665 11.471,12.249 11.730,12.425 C11.947,12.483 12.164,12.542 12.381,12.600 C13.141,12.907 13.986,13.275 14.748,13.592 C15.442,13.881 16.273,13.983 16.524,14.701 C16.524,15.188 16.570,16.338 16.557,16.976 C16.557,16.976 16.560,19.000 9.000,19.000 C1.441,19.000 1.443,16.976 1.443,16.976 C1.430,16.338 1.477,15.188 1.477,14.701 C1.727,13.983 2.558,13.881 3.252,13.592 C4.014,13.275 4.859,12.907 5.619,12.600 C5.836,12.542 6.053,12.483 6.270,12.425 C6.529,12.249 6.783,11.665 6.921,11.375 L7.229,11.301 C7.159,10.918 6.918,10.888 6.818,10.617 C6.779,10.208 6.739,9.800 6.700,9.391 C6.702,9.410 6.417,9.340 6.379,9.317 C5.977,9.069 5.969,8.060 5.930,7.641 C5.913,7.450 6.183,7.292 6.108,6.941 C5.668,4.883 6.298,3.920 7.296,3.601 C7.989,3.324 9.281,2.811 10.487,3.543 L10.786,3.816 L11.271,3.898 C11.514,4.036 11.669,4.495 11.669,4.495 Z" class="cls-2"/>
+    <path d="M32.010,6.892 L30.864,8.006 L28.000,5.220 L25.136,8.006 L23.990,6.892 L28.000,2.991 L29.146,4.105 L29.146,4.105 L32.010,6.892 Z" class="cls-3"/>
+    <path d="M32.010,12.108 L28.573,15.453 L28.573,15.452 L28.000,16.010 L23.990,12.108 L25.136,10.994 L28.000,13.780 L30.864,10.994 L32.010,12.108 Z" class="cls-4"/>
+  </g>
+</svg>
